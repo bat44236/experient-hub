@@ -6,27 +6,17 @@
 <title>Experient CLT Hub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<canvas id="stars-canvas"></canvas>
 
 <div id="app">
   <header>
     <div class="logo">
-      <div class="logo-mark">
-        <svg viewBox="0 0 12 12" fill="none">
-          <circle cx="6" cy="6" r="2.5" fill="#8b9bff"/>
-          <circle cx="6" cy="1.5" r="1" fill="#8b9bff" opacity="0.5"/>
-          <circle cx="10.5" cy="8.25" r="1" fill="#8b9bff" opacity="0.5"/>
-          <circle cx="1.5" cy="8.25" r="1" fill="#8b9bff" opacity="0.5"/>
-        </svg>
-      </div>
-      <div>
-        <div class="logo-text">Experient CLT</div>
-        <div class="logo-sub">Camp North End · Hub</div>
-      </div>
+      <div class="logo-mark" id="logo-mark-btn" title="">E.</div>
+      <div class="logo-divider"></div>
+      <div class="logo-text">CLT Hub</div>
     </div>
 
     <nav>
@@ -35,7 +25,7 @@
     </nav>
 
     <div class="header-right">
-      <span class="live-dot"></span>
+      <div class="status-pill" id="gcal-status-pill">Not connected</div>
       <span class="date-display" id="header-date"></span>
     </div>
   </header>
@@ -44,21 +34,25 @@
     <!-- ── CALENDAR VIEW ── -->
     <div id="view-calendar" class="view active">
       <div class="cal-toolbar">
-        <button class="cal-nav-btn" id="prev-month">‹</button>
-        <div class="cal-month-label" id="cal-month-label"></div>
-        <button class="cal-nav-btn" id="next-month">›</button>
-        <div class="toolbar-spacer"></div>
-        <div class="cal-legend">
-          <div class="legend-item"><div class="legend-swatch" style="background:var(--c-office-text)"></div>Office Activity</div>
-          <div class="legend-item"><div class="legend-swatch" style="background:var(--c-holiday-text)"></div>Holidays</div>
-          <div class="legend-item"><div class="legend-swatch" style="background:var(--c-birthday-text)"></div>Birthdays</div>
-          <div class="legend-item"><div class="legend-swatch" style="background:var(--c-cnend-text)"></div>Camp North End</div>
-          <div class="legend-item"><div class="legend-swatch" style="background:var(--c-workann-text)"></div>Work Anniversaries</div>
+        <div class="cal-toolbar-left">
+          <button class="cal-nav-btn" id="prev-month">‹</button>
+          <div class="cal-month-label" id="cal-month-label"></div>
+          <button class="cal-nav-btn" id="next-month">›</button>
         </div>
-        <div class="toolbar-spacer"></div>
-        <button class="connect-btn" id="connect-gcal-btn">⟳ Connect Google</button>
+        <div class="cal-legend">
+          <div class="legend-item"><div class="legend-swatch swatch-office"></div>Office Activity</div>
+          <div class="legend-item"><div class="legend-swatch swatch-holiday"></div>Holidays</div>
+          <div class="legend-item"><div class="legend-swatch swatch-birthday"></div>Birthdays</div>
+          <div class="legend-item"><div class="legend-swatch swatch-cnend"></div>Camp North End</div>
+          <div class="legend-item"><div class="legend-swatch swatch-workann"></div>Work Anniversaries</div>
+        </div>
+        <div class="cal-toolbar-right">
+          <button class="btn-outline" id="export-ical-btn">↓ Export iCal</button>
+          <button class="btn-outline" id="add-event-btn">+ Add Event</button>
+          <!-- admin-only: hidden until PIN unlocked -->
+          <button class="btn-primary admin-only" id="connect-gcal-btn" style="display:none">Connect Google</button>
+        </div>
       </div>
-
       <div id="cal-grid-wrap">
         <div class="dow-header">
           <div class="dow-cell">Sunday</div>
@@ -76,42 +70,77 @@
     <!-- ── WORKSPACE VIEW ── -->
     <div id="view-workspace" class="view">
       <div class="ws-layout">
+        <!-- Sidebar: page tree -->
         <aside class="ws-sidebar">
           <div class="ws-sidebar-header">
-            <span class="view-title"><span class="accent">◉</span> Workspace</span>
-            <button class="icon-btn" id="new-note-btn">+ New</button>
+            <span class="ws-sidebar-title">Pages</span>
+            <div class="ws-sidebar-actions">
+              <button class="btn-ghost-sm" id="ws-new-root-btn" title="New top-level page">+ Page</button>
+            </div>
           </div>
-          <div class="ws-note-list" id="note-list"></div>
+          <div class="ws-sync-bar" id="ws-sync-bar">
+            <span class="ws-sync-dot" id="ws-sync-dot"></span>
+            <span id="ws-sync-label">Loading…</span>
+          </div>
+          <div class="ws-page-tree" id="ws-page-tree"></div>
         </aside>
+
+        <!-- Editor pane -->
         <div class="ws-editor-pane">
           <div class="ws-editor-toolbar">
-            <button class="tool-btn primary" id="save-note-btn">Save</button>
-            <div class="tool-sep"></div>
-            <button class="tool-btn" id="del-note-btn">Delete</button>
+            <div class="ws-editor-breadcrumb" id="ws-breadcrumb"></div>
             <div class="toolbar-spacer"></div>
+            <button class="btn-ghost-sm" id="ws-add-child-btn" title="Add sub-page">+ Sub-page</button>
+            <button class="btn-ghost-sm ws-danger-btn" id="ws-delete-btn" title="Delete page">Delete</button>
             <span class="ws-status" id="ws-status"></span>
           </div>
-          <input class="ws-title-input" id="note-title" placeholder="Note title…" type="text">
-          <textarea class="ws-body-input" id="note-body" placeholder="Start writing…"></textarea>
+          <div class="ws-editor-body" id="ws-editor-body">
+            <!-- empty state -->
+            <div class="ws-empty-state" id="ws-empty-state">
+              <div class="ws-empty-icon">📄</div>
+              <div class="ws-empty-title">No page selected</div>
+              <div class="ws-empty-sub">Select a page from the sidebar or create a new one.</div>
+              <button class="btn-primary" id="ws-empty-create-btn">+ Create first page</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 </div>
 
-<!-- Google Calendar Config Modal -->
+<!-- ── ADMIN PIN MODAL ── -->
+<div class="modal-overlay" id="pin-modal">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <div class="modal-title">Admin Access</div>
+      <button class="modal-close" id="pin-modal-close">✕</button>
+    </div>
+    <div class="modal-sub">Enter your admin PIN to access calendar settings.</div>
+    <div class="modal-label">PIN</div>
+    <input class="modal-input" id="pin-input" type="password" placeholder="••••" maxlength="8" autocomplete="off">
+    <div id="pin-error" class="modal-error" style="display:none">Incorrect PIN.</div>
+    <div class="modal-footer">
+      <button class="btn-ghost-sm" id="pin-cancel">Cancel</button>
+      <button class="btn-primary-sm" id="pin-submit">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── GOOGLE CALENDAR CONFIG MODAL ── -->
 <div class="modal-overlay" id="gcal-modal">
   <div class="modal">
-    <div class="modal-title">Connect Google Calendar</div>
+    <div class="modal-header">
+      <div class="modal-title">Connect Google Calendar</div>
+      <button class="modal-close" id="gcal-modal-close">✕</button>
+    </div>
     <div class="modal-sub">
       Create an OAuth 2.0 Web Client ID in <a href="https://console.cloud.google.com" target="_blank">Google Cloud Console</a>,
       enable the Calendar API, and add <code id="modal-origin"></code> as an authorized JavaScript origin.
     </div>
-
     <div class="modal-label">OAuth 2.0 Client ID</div>
     <input class="modal-input" id="cfg-client-id" type="text" placeholder="xxxxxxxxxxxx.apps.googleusercontent.com">
-
-    <div class="modal-label" style="margin-top:16px">Calendar Sources</div>
+    <div class="modal-label" style="margin-top:18px">Calendar Sources</div>
     <div class="cal-entry-list" id="cal-entry-list"></div>
     <div class="cal-add-row">
       <input class="modal-input" id="new-cal-id" type="text" placeholder="Calendar ID (e.g. primary, or full email)">
@@ -122,23 +151,86 @@
         <option value="cnend">Camp North End</option>
         <option value="workann">Work Anniversaries</option>
       </select>
-      <button class="tool-btn" id="add-cal-btn">+ Add</button>
+      <button class="btn-ghost-sm" id="add-cal-btn">+ Add</button>
     </div>
-
     <div class="modal-footer">
-      <button class="tool-btn" id="modal-cancel">Cancel</button>
-      <button class="tool-btn primary" id="modal-save">Save &amp; Authorize</button>
+      <button class="btn-ghost-sm" id="modal-cancel">Cancel</button>
+      <button class="btn-primary-sm" id="modal-save">Save &amp; Authorize</button>
     </div>
   </div>
 </div>
 
-<!-- Event Tooltip -->
+<!-- ── ADD EVENT MODAL ── -->
+<div class="modal-overlay" id="add-event-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Add Office Activity Event</div>
+      <button class="modal-close" id="add-event-modal-close">✕</button>
+    </div>
+    <div class="modal-sub">This event will be added to your Office Activity Google Calendar.</div>
+    <div class="modal-label">Event Title</div>
+    <input class="modal-input" id="evt-title" type="text" placeholder="e.g. Team Lunch, All Hands…">
+    <div class="modal-row">
+      <div class="modal-field">
+        <div class="modal-label">Date</div>
+        <input class="modal-input" id="evt-date" type="date">
+      </div>
+      <div class="modal-field">
+        <div class="modal-label">Type</div>
+        <select class="modal-input modal-select" id="evt-allday">
+          <option value="allday">All Day</option>
+          <option value="timed">Specific Time</option>
+        </select>
+      </div>
+    </div>
+    <div id="evt-time-row" class="modal-row" style="display:none">
+      <div class="modal-field">
+        <div class="modal-label">Start Time</div>
+        <input class="modal-input" id="evt-start" type="time" value="09:00">
+      </div>
+      <div class="modal-field">
+        <div class="modal-label">End Time</div>
+        <input class="modal-input" id="evt-end" type="time" value="10:00">
+      </div>
+    </div>
+    <div class="modal-label">Description <span class="modal-label-opt">(optional)</span></div>
+    <textarea class="modal-input modal-textarea" id="evt-desc" placeholder="Add any notes or details…"></textarea>
+    <div class="modal-label">Location <span class="modal-label-opt">(optional)</span></div>
+    <input class="modal-input" id="evt-location" type="text" placeholder="e.g. Camp North End, Building C…">
+    <div id="evt-error" class="modal-error" style="display:none"></div>
+    <div class="modal-footer">
+      <button class="btn-ghost-sm" id="add-event-cancel">Cancel</button>
+      <button class="btn-primary-sm" id="add-event-save">Add to Calendar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── NEW PAGE MODAL ── -->
+<div class="modal-overlay" id="new-page-modal">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <div class="modal-title" id="new-page-modal-title">New Page</div>
+      <button class="modal-close" id="new-page-close">✕</button>
+    </div>
+    <div class="modal-label">Page Title</div>
+    <input class="modal-input" id="new-page-title" type="text" placeholder="e.g. Team Meeting Agenda Topics">
+    <div class="modal-label">Icon <span class="modal-label-opt">(optional emoji)</span></div>
+    <input class="modal-input" id="new-page-icon" type="text" placeholder="📋" maxlength="4" style="max-width:80px">
+    <div id="new-page-error" class="modal-error" style="display:none"></div>
+    <div class="modal-footer">
+      <button class="btn-ghost-sm" id="new-page-cancel">Cancel</button>
+      <button class="btn-primary-sm" id="new-page-submit">Create Page</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── EVENT TOOLTIP ── -->
 <div class="evt-tooltip" id="evt-tooltip">
   <div class="tt-title" id="tt-title"></div>
   <div class="tt-meta" id="tt-meta"></div>
 </div>
 
-<!-- Overflow popup -->
+<!-- ── OVERFLOW POPUP ── -->
 <div class="overflow-popup" id="overflow-popup">
   <div class="overflow-header">
     <span class="overflow-date" id="overflow-date"></span>
@@ -147,7 +239,6 @@
   <div id="overflow-list"></div>
 </div>
 
-<script src="stars.js"></script>
 <script src="calendar.js"></script>
 <script src="workspace.js"></script>
 <script src="app.js"></script>
