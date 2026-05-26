@@ -321,15 +321,17 @@ const CAL = (() => {
 
     ics.push('END:VCALENDAR');
 
-    const blob = new Blob([ics.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
-    const url  = URL.createObjectURL(blob);
-    const a    = document.createElement('a');
-    a.href     = url;
-    a.download = `experient-clt-${calYear}-${String(calMonth+1).padStart(2,'0')}.ics`;
+    const content  = ics.join('\r\n');
+    const filename = `experient-clt-${calYear}-${String(calMonth+1).padStart(2,'0')}.ics`;
+    // data: URI works reliably in Chrome where createObjectURL can be blocked
+    const dataUri  = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(content);
+    const a        = document.createElement('a');
+    a.href         = dataUri;
+    a.download     = filename;
     a.style.display = 'none';
     document.body.appendChild(a);
     a.click();
-    setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 200);
+    document.body.removeChild(a);
   }
 
   // ── Loading state ─────────────────────────────────────────────────────────
