@@ -1,21 +1,5 @@
 /* ── APP BOOTSTRAP ───────────────────────────────────────────────────────── */
 
-// ── CREDENTIALS — paste yours here so any browser loads calendars automatically
-// These are public-safe: the API key is read-only and restricted to your domain.
-// Users who want write access still go through OAuth individually.
-const CONFIG = {
-  apiKey:   'YOUR_API_KEY_HERE',         // ← paste your Google API key
-  clientId: 'YOUR_CLIENT_ID_HERE',       // ← paste your OAuth Client ID
-  calendars: [
-    // { id: 'your-calendar-id@gmail.com', cat: 'office' },
-    // { id: 'en.usa#holiday@group.v.calendar.google.com', cat: 'holiday' },
-    // { id: 'your-birthday-cal-id', cat: 'birthday' },
-    // { id: 'your-cnend-cal-id', cat: 'cnend' },
-    // { id: 'your-workann-cal-id', cat: 'workann' },
-  ],
-};
-// ─────────────────────────────────────────────────────────────────────────────
-
 // ── Date/time header ─────────────────────────────────────────────────────────
 (function () {
   function tick() {
@@ -44,20 +28,26 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   const pinInput   = document.getElementById('pin-input');
   const pinError   = document.getElementById('pin-error');
   const connectBtn = document.getElementById('connect-gcal-btn');
+  const logoutBtn  = document.getElementById('admin-logout-btn');
   let logoClicks = 0, logoTimer = null;
 
-  function isUnlocked() { return localStorage.getItem('hub_admin') === 'yes'; }
-
-  const logoutBtn = document.getElementById('admin-logout-btn');
+  function isUnlocked() { return sessionStorage.getItem('hub_admin') === 'yes'; }
 
   function setAdminUI(show) {
-    connectBtn.style.display  = show ? '' : 'none';
-    logoutBtn.style.display   = show ? '' : 'none';
+    connectBtn.style.display = show ? '' : 'none';
+    logoutBtn.style.display  = show ? '' : 'none';
+    // Notify Quincy so Add Person / Manage Fields buttons appear
+    if (typeof QUINCY !== 'undefined') QUINCY.notifyAdminChange(show);
   }
 
+  // Exit admin — clears session, reverts pill text if still connected
   logoutBtn.addEventListener('click', () => {
-    localStorage.removeItem('hub_admin');
+    sessionStorage.removeItem('hub_admin');
     setAdminUI(false);
+    const pill = document.getElementById('gcal-status-pill');
+    if (pill.classList.contains('connected')) {
+      pill.textContent = '● Connected';
+    }
   });
 
   if (isUnlocked()) setAdminUI(true);
@@ -71,7 +61,9 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   });
 
   function openPin() {
-    pinInput.value=''; pinError.style.display='none';
+    pinInput.value='';
+    document.getElementById('pin-api-key').value = '';
+    pinError.style.display='none';
     pinModal.classList.add('open');
     setTimeout(()=>pinInput.focus(), 80);
   }
@@ -83,11 +75,17 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
   async function tryUnlock() {
     if (pinInput.value === ADMIN_PIN) {
-      localStorage.setItem('hub_admin','yes');
+      sessionStorage.setItem('hub_admin','yes');
+
+      // Store Anthropic API key for Quincy (session only — never persisted)
+      const apiKey = document.getElementById('pin-api-key').value.trim();
+      if (apiKey) sessionStorage.setItem('hub_anthropic_key', apiKey);
+
       closePin();
       setAdminUI(true);
+
       // Immediately trigger OAuth so admin has write access
-      const clientId = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
+      const clientId = localStorage.getItem('hub_gcal_client');
       if (clientId) {
         try {
           await CAL.adminAuth(clientId);
@@ -194,11 +192,10 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 
   const modal = document.getElementById('gcal-modal');
   function openModal() {
-    document.getElementById('cfg-api-key').value   = localStorage.getItem('hub_gcal_apikey') || CONFIG.apiKey || '';
-    document.getElementById('cfg-client-id').value = localStorage.getItem('hub_gcal_client') || CONFIG.clientId || '';
-    const savedE = localStorage.getItem('hub_cal_entries');
-    if (savedE) calEntries = JSON.parse(savedE);
-    else if (CONFIG.calendars.length) calEntries = CONFIG.calendars;
+    document.getElementById('cfg-api-key').value  = localStorage.getItem('hub_gcal_apikey')||'';
+    document.getElementById('cfg-client-id').value= localStorage.getItem('hub_gcal_client')||'';
+    const savedE=localStorage.getItem('hub_cal_entries');
+    if (savedE) calEntries=JSON.parse(savedE);
     renderEntries();
     modal.classList.add('open');
   }
@@ -223,18 +220,12 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
     document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
   });
 
-  // ── Auto-connect on load ──────────────────────────────────────────────────
-  // Use localStorage credentials if saved (from Manage Calendars),
-  // otherwise fall back to the hardcoded CONFIG above so any browser works.
-  const savedApiKey = localStorage.getItem('hub_gcal_apikey') || CONFIG.apiKey;
-  const savedClient = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
+  // Auto-connect on load using saved API key (no login)
+  const savedApiKey = localStorage.getItem('hub_gcal_apikey');
+  const savedClient = localStorage.getItem('hub_gcal_client');
   const savedEntries= localStorage.getItem('hub_cal_entries');
-  const resolvedEntries = savedEntries ? JSON.parse(savedEntries)
-    : CONFIG.calendars.length ? CONFIG.calendars
-    : null;
-
-  if (savedApiKey && savedApiKey !== 'YOUR_API_KEY_HERE' && resolvedEntries?.length) {
-    calEntries = resolvedEntries;
+  if (savedApiKey && savedEntries) {
+    calEntries = JSON.parse(savedEntries);
     CAL.connectGoogle(savedClient||'', savedApiKey, calEntries).then(()=>{
       document.getElementById('gcal-status-pill').textContent='● Connected';
       document.getElementById('gcal-status-pill').classList.add('connected');
@@ -244,11 +235,10 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-// Only show sample data if no API key is saved — avoids flash of placeholder events
-const _hasCreds = (localStorage.getItem('hub_gcal_apikey') || CONFIG.apiKey !== 'YOUR_API_KEY_HERE') &&
-                  (localStorage.getItem('hub_cal_entries') || CONFIG.calendars.length > 0);
+const _hasCreds = localStorage.getItem('hub_gcal_apikey') && localStorage.getItem('hub_cal_entries');
 if (!_hasCreds) {
   CAL.loadSample();
 }
 CAL.render();
 WS.init();
+QUINCY.init();
