@@ -30,10 +30,12 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   const connectBtn = document.getElementById('connect-gcal-btn');
   let logoClicks = 0, logoTimer = null;
 
-  function isUnlocked() { return localStorage.getItem('hub_admin') === 'yes'; }
+  function isUnlocked() { return sessionStorage.getItem('hub_admin') === 'yes'; }
 
   function setAdminUI(show) {
     connectBtn.style.display = show ? '' : 'none';
+    // Notify Quincy so Add Person / Manage Fields buttons appear
+    if (typeof QUINCY !== 'undefined') QUINCY.notifyAdminChange(show);
   }
 
   if (isUnlocked()) setAdminUI(true);
@@ -47,7 +49,9 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   });
 
   function openPin() {
-    pinInput.value=''; pinError.style.display='none';
+    pinInput.value='';
+    document.getElementById('pin-api-key').value = '';
+    pinError.style.display='none';
     pinModal.classList.add('open');
     setTimeout(()=>pinInput.focus(), 80);
   }
@@ -59,9 +63,15 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
   async function tryUnlock() {
     if (pinInput.value === ADMIN_PIN) {
-      localStorage.setItem('hub_admin','yes');
+      sessionStorage.setItem('hub_admin','yes');
+
+      // Store Anthropic API key for Quincy (session only — never persisted)
+      const apiKey = document.getElementById('pin-api-key').value.trim();
+      if (apiKey) sessionStorage.setItem('hub_anthropic_key', apiKey);
+
       closePin();
       setAdminUI(true);
+
       // Immediately trigger OAuth so admin has write access
       const clientId = localStorage.getItem('hub_gcal_client');
       if (clientId) {
@@ -213,10 +223,10 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-// Only show sample data if no API key is saved — avoids flash of placeholder events
 const _hasCreds = localStorage.getItem('hub_gcal_apikey') && localStorage.getItem('hub_cal_entries');
 if (!_hasCreds) {
   CAL.loadSample();
 }
 CAL.render();
 WS.init();
+QUINCY.init();
