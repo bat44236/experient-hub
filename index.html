@@ -138,7 +138,9 @@
       Create an OAuth 2.0 Web Client ID in <a href="https://console.cloud.google.com" target="_blank">Google Cloud Console</a>,
       enable the Calendar API, and add <code id="modal-origin"></code> as an authorized JavaScript origin.
     </div>
-    <div class="modal-label">OAuth 2.0 Client ID</div>
+    <div class="modal-label">API Key <span class="modal-label-opt">(for public read — no login required)</span></div>
+    <input class="modal-input" id="cfg-api-key" type="text" placeholder="AIzaSy…">
+    <div class="modal-label" style="margin-top:10px">OAuth 2.0 Client ID <span class="modal-label-opt">(admin write access only)</span></div>
     <input class="modal-input" id="cfg-client-id" type="text" placeholder="xxxxxxxxxxxx.apps.googleusercontent.com">
     <div class="modal-label" style="margin-top:18px">Calendar Sources</div>
     <div class="cal-entry-list" id="cal-entry-list"></div>
@@ -223,6 +225,10 @@
     </div>
   </div>
 </div>
+
+<!-- ── EVENT DETAIL PANEL ── -->
+<div class="evt-detail-overlay" id="evt-detail-overlay"></div>
+<div class="evt-detail-panel" id="evt-detail-panel"></div>
 
 <!-- ── EVENT TOOLTIP ── -->
 <div class="evt-tooltip" id="evt-tooltip">

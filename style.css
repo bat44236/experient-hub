@@ -544,7 +544,7 @@ main { position: relative; overflow: hidden; height: 100%; }
 .ws-editor-body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.07); border-radius: 2px; }
 
 /* page editor content */
-.ws-page-editor { display: flex; flex-direction: column; flex: 1; padding: 28px 48px 40px; max-width: 860px; width: 100%; margin: 0 auto; }
+.ws-page-editor { display: flex; flex-direction: column; flex: 1; padding: 28px 48px 40px; width: 100%; }
 
 .ws-page-icon-display {
   font-size: 40px; line-height: 1; margin-bottom: 10px; cursor: pointer;
@@ -652,3 +652,83 @@ main { position: relative; overflow: hidden; height: 100%; }
 
 /* more-button always visible on active row */
 .page-row.active .page-row-actions { display: flex; }
+
+/* ── EVENT DETAIL PANEL ──────────────────────────────────────────────────── */
+.evt-detail-overlay {
+  position: fixed; inset: 0; z-index: 300;
+  background: rgba(5,8,14,0.6); backdrop-filter: blur(3px);
+  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+.evt-detail-overlay.open { opacity: 1; pointer-events: all; }
+
+.evt-detail-panel {
+  position: fixed; right: 0; top: 56px; bottom: 0; z-index: 301;
+  width: 380px; max-width: 95vw;
+  background: var(--navy-mid);
+  border-left: 1px solid var(--border-mid);
+  box-shadow: -8px 0 40px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.22s ease;
+  padding: 24px 24px 32px;
+  scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.07) transparent;
+}
+.evt-detail-panel::-webkit-scrollbar { width: 4px; }
+.evt-detail-panel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.07); border-radius: 2px; }
+.evt-detail-panel.open { transform: translateX(0); }
+
+.edp-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px;
+}
+.edp-cat-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 20px; border: 1px solid;
+}
+.edp-close {
+  background: none; border: none; color: var(--gray-500); font-size: 16px;
+  cursor: pointer; padding: 3px 7px; border-radius: 4px; transition: all 0.12s;
+}
+.edp-close:hover { color: var(--white); background: rgba(255,255,255,0.07); }
+
+.edp-title {
+  font-size: 20px; font-weight: 700; color: var(--white);
+  line-height: 1.3; margin-bottom: 8px; letter-spacing: -0.01em;
+  outline: none;
+}
+.edp-title[contenteditable="true"] {
+  border-bottom: 1px solid var(--border-mid); padding-bottom: 6px;
+  cursor: text;
+}
+.edp-title[contenteditable="true"]:focus { border-color: var(--accent-dim); }
+
+.edp-date { font-size: 13px; color: var(--gray-500); margin-bottom: 20px; }
+
+.edp-row {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin-bottom: 12px; font-size: 13px; color: var(--gray-300);
+}
+.edp-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+.edp-val  { flex: 1; line-height: 1.5; }
+
+.edp-desc-wrap { margin-top: 16px; }
+.edp-desc-read {
+  font-size: 13px; color: var(--gray-300); line-height: 1.75;
+  white-space: pre-wrap;
+}
+.edp-desc-edit {
+  width: 100%; min-height: 100px; background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-mid); border-radius: 6px;
+  color: var(--white); font-family: var(--font); font-size: 13px;
+  line-height: 1.7; padding: 10px 12px; outline: none; resize: vertical;
+  transition: border-color 0.15s;
+}
+.edp-desc-edit:focus { border-color: var(--accent-dim); }
+.edp-desc-edit::placeholder { color: var(--gray-700); }
+
+.edp-actions {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border);
+}
+.edp-delete-btn { color: var(--gray-500) !important; }
+.edp-delete-btn:hover { color: var(--danger) !important; border-color: rgba(239,68,68,0.4) !important; }
