@@ -48,9 +48,17 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
   function isUnlocked() { return localStorage.getItem('hub_admin') === 'yes'; }
 
+  const logoutBtn = document.getElementById('admin-logout-btn');
+
   function setAdminUI(show) {
-    connectBtn.style.display = show ? '' : 'none';
+    connectBtn.style.display  = show ? '' : 'none';
+    logoutBtn.style.display   = show ? '' : 'none';
   }
+
+  logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem('hub_admin');
+    setAdminUI(false);
+  });
 
   if (isUnlocked()) setAdminUI(true);
 

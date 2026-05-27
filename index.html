@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="quincy-styles.css">
 </head>
 <body>
 
@@ -23,10 +22,10 @@
     <nav>
       <button class="nav-btn active" data-view="calendar">Calendar</button>
       <button class="nav-btn" data-view="workspace">Workspace</button>
-      <button class="nav-btn" data-view="quincy">Quincy</button>
     </nav>
 
     <div class="header-right">
+      <button class="btn-ghost-sm" id="admin-logout-btn" style="display:none;font-size:11px">Exit Admin</button>
       <div class="status-pill" id="gcal-status-pill">Not connected</div>
       <span class="date-display" id="header-date"></span>
     </div>
@@ -108,53 +107,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ── QUINCY VIEW ── -->
-    <div id="view-quincy" class="view">
-      <div class="q-people-panel">
-        <div class="q-people-header">
-          <div class="q-people-header-row">
-            <div class="q-people-title">People</div>
-          </div>
-          <input
-            type="text"
-            id="quincy-search"
-            class="q-people-search"
-            placeholder="Search by name, role, or team…"
-          >
-        </div>
-        <div id="quincy-people-list"></div>
-        <div class="q-people-footer">
-          <button id="quincy-add-person">+ Add person</button>
-          <button id="quincy-manage-fields">⚙ Manage survey fields</button>
-        </div>
-      </div>
-
-      <div class="q-profile-panel" id="quincy-profile">
-        <div class="qp-placeholder">Select a person to view their profile.</div>
-      </div>
-
-      <div class="q-chat-panel">
-        <div class="q-chat-header">
-          <div class="q-chat-header-label">Ask Quincy</div>
-          <div id="quincy-context-badge">No person selected</div>
-        </div>
-        <div id="quincy-chat-messages"></div>
-        <div id="quincy-chat-chips"></div>
-        <div class="q-chat-input-row">
-          <textarea
-            id="quincy-chat-input"
-            placeholder="Ask about this person…"
-            rows="1"
-            oninput="this.style.height='36px';this.style.height=Math.min(this.scrollHeight,80)+'px'"
-          ></textarea>
-          <button id="quincy-chat-send">
-            <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
   </main>
 </div>
 
@@ -165,11 +117,9 @@
       <div class="modal-title">Admin Access</div>
       <button class="modal-close" id="pin-modal-close">✕</button>
     </div>
-    <div class="modal-sub">Enter your admin PIN to access settings.</div>
+    <div class="modal-sub">Enter your admin PIN to access calendar settings.</div>
     <div class="modal-label">PIN</div>
     <input class="modal-input" id="pin-input" type="password" placeholder="••••" maxlength="8" autocomplete="off">
-    <div class="modal-label" style="margin-top:10px">Anthropic API Key <span class="modal-label-opt">(for Quincy AI chat)</span></div>
-    <input class="modal-input" id="pin-api-key" type="password" placeholder="sk-ant-…" autocomplete="off">
     <div id="pin-error" class="modal-error" style="display:none">Incorrect PIN.</div>
     <div class="modal-footer">
       <button class="btn-ghost-sm" id="pin-cancel">Cancel</button>
@@ -298,7 +248,6 @@
 
 <script src="calendar.js"></script>
 <script src="workspace.js"></script>
-<script src="quincy.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
