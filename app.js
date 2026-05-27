@@ -213,6 +213,10 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-CAL.loadSample();
+// Only show sample data if no API key is saved — avoids flash of placeholder events
+const _hasCreds = localStorage.getItem('hub_gcal_apikey') && localStorage.getItem('hub_cal_entries');
+if (!_hasCreds) {
+  CAL.loadSample();
+}
 CAL.render();
 WS.init();

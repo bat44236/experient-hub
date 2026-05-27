@@ -237,6 +237,7 @@ const CAL = (() => {
 
       const officeEntry = calEntries.find(e=>e.cat==='office');
       if (officeEntry) officeCalId = officeEntry.id;
+      currentCalEntries = calEntries;
 
       // Fetch public calendar data — no login required
       await fetchEvents(calEntries, false);
@@ -271,8 +272,11 @@ const CAL = (() => {
   }
 
   async function fetchEvents(calEntries) {
-    const timeMin = new Date(calYear, calMonth-1, 1).toISOString();
-    const timeMax = new Date(calYear, calMonth+2, 0, 23,59,59).toISOString();
+    // Fetch the full year so recurring events (birthdays, holidays, anniversaries)
+    // are always available regardless of which month the user is viewing.
+    // If the user navigates to a new year, re-fetch then.
+    const timeMin = new Date(calYear, 0,  1).toISOString();
+    const timeMax = new Date(calYear, 11, 31, 23,59,59).toISOString();
     store = {};
     await Promise.all(calEntries.map(async entry => {
       try {
@@ -399,9 +403,21 @@ const CAL = (() => {
   }
   function hideLoading() { loadingEl=null; }
 
-  // ── Nav ───────────────────────────────────────────────────────────────────
-  document.getElementById('prev-month').addEventListener('click',()=>{ calMonth--; if(calMonth<0){calMonth=11;calYear--;} render(); });
-  document.getElementById('next-month').addEventListener('click',()=>{ calMonth++; if(calMonth>11){calMonth=0;calYear++;} render(); });
+  let currentCalEntries = [];
+
+  // ── Nav — refetch if crossing into a new year ─────────────────────────────
+  document.getElementById('prev-month').addEventListener('click', async () => {
+    const prevYear = calYear;
+    calMonth--; if (calMonth < 0) { calMonth=11; calYear--; }
+    render();
+    if (calYear !== prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
+  });
+  document.getElementById('next-month').addEventListener('click', async () => {
+    const prevYear = calYear;
+    calMonth++; if (calMonth > 11) { calMonth=0; calYear++; }
+    render();
+    if (calYear !== prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
+  });
 
   return { render, loadSample, connectGoogle, adminAuth, addOfficeEvent, exportICal };
 })();
