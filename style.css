@@ -723,3 +723,78 @@ main { position: relative; overflow: hidden; height: 100%; }
 }
 .edp-delete-btn { color: var(--gray-500) !important; }
 .edp-delete-btn:hover { color: var(--danger) !important; border-color: rgba(239,68,68,0.4) !important; }
+
+/* ── RICH TEXT EDITOR ────────────────────────────────────────────────────── */
+.ws-rich-toolbar {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 2px;
+  padding: 6px 48px; border-bottom: 1px solid var(--border);
+  flex-shrink: 0; background: rgba(255,255,255,0.02);
+}
+.rt-btn {
+  font-family: var(--font); font-size: 12px; font-weight: 500;
+  padding: 4px 9px; border-radius: 4px;
+  border: 1px solid transparent;
+  background: transparent; color: var(--gray-300);
+  cursor: pointer; transition: all 0.12s; white-space: nowrap;
+  line-height: 1.4;
+}
+.rt-btn:hover { background: rgba(255,255,255,0.08); color: var(--white); border-color: var(--border); }
+.rt-btn.active { background: rgba(45,124,246,0.15); color: var(--accent); border-color: var(--accent-dim); }
+.rt-sep { width: 1px; height: 18px; background: var(--border-mid); margin: 0 4px; flex-shrink: 0; }
+
+/* page title as contenteditable */
+.ws-page-title-input {
+  font-family: var(--font); font-size: 28px; font-weight: 700;
+  color: var(--white); outline: none; width: 100%;
+  letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 6px;
+  min-height: 1.25em;
+}
+.ws-page-title-input:empty::before {
+  content: attr(data-placeholder); color: var(--gray-700); pointer-events: none;
+}
+
+/* rich text body */
+.ws-page-body-input {
+  font-family: var(--font); font-size: 14px; line-height: 1.85;
+  color: var(--gray-300); outline: none;
+  width: 100%; flex: 1; min-height: 300px;
+  padding-bottom: 40px;
+}
+.ws-page-body-input:empty::before { content: 'Start writing…'; color: var(--gray-700); pointer-events: none; }
+
+/* rich text content styling */
+.ws-page-body-input h1 { font-size: 22px; font-weight: 700; color: var(--white); margin: 20px 0 8px; letter-spacing: -0.01em; }
+.ws-page-body-input h2 { font-size: 18px; font-weight: 600; color: var(--white); margin: 18px 0 6px; }
+.ws-page-body-input h3 { font-size: 15px; font-weight: 600; color: var(--gray-100); margin: 14px 0 4px; }
+.ws-page-body-input p  { margin: 0 0 8px; }
+.ws-page-body-input ul, .ws-page-body-input ol { padding-left: 24px; margin: 6px 0 10px; }
+.ws-page-body-input li { margin-bottom: 3px; }
+.ws-page-body-input strong { color: var(--white); font-weight: 600; }
+.ws-page-body-input em { font-style: italic; color: var(--gray-100); }
+.ws-page-body-input u  { text-decoration: underline; text-underline-offset: 3px; }
+.ws-page-body-input s  { text-decoration: line-through; opacity: 0.6; }
+.ws-page-body-input a  { color: var(--accent); text-decoration: underline; }
+.ws-page-body-input a:hover { opacity: 0.8; }
+.ws-page-body-input hr { border: none; border-top: 1px solid var(--border-mid); margin: 16px 0; }
+.ws-page-body-input blockquote { border-left: 3px solid var(--accent-dim); padding-left: 14px; color: var(--gray-500); margin: 10px 0; }
+
+/* tables */
+.ws-page-body-input table {
+  border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px;
+}
+.ws-page-body-input th, .ws-page-body-input td {
+  border: 1px solid var(--border-mid); padding: 8px 12px;
+  text-align: left; vertical-align: top;
+}
+.ws-page-body-input th {
+  background: rgba(255,255,255,0.05); color: var(--white);
+  font-weight: 600; font-size: 12px; letter-spacing: 0.04em;
+}
+.ws-page-body-input td { color: var(--gray-300); }
+.ws-page-body-input tr:hover td { background: rgba(255,255,255,0.02); }
+
+/* auth note in event detail */
+.edp-auth-note {
+  font-size: 12px; color: var(--gray-500);
+  padding: 8px 0; display: flex; align-items: center; gap: 6px;
+}

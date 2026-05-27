@@ -2,21 +2,22 @@
 const CAL = (() => {
   const MONTHS = ['January','February','March','April','May','June',
                   'July','August','September','October','November','December'];
-
   const CAT_PILL  = { office:'pill-office', holiday:'pill-holiday', birthday:'pill-birthday', cnend:'pill-cnend', workann:'pill-workann' };
   const CAT_DOT   = { office:'dot-office',  holiday:'dot-holiday',  birthday:'dot-birthday',  cnend:'dot-cnend',  workann:'dot-workann'  };
   const CAT_LABEL = { office:'Office Activity', holiday:'Holiday', birthday:'Birthday', cnend:'Camp North End', workann:'Work Anniversary' };
   const CAT_COLOR = { office:'var(--c-office-text)', holiday:'var(--c-holiday-text)', birthday:'var(--c-birthday-text)', cnend:'var(--c-cnend-text)', workann:'var(--c-workann-text)' };
   const MAX_PILLS = 3;
 
-  const today     = new Date();
-  let calYear     = today.getFullYear();
-  let calMonth    = today.getMonth();
-  let store       = {};
-  let officeCalId = 'primary';
-  let isAdminAuth = false; // true once admin has done OAuth
+  const today      = new Date();
+  let calYear      = today.getFullYear();
+  let calMonth     = today.getMonth();
+  let store        = {};
+  let officeCalId  = 'primary';
+  let isAdminAuth  = false;  // full admin (PIN unlocked)
+  let isUserAuth   = false;  // regular user write (Office Activity only)
+  let currentCalEntries = [];
 
-  // ── Sample data ──────────────────────────────────────────────────────────
+  // ── Sample data ───────────────────────────────────────────────────────────
   const SAMPLE = [
     {id:'s1', title:'Team Sync — Archer Migration', date:'2026-05-22', time:'10:00 AM', cat:'office', description:'Weekly check-in on the Archer migration project.', location:'Camp North End, Bldg C'},
     {id:'s2', title:'Q2 Planning — BRC',            date:'2026-05-21', time:'1:00 PM',  cat:'office', description:'Quarterly planning session for BRC deliverables.', location:''},
@@ -27,16 +28,16 @@ const CAL = (() => {
     {id:'s7', title:'Drew Marshall\'s Birthday 🎂', date:'2026-05-13', allDay:true,     cat:'birthday', description:'', location:''},
     {id:'s8', title:'Mandie Hancock\'s Birthday 🎂',date:'2026-05-18', allDay:true,     cat:'birthday', description:'', location:''},
     {id:'s9', title:'Chad Carmichael — Work Ann.',  date:'2026-06-06', allDay:true,     cat:'workann', description:'', location:''},
-    ...['2026-05-06','2026-05-13','2026-05-20','2026-05-27'].map((d,i)=>({id:`cork${i}`,  title:'Cork & Canvas',       date:d, time:'4:00 PM',  cat:'cnend', description:'Paint night at CNE.', location:'Camp North End'})),
-    ...['2026-05-07','2026-05-14','2026-05-21','2026-05-28'].map((d,i)=>({id:`surv${i}`,  title:'Survey Says Trivia',  date:d, time:'7:00 PM',  cat:'cnend', description:'', location:'Boileryard Clarke'})),
-    ...['2026-05-12','2026-05-19','2026-05-26'].map((d,i)=>             ({id:`mad${i}`,   title:'Mad Miles Run',       date:d, time:'6:30 PM',  cat:'cnend', description:'', location:'Camp North End'})),
-    ...['2026-05-11','2026-05-18','2026-05-25'].map((d,i)=>             ({id:`intv${i}`,  title:'Intermediate Run Club',date:d,time:'10:00 AM', cat:'cnend', description:'', location:'Camp North End'})),
-    ...['2026-05-11','2026-05-18','2026-05-25'].map((d,i)=>             ({id:`pick${i}`,  title:'PickleBall Clinic',   date:d, time:'6:00 PM',  cat:'cnend', description:'', location:'Camp North End'})),
-    ...['2026-05-08','2026-05-14','2026-05-21','2026-05-28'].map((d,i)=>({id:`wine${i}`,  title:'Wine Thursday',       date:d, time:'8:00 AM',  cat:'cnend', description:'', location:'Boileryard Clarke'})),
+    ...['2026-05-06','2026-05-13','2026-05-20','2026-05-27'].map((d,i)=>({id:`cork${i}`, title:'Cork & Canvas',        date:d, time:'4:00 PM',  cat:'cnend', description:'Paint night at CNE.', location:'Camp North End'})),
+    ...['2026-05-07','2026-05-14','2026-05-21','2026-05-28'].map((d,i)=>({id:`surv${i}`, title:'Survey Says Trivia',   date:d, time:'7:00 PM',  cat:'cnend', description:'', location:'Boileryard Clarke'})),
+    ...['2026-05-12','2026-05-19','2026-05-26'].map((d,i)=>             ({id:`mad${i}`,  title:'Mad Miles Run',        date:d, time:'6:30 PM',  cat:'cnend', description:'', location:'Camp North End'})),
+    ...['2026-05-11','2026-05-18','2026-05-25'].map((d,i)=>             ({id:`intv${i}`, title:'Intermediate Run Club',date:d, time:'10:00 AM', cat:'cnend', description:'', location:'Camp North End'})),
+    ...['2026-05-11','2026-05-18','2026-05-25'].map((d,i)=>             ({id:`pick${i}`, title:'PickleBall Clinic',    date:d, time:'6:00 PM',  cat:'cnend', description:'', location:'Camp North End'})),
+    ...['2026-05-08','2026-05-14','2026-05-21','2026-05-28'].map((d,i)=>({id:`wine${i}`, title:'Wine Thursday',        date:d, time:'8:00 AM',  cat:'cnend', description:'', location:'Boileryard Clarke'})),
     ...['2026-05-03','2026-05-10','2026-05-17','2026-05-24','2026-05-31'].map((d,i)=>({id:`mim${i}`, title:'Mimosa Sunday', date:d, time:'11:00 AM', cat:'cnend', description:'', location:'Camp North End'})),
-    {id:'disco', title:'Disco Luau',             date:'2026-05-22', time:'4:30 PM',  cat:'cnend', description:'', location:'Camp North End'},
-    {id:'novel', title:'That\'s Novel Book Club',date:'2026-05-17', time:'9:30 AM',  cat:'cnend', description:'', location:'Camp North End'},
-    {id:'boiler',title:'Boileryard Pool',        date:'2026-05-24', time:'12:00 PM', cat:'cnend', description:'', location:'Boileryard Clarke'},
+    {id:'disco', title:'Disco Luau',              date:'2026-05-22', time:'4:30 PM',  cat:'cnend', description:'', location:'Camp North End'},
+    {id:'novel', title:'That\'s Novel Book Club', date:'2026-05-17', time:'9:30 AM',  cat:'cnend', description:'', location:'Camp North End'},
+    {id:'boiler',title:'Boileryard Pool',         date:'2026-05-24', time:'12:00 PM', cat:'cnend', description:'', location:'Boileryard Clarke'},
   ];
 
   function loadSample() {
@@ -47,10 +48,32 @@ const CAL = (() => {
   function ds(y,m,d) { return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`; }
 
   function sortEvents(evts) {
-    return evts.slice().sort((a,b) => {
+    return evts.slice().sort((a,b)=>{
       if (a.allDay && !b.allDay) return -1;
       if (!a.allDay && b.allDay) return  1;
       return (a.time||'').localeCompare(b.time||'');
+    });
+  }
+
+  // ── User OAuth — anyone can trigger this to get write access to Office cal ─
+  async function ensureUserAuth(clientId) {
+    if (isUserAuth || isAdminAuth) return; // already authed
+    const loadScript = src => new Promise(res => {
+      if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
+      const s = document.createElement('script'); s.src=src; s.onload=res; document.head.appendChild(s);
+    });
+    await loadScript('https://accounts.google.com/gsi/client');
+    return new Promise((resolve, reject) => {
+      const tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: clientId,
+        scope: 'https://www.googleapis.com/auth/calendar',
+        callback: resp => {
+          if (resp.error) { reject(new Error(resp.error)); return; }
+          isUserAuth = true;
+          resolve();
+        },
+      });
+      tokenClient.requestAccessToken({ prompt: 'select_account' });
     });
   }
 
@@ -59,14 +82,15 @@ const CAL = (() => {
     const panel   = document.getElementById('evt-detail-panel');
     const overlay = document.getElementById('evt-detail-overlay');
     const isOffice = evt.cat === 'office';
-    const isAdmin  = isAdminAuth;
+    // Both regular users and admins can edit Office Activity events
+    const canEdit  = isOffice;
 
     const dateLabel = evt.allDay
       ? new Date(evt.date+'T00:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})
       : (() => {
-          const d = new Date(evt.startDateTime || evt.date+'T'+evt.time);
+          const d = new Date(evt.startDateTime || evt.date+'T00:00:00');
           return d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})
-            + ' · ' + (evt.time||'');
+            + (evt.time ? ' · ' + evt.time : '');
         })();
 
     panel.innerHTML = `
@@ -77,45 +101,61 @@ const CAL = (() => {
         <button class="edp-close" id="edp-close-btn">✕</button>
       </div>
 
-      <div class="edp-title" ${isOffice&&isAdmin ? `contenteditable="true" id="edp-title-field"` : ''}>${evt.title}</div>
+      <div class="edp-title" ${canEdit?'contenteditable="true" id="edp-title-field"':''}>${evt.title}</div>
       <div class="edp-date">${dateLabel}</div>
 
       ${evt.location ? `<div class="edp-row"><span class="edp-icon">📍</span><span class="edp-val">${evt.location}</span></div>` : ''}
-
-      <div class="edp-row">
-        <span class="edp-icon">🗂️</span>
-        <span class="edp-val">${CAT_LABEL[evt.cat]||evt.cat}</span>
-      </div>
+      <div class="edp-row"><span class="edp-icon">🗂️</span><span class="edp-val">${CAT_LABEL[evt.cat]||evt.cat}</span></div>
 
       <div class="edp-desc-wrap">
-        ${isOffice && isAdmin
+        ${canEdit
           ? `<textarea class="edp-desc-edit" id="edp-desc-field" placeholder="Add a description…">${evt.description||''}</textarea>`
-          : `<div class="edp-desc-read">${evt.description || '<span style="color:var(--gray-700)">No description</span>'}</div>`
+          : `<div class="edp-desc-read">${evt.description||'<span style="color:var(--gray-700)">No description</span>'}</div>`
         }
       </div>
 
-      ${isOffice && isAdmin ? `
+      ${canEdit ? `
         <div class="edp-actions">
           <button class="btn-primary-sm" id="edp-save-btn">Save changes</button>
           <button class="btn-ghost-sm edp-delete-btn" id="edp-delete-btn">Delete event</button>
+        </div>
+        <div class="edp-auth-note" id="edp-auth-note" style="display:none">
+          <span>Signing in to Google to save changes…</span>
         </div>` : ''}
     `;
 
-    // wire close
     document.getElementById('edp-close-btn').addEventListener('click', closeEventDetail);
 
-    // wire save / delete (office + admin only)
-    if (isOffice && isAdmin) {
+    if (canEdit) {
       document.getElementById('edp-save-btn').addEventListener('click', async () => {
+        const saveBtn  = document.getElementById('edp-save-btn');
+        const authNote = document.getElementById('edp-auth-note');
         const newTitle = document.getElementById('edp-title-field')?.innerText.trim() || evt.title;
         const newDesc  = document.getElementById('edp-desc-field')?.value.trim() || '';
-        await updateOfficeEvent(evt, newTitle, newDesc);
-        closeEventDetail();
+        saveBtn.disabled = true; saveBtn.textContent = 'Saving…';
+        try {
+          if (!isUserAuth && !isAdminAuth) {
+            authNote.style.display = 'block';
+            await ensureUserAuth(localStorage.getItem('hub_gcal_client'));
+            authNote.style.display = 'none';
+          }
+          await updateOfficeEvent(evt, newTitle, newDesc);
+          closeEventDetail();
+        } catch(e) {
+          saveBtn.textContent = 'Save changes';
+          saveBtn.disabled = false;
+          authNote.style.display = 'none';
+          alert('Could not save: ' + (e.message||'Unknown error'));
+        }
       });
+
       document.getElementById('edp-delete-btn').addEventListener('click', async () => {
         if (!confirm(`Delete "${evt.title}"?`)) return;
-        await deleteOfficeEvent(evt);
-        closeEventDetail();
+        try {
+          if (!isUserAuth && !isAdminAuth) await ensureUserAuth(localStorage.getItem('hub_gcal_client'));
+          await deleteOfficeEvent(evt);
+          closeEventDetail();
+        } catch(e) { alert('Could not delete: ' + (e.message||'Unknown error')); }
       });
     }
 
@@ -128,7 +168,10 @@ const CAL = (() => {
     document.getElementById('evt-detail-overlay').classList.remove('open');
   }
 
-  // ── Pill builder ─────────────────────────────────────────────────────────
+  // close on overlay click
+  document.getElementById('evt-detail-overlay').addEventListener('click', closeEventDetail);
+
+  // ── Pill builder ──────────────────────────────────────────────────────────
   function makePill(evt) {
     const pill = document.createElement('div');
     pill.className = 'event-pill ' + (CAT_PILL[evt.cat]||'pill-office');
@@ -141,7 +184,7 @@ const CAL = (() => {
     return pill;
   }
 
-  // ── Tooltip ──────────────────────────────────────────────────────────────
+  // ── Tooltip ───────────────────────────────────────────────────────────────
   const tooltip = document.getElementById('evt-tooltip');
   function showTooltip(evt, e) {
     document.getElementById('tt-title').textContent = evt.title;
@@ -173,7 +216,7 @@ const CAL = (() => {
     overflowPopup.style.left = Math.min(me.clientX+10, window.innerWidth -255)+'px';
     overflowPopup.style.top  = Math.min(me.clientY+10, window.innerHeight-300)+'px';
   }
-  document.getElementById('overflow-close').addEventListener('click', ()=>overflowPopup.classList.remove('show'));
+  document.getElementById('overflow-close').addEventListener('click',()=>overflowPopup.classList.remove('show'));
   document.addEventListener('click', e => { if (!overflowPopup.contains(e.target)) overflowPopup.classList.remove('show'); });
 
   // ── Render ────────────────────────────────────────────────────────────────
@@ -181,18 +224,15 @@ const CAL = (() => {
     document.getElementById('cal-month-label').textContent = MONTHS[calMonth]+' '+calYear;
     const body = document.getElementById('cal-grid-body');
     body.innerHTML = '';
-
     const firstDow    = new Date(calYear, calMonth, 1).getDay();
     const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
     const daysInPrev  = new Date(calYear, calMonth, 0).getDate();
     const prevM = calMonth===0?11:calMonth-1; const prevY = calMonth===0?calYear-1:calYear;
     const nextM = calMonth===11?0:calMonth+1; const nextY = calMonth===11?calYear+1:calYear;
-
     const cells = [];
     for (let i=firstDow-1;i>=0;i--) cells.push({y:prevY,m:prevM,d:daysInPrev-i,other:true});
     for (let d=1;d<=daysInMonth;d++) cells.push({y:calYear,m:calMonth,d,other:false});
     while (cells.length%7!==0) cells.push({y:nextY,m:nextM,d:cells.length-firstDow-daysInMonth+1,other:true});
-
     const rows = cells.length/7;
     for (let row=0;row<rows;row++) {
       const weekEl = document.createElement('div'); weekEl.className='week-row';
@@ -219,7 +259,7 @@ const CAL = (() => {
     }
   }
 
-  // ── Google Calendar — PUBLIC read via API key (no login for viewers) ──────
+  // ── Google Calendar — public read via API key ─────────────────────────────
   async function connectGoogle(clientId, apiKey, calEntries) {
     const loadScript = src => new Promise(res => {
       if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
@@ -229,19 +269,14 @@ const CAL = (() => {
     try {
       await loadScript('https://apis.google.com/js/api.js');
       await new Promise(res => gapi.load('client', res));
-
       await gapi.client.init({
         apiKey,
         discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
       });
-
       const officeEntry = calEntries.find(e=>e.cat==='office');
       if (officeEntry) officeCalId = officeEntry.id;
       currentCalEntries = calEntries;
-
-      // Fetch public calendar data — no login required
-      await fetchEvents(calEntries, false);
-
+      await fetchEvents(calEntries);
     } catch (err) {
       hideLoading();
       console.error('Google Calendar error:', err);
@@ -249,21 +284,20 @@ const CAL = (() => {
     }
   }
 
-  // ── Admin OAuth — only called after PIN unlock for write access ───────────
+  // ── Admin OAuth — PIN-gated, full write ───────────────────────────────────
   async function adminAuth(clientId) {
     const loadScript = src => new Promise(res => {
       if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
       const s=document.createElement('script'); s.src=src; s.onload=res; document.head.appendChild(s);
     });
     await loadScript('https://accounts.google.com/gsi/client');
-
     return new Promise((resolve, reject) => {
       const tokenClient = google.accounts.oauth2.initTokenClient({
         client_id: clientId,
         scope: 'https://www.googleapis.com/auth/calendar',
         callback: resp => {
           if (resp.error) { reject(new Error(resp.error)); return; }
-          isAdminAuth = true;
+          isAdminAuth = true; isUserAuth = true;
           resolve();
         },
       });
@@ -272,9 +306,6 @@ const CAL = (() => {
   }
 
   async function fetchEvents(calEntries) {
-    // Fetch the full year so recurring events (birthdays, holidays, anniversaries)
-    // are always available regardless of which month the user is viewing.
-    // If the user navigates to a new year, re-fetch then.
     const timeMin = new Date(calYear, 0,  1).toISOString();
     const timeMax = new Date(calYear, 11, 31, 23,59,59).toISOString();
     store = {};
@@ -306,9 +337,13 @@ const CAL = (() => {
     render();
   }
 
-  // ── Add event (admin only) ────────────────────────────────────────────────
+  // ── Add event — available to ALL users (triggers OAuth on first use) ───────
   async function addOfficeEvent(evt) {
-    if (!isAdminAuth) throw new Error('Admin access required. Use the Connect Google button.');
+    const clientId = localStorage.getItem('hub_gcal_client');
+    if (!clientId) throw new Error('No OAuth Client ID configured. Ask your admin to set one up.');
+    if (!isUserAuth && !isAdminAuth) {
+      await ensureUserAuth(clientId);
+    }
     const resource = { summary: evt.title };
     if (evt.description) resource.description = evt.description;
     if (evt.location)    resource.location    = evt.location;
@@ -335,44 +370,39 @@ const CAL = (() => {
     return resp.result;
   }
 
-  // ── Update event (admin only) ─────────────────────────────────────────────
   async function updateOfficeEvent(evt, newTitle, newDesc) {
-    if (!isAdminAuth) return;
     try {
       await gapi.client.calendar.events.patch({
         calendarId: officeCalId, eventId: evt.id,
         resource: { summary: newTitle, description: newDesc },
       });
-      evt.title       = newTitle;
-      evt.description = newDesc;
+      evt.title=newTitle; evt.description=newDesc;
       render();
-    } catch(e) { console.warn('Update failed', e); alert('Could not save changes.'); }
+    } catch(e) { console.warn('Update failed',e); throw e; }
   }
 
-  // ── Delete event (admin only) ─────────────────────────────────────────────
   async function deleteOfficeEvent(evt) {
-    if (!isAdminAuth) return;
     try {
       await gapi.client.calendar.events.delete({ calendarId:officeCalId, eventId:evt.id });
-      Object.keys(store).forEach(date => { store[date]=store[date].filter(e=>e.id!==evt.id); });
+      Object.keys(store).forEach(date=>{store[date]=store[date].filter(e=>e.id!==evt.id);});
       render();
-    } catch(e) { console.warn('Delete failed', e); alert('Could not delete event.'); }
+    } catch(e) { console.warn('Delete failed',e); throw e; }
   }
 
   // ── Export iCal ───────────────────────────────────────────────────────────
   function exportICal() {
-    const allEvents = [];
-    Object.values(store).forEach(evts => evts.forEach(e=>allEvents.push(e)));
+    const allEvents=[];
+    Object.values(store).forEach(evts=>evts.forEach(e=>allEvents.push(e)));
     if (!allEvents.length) { alert('No events to export.'); return; }
-    const esc   = s=>(s||'').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;');
-    const uid   = ()=>Math.random().toString(36).slice(2)+'-experient-hub';
-    const stamp = new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-    const toD   = s=>s.replace(/-/g,'');
-    const toDT  = d=>new Date(d).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-    const ics   = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Experient CLT Hub//EN',
-                   'CALSCALE:GREGORIAN','METHOD:PUBLISH',
-                   `X-WR-CALNAME:Experient CLT Hub — ${MONTHS[calMonth]} ${calYear}`];
-    allEvents.forEach(e => {
+    const esc=s=>(s||'').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;');
+    const uid=()=>Math.random().toString(36).slice(2)+'-experient-hub';
+    const stamp=new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+    const toD=s=>s.replace(/-/g,'');
+    const toDT=d=>new Date(d).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+    const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Experient CLT Hub//EN',
+               'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+               `X-WR-CALNAME:Experient CLT Hub — ${MONTHS[calMonth]} ${calYear}`];
+    allEvents.forEach(e=>{
       ics.push('BEGIN:VEVENT',`UID:${uid()}`,`DTSTAMP:${stamp}`,`SUMMARY:${esc(e.title)}`);
       if (e.description) ics.push(`DESCRIPTION:${esc(e.description)}`);
       if (e.location)    ics.push(`LOCATION:${esc(e.location)}`);
@@ -385,10 +415,10 @@ const CAL = (() => {
       ics.push('END:VEVENT');
     });
     ics.push('END:VCALENDAR');
-    const content  = ics.join('\r\n');
-    const filename = `experient-clt-${calYear}-${String(calMonth+1).padStart(2,'0')}.ics`;
-    const dataUri  = 'data:text/calendar;charset=utf-8,'+encodeURIComponent(content);
-    const a = document.createElement('a');
+    const content=ics.join('\r\n');
+    const filename=`experient-clt-${calYear}-${String(calMonth+1).padStart(2,'0')}.ics`;
+    const dataUri='data:text/calendar;charset=utf-8,'+encodeURIComponent(content);
+    const a=document.createElement('a');
     a.href=dataUri; a.download=filename; a.style.display='none';
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
   }
@@ -403,20 +433,14 @@ const CAL = (() => {
   }
   function hideLoading() { loadingEl=null; }
 
-  let currentCalEntries = [];
-
-  // ── Nav — refetch if crossing into a new year ─────────────────────────────
+  // ── Nav ───────────────────────────────────────────────────────────────────
   document.getElementById('prev-month').addEventListener('click', async () => {
-    const prevYear = calYear;
-    calMonth--; if (calMonth < 0) { calMonth=11; calYear--; }
-    render();
-    if (calYear !== prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
+    const prevYear=calYear; calMonth--; if(calMonth<0){calMonth=11;calYear--;} render();
+    if (calYear!==prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
   });
   document.getElementById('next-month').addEventListener('click', async () => {
-    const prevYear = calYear;
-    calMonth++; if (calMonth > 11) { calMonth=0; calYear++; }
-    render();
-    if (calYear !== prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
+    const prevYear=calYear; calMonth++; if(calMonth>11){calMonth=0;calYear++;} render();
+    if (calYear!==prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
   });
 
   return { render, loadSample, connectGoogle, adminAuth, addOfficeEvent, exportICal };
