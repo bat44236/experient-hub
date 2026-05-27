@@ -37,38 +37,72 @@ const WS = (() => {
       createdAt:Date.now(), updatedAt:Date.now(), updatedBy:'Barry' },
   ];
 
-  // ── Storage ───────────────────────────────────────────────────────────────
-  async function storageGet() {
-    try { const r=await window.storage.get(STORE_KEY,true); return r?JSON.parse(r.value):null; }
+  // ── Storage — localStorage with cross-tab sync via StorageEvent ──────────
+  // window.storage (Claude artifact API) is only available in Claude artifacts,
+  // not on GitHub Pages. We use localStorage here, which persists across sessions
+  // and syncs across tabs on the same browser via the 'storage' event.
+  const LS_KEY = 'hub_ws_pages_v4';
+
+  function storageGet() {
+    try { const v = localStorage.getItem(LS_KEY); return v ? JSON.parse(v) : null; }
     catch { return null; }
   }
-  async function storageSet(data) {
-    try { await window.storage.set(STORE_KEY,JSON.stringify(data),true); return true; }
+  function storageSet(data) {
+    try { localStorage.setItem(LS_KEY, JSON.stringify(data)); return true; }
     catch { return false; }
   }
-  function setSyncState(state,msg) {
-    const dot=document.getElementById('ws-sync-dot');
-    const lbl=document.getElementById('ws-sync-label');
-    if(dot) dot.className='ws-sync-dot '+state;
-    if(lbl) lbl.textContent=msg;
+
+  // Cross-tab sync: when another tab saves, reload pages
+  window.addEventListener('storage', e => {
+    if (e.key === LS_KEY && e.newValue) {
+      try {
+        const remote = JSON.parse(e.newValue);
+        if (remote && Array.isArray(remote.pages)) {
+          pages = remote.pages;
+          renderTree();
+          if (activeId) renderEditor();
+          setSyncState('ok', `Updated · ${now()}`);
+        }
+      } catch {}
+    }
+  });
+
+  function setSyncState(state, msg) {
+    const bar = document.getElementById('ws-sync-bar');
+    const dot = document.getElementById('ws-sync-dot');
+    const lbl = document.getElementById('ws-sync-label');
+    // Only show the bar for actual errors; hide it for normal operation
+    if (state === 'error') {
+      if (bar) bar.style.display = 'flex';
+      if (dot) dot.className = 'ws-sync-dot error';
+      if (lbl) lbl.textContent = msg;
+    } else {
+      if (bar) bar.style.display = 'none';
+    }
   }
-  async function loadFromRemote(force=false) {
-    setSyncState('syncing','Syncing…');
-    const remote=await storageGet();
-    if (remote&&Array.isArray(remote.pages)) {
-      const str=JSON.stringify(remote.pages);
-      if (force||str!==lastSaved) { pages=remote.pages; lastSaved=str; renderTree(); if(activeId) renderEditor(); }
-      setSyncState('ok',`Synced · ${now()}`);
-    } else { pages=DEFAULT_PAGES; await saveToRemote(); setSyncState('ok','Workspace ready'); }
+
+  function loadFromLocal() {
+    const saved = storageGet();
+    if (saved && Array.isArray(saved.pages)) {
+      pages = saved.pages;
+    } else {
+      pages = DEFAULT_PAGES;
+      saveToLocal();
+    }
   }
-  async function saveToRemote() {
-    setSyncState('syncing','Saving…');
-    const ok=await storageSet({pages,v:4});
-    if(ok){lastSaved=JSON.stringify(pages);setSyncState('ok',`Saved · ${now()}`);}
-    else setSyncState('error','Save failed');
+
+  function saveToLocal() {
+    const ok = storageSet({ pages, v: 4 });
+    if (!ok) setSyncState('error', 'Could not save — storage full?');
   }
-  function scheduleSync() { clearTimeout(saveTimer); saveTimer=setTimeout(saveToRemote,1200); }
-  function startPolling() { clearInterval(pollTimer); pollTimer=setInterval(()=>loadFromRemote(),POLL_MS); }
+
+  function scheduleSync() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(saveToLocal, 800);
+  }
+
+  // Keep startPolling as no-op — not needed with localStorage
+  function startPolling() {}
   function now() { return new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}); }
 
   // ── Page helpers ──────────────────────────────────────────────────────────
@@ -191,7 +225,7 @@ const WS = (() => {
     const toRemove=new Set([pageId,...kids]);
     pages=pages.filter(p=>!toRemove.has(p.id));
     if(toRemove.has(activeId)) activeId=pages[0]?.id||null;
-    saveToRemote();renderTree();renderEditor();
+    saveToLocal();renderTree();renderEditor();
   }
 
   // ── Drag & drop ───────────────────────────────────────────────────────────
@@ -254,7 +288,7 @@ const WS = (() => {
   }
 
   // ── Editor ────────────────────────────────────────────────────────────────
-  function selectPage(id){flushSave();activeId=id;renderTree();renderEditor();}
+  function selectPage(id){flushSave();hideBubble();activeId=id;renderTree();renderEditor();}
 
   function renderEditor(){
     const body=document.getElementById('ws-editor-body'); if(!body) return;
@@ -279,30 +313,6 @@ const WS = (() => {
       <div class="ws-page-meta">Last edited ${timeAgo(page.updatedAt)}${page.updatedBy?' by '+page.updatedBy:''}</div>
       <div class="ws-divider"></div>
 
-      <div class="ws-rich-toolbar" id="ws-rich-toolbar">
-        <button class="rt-btn" data-cmd="bold"        title="Bold (Ctrl+B)"><b>B</b></button>
-        <button class="rt-btn" data-cmd="italic"      title="Italic (Ctrl+I)"><i>I</i></button>
-        <button class="rt-btn" data-cmd="underline"   title="Underline (Ctrl+U)"><u>U</u></button>
-        <button class="rt-btn" data-cmd="strikeThrough" title="Strikethrough"><s>S</s></button>
-        <div class="rt-sep"></div>
-        <button class="rt-btn" data-cmd="formatBlock" data-val="h1" title="Heading 1">H1</button>
-        <button class="rt-btn" data-cmd="formatBlock" data-val="h2" title="Heading 2">H2</button>
-        <button class="rt-btn" data-cmd="formatBlock" data-val="h3" title="Heading 3">H3</button>
-        <button class="rt-btn" data-cmd="formatBlock" data-val="p"  title="Paragraph">¶</button>
-        <div class="rt-sep"></div>
-        <button class="rt-btn" data-cmd="insertUnorderedList" title="Bullet list">• List</button>
-        <button class="rt-btn" data-cmd="insertOrderedList"   title="Numbered list">1. List</button>
-        <div class="rt-sep"></div>
-        <button class="rt-btn" data-cmd="indent"  title="Indent">→</button>
-        <button class="rt-btn" data-cmd="outdent" title="Outdent">←</button>
-        <div class="rt-sep"></div>
-        <button class="rt-btn" id="rt-table-btn" title="Insert table">⊞ Table</button>
-        <button class="rt-btn" id="rt-link-btn"  title="Insert link">🔗 Link</button>
-        <button class="rt-btn" id="rt-hr-btn"    title="Horizontal rule">― Rule</button>
-        <div class="rt-sep"></div>
-        <button class="rt-btn" data-cmd="removeFormat" title="Clear formatting">✕ Format</button>
-      </div>
-
       <div class="ws-page-body-input" id="ws-page-body" contenteditable="true" spellcheck="true">${page.body||''}</div>
 
       ${children.length?`<div class="ws-subpages-block">
@@ -311,47 +321,41 @@ const WS = (() => {
       </div>`:''}
     </div>`;
 
-    // wire toolbar
-    document.querySelectorAll('.rt-btn[data-cmd]').forEach(btn=>{
-      btn.addEventListener('mousedown',e=>{
-        e.preventDefault(); // keep focus in editor
-        const cmd=btn.dataset.cmd; const val=btn.dataset.val||null;
-        document.execCommand(cmd,false,val);
-        updateToolbarState();
-      });
-    });
+    // ── Floating selection bubble ──────────────────────────────────────────
+    const bubble = getOrCreateBubble();
+    const editor = document.getElementById('ws-page-body');
 
-    document.getElementById('rt-table-btn').addEventListener('mousedown', e=>{
-      e.preventDefault();
-      const rows=parseInt(prompt('Rows:','3')||'0'); if(!rows||rows<1) return;
-      const cols=parseInt(prompt('Columns:','3')||'0'); if(!cols||cols<1) return;
-      let html='<table><thead><tr>'+Array(cols).fill('<th>Header</th>').join('')+'</tr></thead><tbody>';
-      for(let r=0;r<rows-1;r++){html+='<tr>'+Array(cols).fill('<td></td>').join('')+'</tr>';}
-      html+='</tbody></table><p></p>';
-      document.execCommand('insertHTML',false,html);
-    });
+    function showBubble() {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || !sel.rangeCount) { hideBubble(); return; }
+      const range = sel.getRangeAt(0);
+      // Only show if selection is inside our editor
+      if (!editor.contains(range.commonAncestorContainer)) { hideBubble(); return; }
+      const rect = range.getBoundingClientRect();
+      if (rect.width === 0) { hideBubble(); return; }
+      bubble.style.display = 'flex';
+      // Position above the selection, centered
+      const bw = bubble.offsetWidth;
+      let left = rect.left + rect.width/2 - bw/2;
+      left = Math.max(8, Math.min(left, window.innerWidth - bw - 8));
+      bubble.style.left = left + 'px';
+      bubble.style.top  = (rect.top + window.scrollY - bubble.offsetHeight - 8) + 'px';
+      updateBubbleState();
+    }
+    function hideBubble() { bubble.style.display = 'none'; }
 
-    document.getElementById('rt-link-btn').addEventListener('mousedown', e=>{
-      e.preventDefault();
-      const url=prompt('URL:','https://');
-      if(url) document.execCommand('createLink',false,url);
+    editor.addEventListener('mouseup',  () => setTimeout(showBubble, 10));
+    editor.addEventListener('keyup',    () => setTimeout(showBubble, 10));
+    editor.addEventListener('input',    onEdit);
+    document.addEventListener('selectionchange', () => {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed) hideBubble();
     });
-
-    document.getElementById('rt-hr-btn').addEventListener('mousedown', e=>{
-      e.preventDefault();
-      document.execCommand('insertHTML',false,'<hr><p></p>');
-    });
-
-    // track formatting state
-    const editor=document.getElementById('ws-page-body');
-    editor.addEventListener('keyup',  updateToolbarState);
-    editor.addEventListener('mouseup', updateToolbarState);
-    editor.addEventListener('input',   onEdit);
 
     // title events
-    const titleEl=document.getElementById('ws-page-title');
+    const titleEl = document.getElementById('ws-page-title');
     titleEl.addEventListener('input', onEdit);
-    titleEl.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();editor.focus();}});
+    titleEl.addEventListener('keydown', e => { if(e.key==='Enter'){e.preventDefault();editor.focus();} });
 
     // subpage click
     body.querySelectorAll('.ws-subpage-card').forEach(el=>el.addEventListener('click',()=>selectPage(el.dataset.id)));
@@ -359,15 +363,93 @@ const WS = (() => {
 
     // place cursor at end of body
     editor.focus();
-    const range=document.createRange(); range.selectNodeContents(editor); range.collapse(false);
-    const sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    try {
+      const range = document.createRange(); range.selectNodeContents(editor); range.collapse(false);
+      const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    } catch {}
   }
 
-  function updateToolbarState(){
-    document.querySelectorAll('.rt-btn[data-cmd]').forEach(btn=>{
-      const cmd=btn.dataset.cmd;
-      try { btn.classList.toggle('active', document.queryCommandState(cmd)); } catch{}
+  // ── Floating bubble (created once, reused) ────────────────────────────────
+  function getOrCreateBubble() {
+    let bubble = document.getElementById('ws-float-bubble');
+    if (bubble) return bubble;
+
+    bubble = document.createElement('div');
+    bubble.id = 'ws-float-bubble';
+    bubble.className = 'ws-float-bubble';
+    bubble.style.display = 'none';
+
+    const tools = [
+      { cmd:'bold',             label:'<b>B</b>',   title:'Bold' },
+      { cmd:'italic',           label:'<i>I</i>',   title:'Italic' },
+      { cmd:'underline',        label:'<u>U</u>',   title:'Underline' },
+      { cmd:'strikeThrough',    label:'<s>S</s>',   title:'Strikethrough' },
+      { sep: true },
+      { cmd:'formatBlock', val:'h1', label:'H1',    title:'Heading 1' },
+      { cmd:'formatBlock', val:'h2', label:'H2',    title:'Heading 2' },
+      { cmd:'formatBlock', val:'h3', label:'H3',    title:'Heading 3' },
+      { cmd:'formatBlock', val:'p',  label:'¶',     title:'Paragraph' },
+      { sep: true },
+      { cmd:'insertUnorderedList', label:'• List',  title:'Bullet list' },
+      { cmd:'insertOrderedList',   label:'1. List', title:'Numbered list' },
+      { sep: true },
+      { id:'bubble-link',  label:'🔗', title:'Link' },
+      { id:'bubble-table', label:'⊞',  title:'Insert table' },
+      { sep: true },
+      { cmd:'removeFormat', label:'✕', title:'Clear formatting' },
+    ];
+
+    tools.forEach(t => {
+      if (t.sep) {
+        const sep = document.createElement('div'); sep.className='rt-sep'; bubble.appendChild(sep); return;
+      }
+      const btn = document.createElement('button');
+      btn.className = 'rt-btn';
+      btn.innerHTML = t.label;
+      btn.title = t.title;
+      if (t.id) btn.id = t.id;
+      if (t.cmd) btn.dataset.cmd = t.cmd;
+      if (t.val) btn.dataset.val = t.val;
+      btn.addEventListener('mousedown', e => {
+        e.preventDefault();
+        if (t.cmd) { document.execCommand(t.cmd, false, t.val||null); updateBubbleState(); }
+      });
+      bubble.appendChild(btn);
     });
+
+    // Special: link
+    bubble.querySelector('#bubble-link').addEventListener('mousedown', e => {
+      e.preventDefault();
+      const url = prompt('URL:', 'https://');
+      if (url) document.execCommand('createLink', false, url);
+    });
+
+    // Special: table
+    bubble.querySelector('#bubble-table').addEventListener('mousedown', e => {
+      e.preventDefault();
+      const rows = parseInt(prompt('Rows:', '3')||'0'); if (!rows||rows<1) return;
+      const cols = parseInt(prompt('Columns:', '3')||'0'); if (!cols||cols<1) return;
+      let html = '<table><thead><tr>'+Array(cols).fill('<th>Header</th>').join('')+'</tr></thead><tbody>';
+      for (let r=0;r<rows-1;r++) html += '<tr>'+Array(cols).fill('<td></td>').join('')+'</tr>';
+      html += '</tbody></table><p></p>';
+      document.execCommand('insertHTML', false, html);
+    });
+
+    // Don't hide bubble when clicking it
+    bubble.addEventListener('mousedown', e => e.preventDefault());
+    document.body.appendChild(bubble);
+    return bubble;
+  }
+
+  function updateBubbleState() {
+    const bubble = document.getElementById('ws-float-bubble'); if (!bubble) return;
+    bubble.querySelectorAll('.rt-btn[data-cmd]').forEach(btn => {
+      try { btn.classList.toggle('active', document.queryCommandState(btn.dataset.cmd)); } catch {}
+    });
+  }
+
+  function hideBubble() {
+    const b = document.getElementById('ws-float-bubble'); if (b) b.style.display='none';
   }
 
   function getEditorContent(){
@@ -395,6 +477,7 @@ const WS = (() => {
     page.title=getTitleContent();
     page.body =getEditorContent();
     page.updatedAt=Date.now();
+    saveToLocal();
   }
 
   function timeAgo(ts){
@@ -429,7 +512,7 @@ const WS = (() => {
     pages.push(page);
     if(newPageParentId) expanded[newPageParentId]=true;
     closeNewPageModal();
-    await saveToRemote();
+    saveToLocal();
     renderTree();
     selectPage(page.id);
     setTimeout(()=>document.getElementById('ws-page-body')?.focus(),100);
@@ -446,9 +529,9 @@ const WS = (() => {
 
   // ── Init ──────────────────────────────────────────────────────────────────
   async function init(){
+    loadFromLocal();
     renderTree();
-    if(window.storage){await loadFromRemote(true);startPolling();}
-    else{const saved=localStorage.getItem('hub_pages_local');pages=saved?JSON.parse(saved):DEFAULT_PAGES;setSyncState('error','Local only');renderTree();}
+    setSyncState('ok',''); // hide the sync bar on load
   }
 
   return {init,openNewPageModal};

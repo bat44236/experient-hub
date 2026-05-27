@@ -30,7 +30,7 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   const connectBtn = document.getElementById('connect-gcal-btn');
   let logoClicks = 0, logoTimer = null;
 
-  function isUnlocked() { return sessionStorage.getItem('hub_admin') === 'yes'; }
+  function isUnlocked() { return localStorage.getItem('hub_admin') === 'yes'; }
 
   function setAdminUI(show) {
     connectBtn.style.display = show ? '' : 'none';
@@ -59,7 +59,7 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
   async function tryUnlock() {
     if (pinInput.value === ADMIN_PIN) {
-      sessionStorage.setItem('hub_admin','yes');
+      localStorage.setItem('hub_admin','yes');
       closePin();
       setAdminUI(true);
       // Immediately trigger OAuth so admin has write access
