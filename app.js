@@ -1,4 +1,15 @@
-/* ── APP BOOTSTRAP ───────────────────────────────────────────────────────── */
+// ── HARDCODED CREDENTIALS — every browser connects automatically ──────────────
+const CONFIG = {
+  apiKey:   'AIzaSyDUbHdv29FZkFo0EUW9usfWWJ5ErZ6Zzu4',
+  clientId: '778007470057-6g7aur2jdjgfb2ooakoommqq0gjpb923.apps.googleusercontent.com',
+  calendars: [
+    { id: 'en.usa#holiday@group.v.calendar.google.com',                                                  cat: 'holiday'  },
+    { id: '9e3d406ff577e84f8520707b3d6fde4f0231d9af3bfa3d540139a70e801dbec2@group.calendar.google.com', cat: 'workann'  },
+    { id: '382b2aa86827b768761c16ce3b5bec6323f1d9f62fed78aaf107bf83c537a410@group.calendar.google.com', cat: 'cnend'    },
+    { id: '3e2fc9cd2ded39150182128a50e16d2d3ac65d7deabdaa411c2f497446d002fb@group.calendar.google.com', cat: 'birthday' },
+  ],
+};
+// ─────────────────────────────────────────────────────────────────────────────
 
 // ── Date/time header ─────────────────────────────────────────────────────────
 (function () {
@@ -85,7 +96,7 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
       setAdminUI(true);
 
       // Immediately trigger OAuth so admin has write access
-      const clientId = localStorage.getItem('hub_gcal_client');
+      const clientId = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
       if (clientId) {
         try {
           await CAL.adminAuth(clientId);
@@ -220,13 +231,15 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
     document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
   });
 
-  // Auto-connect on load using saved API key (no login)
-  const savedApiKey = localStorage.getItem('hub_gcal_apikey');
-  const savedClient = localStorage.getItem('hub_gcal_client');
-  const savedEntries= localStorage.getItem('hub_cal_entries');
-  if (savedApiKey && savedEntries) {
-    calEntries = JSON.parse(savedEntries);
-    CAL.connectGoogle(savedClient||'', savedApiKey, calEntries).then(()=>{
+  // Auto-connect on load — use localStorage if admin has customised, otherwise CONFIG
+  const savedApiKey  = localStorage.getItem('hub_gcal_apikey')  || CONFIG.apiKey;
+  const savedClient  = localStorage.getItem('hub_gcal_client')  || CONFIG.clientId;
+  const savedEntries = localStorage.getItem('hub_cal_entries');
+  const resolvedEntries = savedEntries ? JSON.parse(savedEntries) : CONFIG.calendars;
+
+  if (resolvedEntries.length) {
+    calEntries = resolvedEntries;
+    CAL.connectGoogle(savedClient, savedApiKey, calEntries).then(()=>{
       document.getElementById('gcal-status-pill').textContent='● Connected';
       document.getElementById('gcal-status-pill').classList.add('connected');
       document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
@@ -235,7 +248,8 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-const _hasCreds = localStorage.getItem('hub_gcal_apikey') && localStorage.getItem('hub_cal_entries');
+// CONFIG is always present so never show sample data
+const _hasCreds = true;
 if (!_hasCreds) {
   CAL.loadSample();
 }

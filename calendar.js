@@ -12,9 +12,6 @@ const CAL = (() => {
   let calYear      = today.getFullYear();
   let calMonth     = today.getMonth();
   let store        = {};
-  let officeCalId  = 'primary';
-  let isAdminAuth  = false;  // full admin (PIN unlocked)
-  let isUserAuth   = false;  // regular user write (Office Activity only)
   let currentCalEntries = [];
 
   // ── Sample data ───────────────────────────────────────────────────────────
@@ -43,6 +40,7 @@ const CAL = (() => {
   function loadSample() {
     store = {};
     SAMPLE.forEach(e => { if (!store[e.date]) store[e.date]=[]; store[e.date].push(e); });
+    loadOfficeEvents();
   }
 
   function ds(y,m,d) { return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`; }
@@ -52,28 +50,6 @@ const CAL = (() => {
       if (a.allDay && !b.allDay) return -1;
       if (!a.allDay && b.allDay) return  1;
       return (a.time||'').localeCompare(b.time||'');
-    });
-  }
-
-  // ── User OAuth — anyone can trigger this to get write access to Office cal ─
-  async function ensureUserAuth(clientId) {
-    if (isUserAuth || isAdminAuth) return; // already authed
-    const loadScript = src => new Promise(res => {
-      if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
-      const s = document.createElement('script'); s.src=src; s.onload=res; document.head.appendChild(s);
-    });
-    await loadScript('https://accounts.google.com/gsi/client');
-    return new Promise((resolve, reject) => {
-      const tokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: clientId,
-        scope: 'https://www.googleapis.com/auth/calendar',
-        callback: resp => {
-          if (resp.error) { reject(new Error(resp.error)); return; }
-          isUserAuth = true;
-          resolve();
-        },
-      });
-      tokenClient.requestAccessToken({ prompt: 'select_account' });
     });
   }
 
@@ -127,35 +103,17 @@ const CAL = (() => {
     document.getElementById('edp-close-btn').addEventListener('click', closeEventDetail);
 
     if (canEdit) {
-      document.getElementById('edp-save-btn').addEventListener('click', async () => {
-        const saveBtn  = document.getElementById('edp-save-btn');
-        const authNote = document.getElementById('edp-auth-note');
+      document.getElementById('edp-save-btn').addEventListener('click', () => {
         const newTitle = document.getElementById('edp-title-field')?.innerText.trim() || evt.title;
         const newDesc  = document.getElementById('edp-desc-field')?.value.trim() || '';
-        saveBtn.disabled = true; saveBtn.textContent = 'Saving…';
-        try {
-          if (!isUserAuth && !isAdminAuth) {
-            authNote.style.display = 'block';
-            await ensureUserAuth(localStorage.getItem('hub_gcal_client'));
-            authNote.style.display = 'none';
-          }
-          await updateOfficeEvent(evt, newTitle, newDesc);
-          closeEventDetail();
-        } catch(e) {
-          saveBtn.textContent = 'Save changes';
-          saveBtn.disabled = false;
-          authNote.style.display = 'none';
-          alert('Could not save: ' + (e.message||'Unknown error'));
-        }
+        updateOfficeEvent(evt, newTitle, newDesc);
+        closeEventDetail();
       });
 
-      document.getElementById('edp-delete-btn').addEventListener('click', async () => {
+      document.getElementById('edp-delete-btn').addEventListener('click', () => {
         if (!confirm(`Delete "${evt.title}"?`)) return;
-        try {
-          if (!isUserAuth && !isAdminAuth) await ensureUserAuth(localStorage.getItem('hub_gcal_client'));
-          await deleteOfficeEvent(evt);
-          closeEventDetail();
-        } catch(e) { alert('Could not delete: ' + (e.message||'Unknown error')); }
+        deleteOfficeEvent(evt);
+        closeEventDetail();
       });
     }
 
@@ -334,59 +292,63 @@ const CAL = (() => {
       } catch(e) { console.warn('Fetch failed for', entry.id, e); }
     }));
     hideLoading();
+    loadOfficeEvents();
     render();
   }
 
-  // ── Add event — available to ALL users (triggers OAuth on first use) ───────
-  async function addOfficeEvent(evt) {
-    const clientId = localStorage.getItem('hub_gcal_client');
-    if (!clientId) throw new Error('No OAuth Client ID configured. Ask your admin to set one up.');
-    if (!isUserAuth && !isAdminAuth) {
-      await ensureUserAuth(clientId);
-    }
-    const resource = { summary: evt.title };
-    if (evt.description) resource.description = evt.description;
-    if (evt.location)    resource.location    = evt.location;
-    if (evt.allDay) {
-      resource.start = { date: evt.date };
-      resource.end   = { date: evt.date };
-    } else {
-      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-      resource.start = { dateTime:`${evt.date}T${evt.startTime}:00`, timeZone:tz };
-      resource.end   = { dateTime:`${evt.date}T${evt.endTime}:00`,   timeZone:tz };
-    }
-    const resp = await gapi.client.calendar.events.insert({ calendarId:officeCalId, resource });
-    const newEvt = {
-      id: resp.result.id, title: evt.title, date: evt.date,
-      time: evt.allDay ? null : new Date(`${evt.date}T${evt.startTime}`).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}),
-      allDay: evt.allDay, cat:'office',
-      description: evt.description||'', location: evt.location||'',
-      startDateTime: resp.result.start?.dateTime||resp.result.start?.date,
-      endDateTime:   resp.result.end?.dateTime  ||resp.result.end?.date,
-    };
-    if (!store[evt.date]) store[evt.date]=[];
-    store[evt.date].push(newEvt);
-    render();
-    return resp.result;
-  }
+  // ── Local office event storage ────────────────────────────────────────────
+  const OFFICE_KEY = 'hub_office_events';
 
-  async function updateOfficeEvent(evt, newTitle, newDesc) {
+  function loadOfficeEvents() {
     try {
-      await gapi.client.calendar.events.patch({
-        calendarId: officeCalId, eventId: evt.id,
-        resource: { summary: newTitle, description: newDesc },
+      const saved = localStorage.getItem(OFFICE_KEY);
+      if (!saved) return;
+      const events = JSON.parse(saved);
+      events.forEach(e => {
+        if (!store[e.date]) store[e.date] = [];
+        // avoid dupes on reload
+        if (!store[e.date].find(x => x.id === e.id)) store[e.date].push(e);
       });
-      evt.title=newTitle; evt.description=newDesc;
-      render();
-    } catch(e) { console.warn('Update failed',e); throw e; }
+    } catch(e) { console.warn('Could not load office events', e); }
   }
 
-  async function deleteOfficeEvent(evt) {
-    try {
-      await gapi.client.calendar.events.delete({ calendarId:officeCalId, eventId:evt.id });
-      Object.keys(store).forEach(date=>{store[date]=store[date].filter(e=>e.id!==evt.id);});
-      render();
-    } catch(e) { console.warn('Delete failed',e); throw e; }
+  function saveOfficeEvents() {
+    const all = [];
+    Object.values(store).forEach(evts => evts.forEach(e => { if (e.cat === 'office') all.push(e); }));
+    localStorage.setItem(OFFICE_KEY, JSON.stringify(all));
+  }
+
+  // ── Add event — stores locally, no Google Calendar write needed ───────────
+  function addOfficeEvent(evt) {
+    const id = 'office-' + Date.now().toString(36);
+    const timeStr = evt.allDay ? null
+      : new Date(`${evt.date}T${evt.startTime}`).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+    const newEvt = {
+      id, title: evt.title, date: evt.date,
+      time: timeStr, allDay: evt.allDay, cat: 'office',
+      description: evt.description||'', location: evt.location||'',
+      startDateTime: evt.allDay ? evt.date : `${evt.date}T${evt.startTime}:00`,
+      endDateTime:   evt.allDay ? evt.date : `${evt.date}T${evt.endTime}:00`,
+    };
+    if (!store[evt.date]) store[evt.date] = [];
+    store[evt.date].push(newEvt);
+    saveOfficeEvents();
+    render();
+    return newEvt;
+  }
+
+  function updateOfficeEvent(evt, newTitle, newDesc) {
+    evt.title       = newTitle;
+    evt.description = newDesc;
+    saveOfficeEvents();
+    render();
+  }
+
+  function deleteOfficeEvent(evt) {
+    Object.keys(store).forEach(date => { store[date] = store[date].filter(e => e.id !== evt.id); });
+    saveOfficeEvents();
+    render();
+  }
   }
 
   // ── Export iCal ───────────────────────────────────────────────────────────
