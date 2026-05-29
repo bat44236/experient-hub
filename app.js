@@ -1,13 +1,10 @@
-// ── HARDCODED CREDENTIALS — every browser connects automatically ──────────────
-const CONFIG = {
-  apiKey:   'AIzaSyDUbHdv29FZkFo0EUW9usfWWJ5ErZ6Zzu4',
-  clientId: '778007470057-6g7aur2jdjgfb2ooakoommqq0gjpb923.apps.googleusercontent.com',
-  calendars: [
-    { id: 'en.usa#holiday@group.v.calendar.google.com',                                                  cat: 'holiday'  },
-    { id: '9e3d406ff577e84f8520707b3d6fde4f0231d9af3bfa3d540139a70e801dbec2@group.calendar.google.com', cat: 'workann'  },
-    { id: '382b2aa86827b768761c16ce3b5bec6323f1d9f62fed78aaf107bf83c537a410@group.calendar.google.com', cat: 'cnend'    },
-    { id: '3e2fc9cd2ded39150182128a50e16d2d3ac65d7deabdaa411c2f497446d002fb@group.calendar.google.com', cat: 'birthday' },
-  ],
+// ── CREDENTIALS ───────────────────────────────────────────────────────────────
+// Loaded from config.js (not committed to repo) or from localStorage
+// if previously saved via the Manage Calendars modal.
+const CONFIG = window.SITE_CONFIG || {
+  apiKey:   '',
+  clientId: '',
+  calendars: [],
 };
 // ─────────────────────────────────────────────────────────────────────────────
 
