@@ -218,6 +218,7 @@ const CAL = (() => {
   }
 
   // ── Google Calendar — public read via API key ─────────────────────────────
+  // ── Google Calendar — public read via API key ────────────────────────────
   async function connectGoogle(clientId, apiKey, calEntries) {
     const loadScript = src => new Promise(res => {
       if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
@@ -231,18 +232,14 @@ const CAL = (() => {
         apiKey,
         discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
       });
-      const officeEntry = calEntries.find(e=>e.cat==='office');
-      if (officeEntry) officeCalId = officeEntry.id;
       currentCalEntries = calEntries;
       await fetchEvents(calEntries);
     } catch (err) {
       hideLoading();
       console.error('Google Calendar error:', err);
-      alert('Could not connect. Check your API key and calendar sharing settings.');
     }
   }
 
-  // ── Admin OAuth — PIN-gated, full write ───────────────────────────────────
   async function adminAuth(clientId) {
     const loadScript = src => new Promise(res => {
       if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
@@ -255,7 +252,6 @@ const CAL = (() => {
         scope: 'https://www.googleapis.com/auth/calendar',
         callback: resp => {
           if (resp.error) { reject(new Error(resp.error)); return; }
-          isAdminAuth = true; isUserAuth = true;
           resolve();
         },
       });
@@ -291,8 +287,8 @@ const CAL = (() => {
         });
       } catch(e) { console.warn('Fetch failed for', entry.id, e); }
     }));
-    hideLoading();
     loadOfficeEvents();
+    hideLoading();
     render();
   }
 

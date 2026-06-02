@@ -1,5 +1,8 @@
-// ── CONFIGURATION — no credentials here, API key lives in Netlify env vars ───
+/* ── APP BOOTSTRAP ───────────────────────────────────────────────────────── */
+
+// ── CONFIGURATION ─────────────────────────────────────────────────────────────
 const CONFIG = {
+  apiKey:   'AIzaSyA3Ng5qsHXY5Qv9tJ07W5W0R1x70z4U-uc',
   clientId: '778007470057-6g7aur2jdjgfb2ooakoommqq0gjpb923.apps.googleusercontent.com',
   calendars: [
     { id: 'en.usa#holiday@group.v.calendar.google.com',                                                  cat: 'holiday'  },
@@ -8,9 +11,8 @@ const CONFIG = {
     { id: '3e2fc9cd2ded39150182128a50e16d2d3ac65d7deabdaa411c2f497446d002fb@group.calendar.google.com', cat: 'birthday' },
   ],
 };
-// ─────────────────────────────────────────────────────────────────────────────
 
-// ── Date/time header ─────────────────────────────────────────────────────────
+// ── Date/time header ──────────────────────────────────────────────────────────
 (function () {
   function tick() {
     const n = new Date();
@@ -33,7 +35,7 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
 
 // ── Admin PIN system ──────────────────────────────────────────────────────────
 (function () {
-  const ADMIN_PIN  = '2712'; // ← change this
+  const ADMIN_PIN  = '2712';
   const pinModal   = document.getElementById('pin-modal');
   const pinInput   = document.getElementById('pin-input');
   const pinError   = document.getElementById('pin-error');
@@ -46,18 +48,14 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   function setAdminUI(show) {
     connectBtn.style.display = show ? '' : 'none';
     logoutBtn.style.display  = show ? '' : 'none';
-    // Notify Quincy so Add Person / Manage Fields buttons appear
     if (typeof QUINCY !== 'undefined') QUINCY.notifyAdminChange(show);
   }
 
-  // Exit admin — clears session, reverts pill text if still connected
   logoutBtn.addEventListener('click', () => {
     sessionStorage.removeItem('hub_admin');
     setAdminUI(false);
     const pill = document.getElementById('gcal-status-pill');
-    if (pill.classList.contains('connected')) {
-      pill.textContent = '● Connected';
-    }
+    if (pill.classList.contains('connected')) pill.textContent = '● Connected';
   });
 
   if (isUnlocked()) setAdminUI(true);
@@ -86,15 +84,10 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   async function tryUnlock() {
     if (pinInput.value === ADMIN_PIN) {
       sessionStorage.setItem('hub_admin','yes');
-
-      // Store Anthropic API key for Quincy (session only — never persisted)
       const apiKey = document.getElementById('pin-api-key').value.trim();
       if (apiKey) sessionStorage.setItem('hub_anthropic_key', apiKey);
-
       closePin();
       setAdminUI(true);
-
-      // Immediately trigger OAuth so admin has write access
       const clientId = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
       if (clientId) {
         try {
@@ -172,7 +165,7 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 
 // ── Google Calendar modal ─────────────────────────────────────────────────────
 (function () {
-  let calEntries = JSON.parse(localStorage.getItem('hub_cal_entries')||'null') || [{id:'primary',cat:'office'}];
+  let calEntries = JSON.parse(localStorage.getItem('hub_cal_entries')||'null') || CONFIG.calendars;
   const CAT_LABEL = {office:'Office Activity',holiday:'Holidays',birthday:'Birthdays',cnend:'Camp North End',workann:'Work Anniversaries'};
   const CAT_COLOR = {office:'var(--c-office-text)',holiday:'var(--c-holiday-text)',birthday:'var(--c-birthday-text)',cnend:'var(--c-cnend-text)',workann:'var(--c-workann-text)'};
 
@@ -202,10 +195,11 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
 
   const modal = document.getElementById('gcal-modal');
   function openModal() {
-    document.getElementById('cfg-api-key').value  = localStorage.getItem('hub_gcal_apikey')||'';
-    document.getElementById('cfg-client-id').value= localStorage.getItem('hub_gcal_client')||'';
+    document.getElementById('cfg-api-key').value  = localStorage.getItem('hub_gcal_apikey') || CONFIG.apiKey || '';
+    document.getElementById('cfg-client-id').value= localStorage.getItem('hub_gcal_client') || CONFIG.clientId || '';
     const savedE=localStorage.getItem('hub_cal_entries');
     if (savedE) calEntries=JSON.parse(savedE);
+    else calEntries = CONFIG.calendars;
     renderEntries();
     modal.classList.add('open');
   }
@@ -230,26 +224,20 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
     document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
   });
 
-  const savedClient     = localStorage.getItem('hub_gcal_client')  || CONFIG.clientId;
-  const savedEntries    = localStorage.getItem('hub_cal_entries');
-  const resolvedEntries = savedEntries ? JSON.parse(savedEntries) : CONFIG.calendars;
+  // Auto-connect on load using CONFIG (works for every browser, no setup needed)
+  const apiKey      = localStorage.getItem('hub_gcal_apikey') || CONFIG.apiKey;
+  const clientId    = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
+  const savedE      = localStorage.getItem('hub_cal_entries');
+  calEntries        = savedE ? JSON.parse(savedE) : CONFIG.calendars;
 
-  if (resolvedEntries.length) {
-    calEntries = resolvedEntries;
-    CAL.connectGoogle(savedClient, '', calEntries).then(()=>{
-      document.getElementById('gcal-status-pill').textContent='● Connected';
-      document.getElementById('gcal-status-pill').classList.add('connected');
-      document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
-    });
-  }
+  CAL.connectGoogle(clientId, apiKey, calEntries).then(()=>{
+    document.getElementById('gcal-status-pill').textContent='● Connected';
+    document.getElementById('gcal-status-pill').classList.add('connected');
+    document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
+  });
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-// CONFIG is always present so never show sample data
-const _hasCreds = true;
-if (!_hasCreds) {
-  CAL.loadSample();
-}
 CAL.render();
 WS.init();
 QUINCY.init();
