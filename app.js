@@ -1,6 +1,5 @@
-// ── CREDENTIALS ───────────────────────────────────────────────────────────────
-const CONFIG = window.SITE_CONFIG || {
-  apiKey:   'AIzaSyA3Ng5qsHXY5Qv9tJ07W5W0R1x70z4U-uc',
+// ── CONFIGURATION — no credentials here, API key lives in Netlify env vars ───
+const CONFIG = {
   clientId: '778007470057-6g7aur2jdjgfb2ooakoommqq0gjpb923.apps.googleusercontent.com',
   calendars: [
     { id: 'en.usa#holiday@group.v.calendar.google.com',                                                  cat: 'holiday'  },
@@ -231,15 +230,13 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
     document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
   });
 
-  // Auto-connect on load — use localStorage if admin has customised, otherwise CONFIG
-  const savedApiKey  = localStorage.getItem('hub_gcal_apikey')  || CONFIG.apiKey;
-  const savedClient  = localStorage.getItem('hub_gcal_client')  || CONFIG.clientId;
-  const savedEntries = localStorage.getItem('hub_cal_entries');
+  const savedClient     = localStorage.getItem('hub_gcal_client')  || CONFIG.clientId;
+  const savedEntries    = localStorage.getItem('hub_cal_entries');
   const resolvedEntries = savedEntries ? JSON.parse(savedEntries) : CONFIG.calendars;
 
   if (resolvedEntries.length) {
     calEntries = resolvedEntries;
-    CAL.connectGoogle(savedClient, savedApiKey, calEntries).then(()=>{
+    CAL.connectGoogle(savedClient, '', calEntries).then(()=>{
       document.getElementById('gcal-status-pill').textContent='● Connected';
       document.getElementById('gcal-status-pill').classList.add('connected');
       document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
