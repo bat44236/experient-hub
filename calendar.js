@@ -69,6 +69,15 @@ const CAL = (() => {
             + (evt.time ? ' · ' + evt.time : '');
         })();
 
+    // parse existing time values for edit fields
+    const existingDate  = evt.date || '';
+    const existingStart = evt.startDateTime && !evt.allDay
+      ? evt.startDateTime.split('T')[1]?.slice(0,5) || '09:00'
+      : '09:00';
+    const existingEnd = evt.endDateTime && !evt.allDay
+      ? evt.endDateTime.split('T')[1]?.slice(0,5) || '10:00'
+      : '10:00';
+
     panel.innerHTML = `
       <div class="edp-header">
         <div class="edp-cat-tag" style="background:${CAT_COLOR[evt.cat]}22;color:${CAT_COLOR[evt.cat]};border-color:${CAT_COLOR[evt.cat]}44">
@@ -78,7 +87,27 @@ const CAL = (() => {
       </div>
 
       <div class="edp-title" ${canEdit?'contenteditable="true" id="edp-title-field"':''}>${evt.title}</div>
-      <div class="edp-date">${dateLabel}</div>
+
+      ${canEdit ? `
+        <div class="edp-edit-row">
+          <div class="modal-label" style="margin-bottom:5px">Date</div>
+          <input class="modal-input" id="edp-date-field" type="date" value="${existingDate}" style="margin-bottom:10px">
+          <div class="modal-label" style="margin-bottom:5px">Type</div>
+          <select class="modal-input modal-select" id="edp-allday-field" style="margin-bottom:10px">
+            <option value="allday" ${evt.allDay?'selected':''}>All Day</option>
+            <option value="timed"  ${!evt.allDay?'selected':''}>Specific Time</option>
+          </select>
+          <div id="edp-time-fields" style="display:${evt.allDay?'none':'flex'};gap:10px;margin-bottom:10px">
+            <div style="flex:1">
+              <div class="modal-label" style="margin-bottom:5px">Start</div>
+              <input class="modal-input" id="edp-start-field" type="time" value="${existingStart}">
+            </div>
+            <div style="flex:1">
+              <div class="modal-label" style="margin-bottom:5px">End</div>
+              <input class="modal-input" id="edp-end-field" type="time" value="${existingEnd}">
+            </div>
+          </div>
+        </div>` : `<div class="edp-date">${dateLabel}</div>`}
 
       ${evt.location ? `<div class="edp-row"><span class="edp-icon">📍</span><span class="edp-val">${evt.location}</span></div>` : ''}
       <div class="edp-row"><span class="edp-icon">🗂️</span><span class="edp-val">${CAT_LABEL[evt.cat]||evt.cat}</span></div>
@@ -94,25 +123,36 @@ const CAL = (() => {
         <div class="edp-actions">
           <button class="btn-primary-sm" id="edp-save-btn">Save changes</button>
           <button class="btn-ghost-sm edp-delete-btn" id="edp-delete-btn">Delete event</button>
-        </div>
-        <div class="edp-auth-note" id="edp-auth-note" style="display:none">
-          <span>Signing in to Google to save changes…</span>
         </div>` : ''}
     `;
 
     document.getElementById('edp-close-btn').addEventListener('click', closeEventDetail);
 
     if (canEdit) {
-      document.getElementById('edp-save-btn').addEventListener('click', () => {
-        const newTitle = document.getElementById('edp-title-field')?.innerText.trim() || evt.title;
-        const newDesc  = document.getElementById('edp-desc-field')?.value.trim() || '';
-        updateOfficeEvent(evt, newTitle, newDesc);
+      // toggle time fields based on all-day select
+      document.getElementById('edp-allday-field').addEventListener('change', e => {
+        document.getElementById('edp-time-fields').style.display =
+          e.target.value === 'timed' ? 'flex' : 'none';
+      });
+
+      document.getElementById('edp-save-btn').addEventListener('click', async () => {
+        const newTitle  = document.getElementById('edp-title-field')?.innerText.trim() || evt.title;
+        const newDesc   = document.getElementById('edp-desc-field')?.value.trim() || '';
+        const newDate   = document.getElementById('edp-date-field')?.value || evt.date;
+        const isAllDay  = document.getElementById('edp-allday-field')?.value === 'allday';
+        const newStart  = document.getElementById('edp-start-field')?.value || '09:00';
+        const newEnd    = document.getElementById('edp-end-field')?.value   || '10:00';
+        const timeStr   = isAllDay ? null
+          : new Date(`${newDate}T${newStart}`).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+        const btn = document.getElementById('edp-save-btn');
+        btn.disabled = true; btn.textContent = 'Saving…';
+        await updateOfficeEvent(evt, newTitle, newDesc, newDate, isAllDay, newStart, newEnd, timeStr);
         closeEventDetail();
       });
 
-      document.getElementById('edp-delete-btn').addEventListener('click', () => {
+      document.getElementById('edp-delete-btn').addEventListener('click', async () => {
         if (!confirm(`Delete "${evt.title}"?`)) return;
-        deleteOfficeEvent(evt);
+        await deleteOfficeEvent(evt);
         closeEventDetail();
       });
     }
@@ -324,9 +364,24 @@ const CAL = (() => {
     return newEvt;
   }
 
-  async function updateOfficeEvent(evt, newTitle, newDesc) {
+  async function updateOfficeEvent(evt, newTitle, newDesc, newDate, isAllDay, newStart, newEnd, timeStr) {
+    // remove from old date slot
+    const oldDate = evt.date;
+    if (store[oldDate]) store[oldDate] = store[oldDate].filter(e => e.id !== evt.id);
+
+    // apply all updates to the event object
     evt.title       = newTitle;
     evt.description = newDesc;
+    evt.date        = newDate        || evt.date;
+    evt.allDay      = isAllDay       ?? evt.allDay;
+    evt.time        = timeStr        ?? evt.time;
+    evt.startDateTime = isAllDay ? evt.date : `${newDate}T${newStart}:00`;
+    evt.endDateTime   = isAllDay ? evt.date : `${newDate}T${newEnd}:00`;
+
+    // place in new date slot
+    if (!store[evt.date]) store[evt.date] = [];
+    store[evt.date].push(evt);
+
     await saveOfficeEvents();
     render();
   }
