@@ -220,19 +220,10 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
     document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
   });
 
-  // Auto-connect on load using credentials saved via the admin UI
-  const apiKey   = localStorage.getItem('hub_gcal_apikey');
-  const clientId = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
-  const savedE   = localStorage.getItem('hub_cal_entries');
-
-  if (apiKey && savedE) {
-    calEntries = JSON.parse(savedE);
-    CAL.connectGoogle(clientId, apiKey, calEntries).then(()=>{
-      document.getElementById('gcal-status-pill').textContent='● Connected';
-      document.getElementById('gcal-status-pill').classList.add('connected');
-      document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
-    });
-  }
+  // Load calendar events from static events.json on every page load
+  CAL.connectGoogle('', '', []).then(() => {
+    document.getElementById('connect-gcal-btn').textContent = 'Manage Calendars';
+  });
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
