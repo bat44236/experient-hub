@@ -7,13 +7,13 @@ const CAL = (() => {
   const CAT_LABEL = { office:'Office Activity', holiday:'Holiday', birthday:'Birthday', cnend:'Camp North End', workann:'Work Anniversary' };
   const CAT_COLOR = { office:'var(--c-office-text)', holiday:'var(--c-holiday-text)', birthday:'var(--c-birthday-text)', cnend:'var(--c-cnend-text)', workann:'var(--c-workann-text)' };
   const MAX_PILLS = 3;
-
+ 
   const today      = new Date();
   let calYear      = today.getFullYear();
   let calMonth     = today.getMonth();
   let store        = {};
   let currentCalEntries = [];
-
+ 
   // ── Sample data ───────────────────────────────────────────────────────────
   const SAMPLE = [
     {id:'s1', title:'Team Sync — Archer Migration', date:'2026-05-22', time:'10:00 AM', cat:'office', description:'Weekly check-in on the Archer migration project.', location:'Camp North End, Bldg C'},
@@ -36,15 +36,15 @@ const CAL = (() => {
     {id:'novel', title:'That\'s Novel Book Club', date:'2026-05-17', time:'9:30 AM',  cat:'cnend', description:'', location:'Camp North End'},
     {id:'boiler',title:'Boileryard Pool',         date:'2026-05-24', time:'12:00 PM', cat:'cnend', description:'', location:'Boileryard Clarke'},
   ];
-
+ 
   function loadSample() {
     store = {};
     SAMPLE.forEach(e => { if (!store[e.date]) store[e.date]=[]; store[e.date].push(e); });
     loadOfficeEvents();
   }
-
+ 
   function ds(y,m,d) { return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`; }
-
+ 
   function sortEvents(evts) {
     return evts.slice().sort((a,b)=>{
       if (a.allDay && !b.allDay) return -1;
@@ -52,7 +52,7 @@ const CAL = (() => {
       return (a.time||'').localeCompare(b.time||'');
     });
   }
-
+ 
   // ── Event detail panel ───────────────────────────────────────────────────
   function openEventDetail(evt) {
     const panel   = document.getElementById('evt-detail-panel');
@@ -60,7 +60,7 @@ const CAL = (() => {
     const isOffice = evt.cat === 'office';
     // Both regular users and admins can edit Office Activity events
     const canEdit  = isOffice;
-
+ 
     const dateLabel = evt.allDay
       ? new Date(evt.date+'T00:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})
       : (() => {
@@ -68,7 +68,7 @@ const CAL = (() => {
           return d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})
             + (evt.time ? ' · ' + evt.time : '');
         })();
-
+ 
     panel.innerHTML = `
       <div class="edp-header">
         <div class="edp-cat-tag" style="background:${CAT_COLOR[evt.cat]}22;color:${CAT_COLOR[evt.cat]};border-color:${CAT_COLOR[evt.cat]}44">
@@ -76,20 +76,20 @@ const CAL = (() => {
         </div>
         <button class="edp-close" id="edp-close-btn">✕</button>
       </div>
-
+ 
       <div class="edp-title" ${canEdit?'contenteditable="true" id="edp-title-field"':''}>${evt.title}</div>
       <div class="edp-date">${dateLabel}</div>
-
+ 
       ${evt.location ? `<div class="edp-row"><span class="edp-icon">📍</span><span class="edp-val">${evt.location}</span></div>` : ''}
       <div class="edp-row"><span class="edp-icon">🗂️</span><span class="edp-val">${CAT_LABEL[evt.cat]||evt.cat}</span></div>
-
+ 
       <div class="edp-desc-wrap">
         ${canEdit
           ? `<textarea class="edp-desc-edit" id="edp-desc-field" placeholder="Add a description…">${evt.description||''}</textarea>`
           : `<div class="edp-desc-read">${evt.description||'<span style="color:var(--gray-700)">No description</span>'}</div>`
         }
       </div>
-
+ 
       ${canEdit ? `
         <div class="edp-actions">
           <button class="btn-primary-sm" id="edp-save-btn">Save changes</button>
@@ -99,9 +99,9 @@ const CAL = (() => {
           <span>Signing in to Google to save changes…</span>
         </div>` : ''}
     `;
-
+ 
     document.getElementById('edp-close-btn').addEventListener('click', closeEventDetail);
-
+ 
     if (canEdit) {
       document.getElementById('edp-save-btn').addEventListener('click', () => {
         const newTitle = document.getElementById('edp-title-field')?.innerText.trim() || evt.title;
@@ -109,26 +109,26 @@ const CAL = (() => {
         updateOfficeEvent(evt, newTitle, newDesc);
         closeEventDetail();
       });
-
+ 
       document.getElementById('edp-delete-btn').addEventListener('click', () => {
         if (!confirm(`Delete "${evt.title}"?`)) return;
         deleteOfficeEvent(evt);
         closeEventDetail();
       });
     }
-
+ 
     panel.classList.add('open');
     overlay.classList.add('open');
   }
-
+ 
   function closeEventDetail() {
     document.getElementById('evt-detail-panel').classList.remove('open');
     document.getElementById('evt-detail-overlay').classList.remove('open');
   }
-
+ 
   // close on overlay click
   document.getElementById('evt-detail-overlay').addEventListener('click', closeEventDetail);
-
+ 
   // ── Pill builder ──────────────────────────────────────────────────────────
   function makePill(evt) {
     const pill = document.createElement('div');
@@ -141,7 +141,7 @@ const CAL = (() => {
     pill.addEventListener('click', e => { e.stopPropagation(); hideTooltip(); openEventDetail(evt); });
     return pill;
   }
-
+ 
   // ── Tooltip ───────────────────────────────────────────────────────────────
   const tooltip = document.getElementById('evt-tooltip');
   function showTooltip(evt, e) {
@@ -160,7 +160,7 @@ const CAL = (() => {
   document.addEventListener('mousemove', e => {
     if (tooltip.classList.contains('show')) placeTooltip(e.clientX, e.clientY);
   });
-
+ 
   // ── Overflow popup ────────────────────────────────────────────────────────
   const overflowPopup = document.getElementById('overflow-popup');
   function showOverflow(dateStr, events, me) {
@@ -176,7 +176,7 @@ const CAL = (() => {
   }
   document.getElementById('overflow-close').addEventListener('click',()=>overflowPopup.classList.remove('show'));
   document.addEventListener('click', e => { if (!overflowPopup.contains(e.target)) overflowPopup.classList.remove('show'); });
-
+ 
   // ── Render ────────────────────────────────────────────────────────────────
   function render() {
     document.getElementById('cal-month-label').textContent = MONTHS[calMonth]+' '+calYear;
@@ -216,7 +216,7 @@ const CAL = (() => {
       body.appendChild(weekEl);
     }
   }
-
+ 
   // ── Google Calendar — public read via API key ─────────────────────────────
   // ── Google Calendar — public read via API key ────────────────────────────
   async function connectGoogle(clientId, apiKey, calEntries) {
@@ -239,7 +239,7 @@ const CAL = (() => {
       console.error('Google Calendar error:', err);
     }
   }
-
+ 
   async function adminAuth(clientId) {
     const loadScript = src => new Promise(res => {
       if (document.querySelector(`script[src="${src}"]`)) { res(); return; }
@@ -258,7 +258,7 @@ const CAL = (() => {
       tokenClient.requestAccessToken({ prompt: 'select_account' });
     });
   }
-
+ 
   async function fetchEvents(calEntries) {
     const timeMin = new Date(calYear, 0,  1).toISOString();
     const timeMax = new Date(calYear, 11, 31, 23,59,59).toISOString();
@@ -291,10 +291,10 @@ const CAL = (() => {
     hideLoading();
     render();
   }
-
+ 
   // ── Local office event storage ────────────────────────────────────────────
   const OFFICE_KEY = 'hub_office_events';
-
+ 
   function loadOfficeEvents() {
     try {
       const saved = localStorage.getItem(OFFICE_KEY);
@@ -307,13 +307,13 @@ const CAL = (() => {
       });
     } catch(e) { console.warn('Could not load office events', e); }
   }
-
+ 
   function saveOfficeEvents() {
     const all = [];
     Object.values(store).forEach(evts => evts.forEach(e => { if (e.cat === 'office') all.push(e); }));
     localStorage.setItem(OFFICE_KEY, JSON.stringify(all));
   }
-
+ 
   // ── Add event — stores locally, no Google Calendar write needed ───────────
   function addOfficeEvent(evt) {
     const id = 'office-' + Date.now().toString(36);
@@ -332,21 +332,20 @@ const CAL = (() => {
     render();
     return newEvt;
   }
-
+ 
   function updateOfficeEvent(evt, newTitle, newDesc) {
     evt.title       = newTitle;
     evt.description = newDesc;
     saveOfficeEvents();
     render();
   }
-
+ 
   function deleteOfficeEvent(evt) {
     Object.keys(store).forEach(date => { store[date] = store[date].filter(e => e.id !== evt.id); });
     saveOfficeEvents();
     render();
   }
-  }
-
+ 
   // ── Export iCal ───────────────────────────────────────────────────────────
   function exportICal() {
     const allEvents=[];
@@ -380,7 +379,7 @@ const CAL = (() => {
     a.href=dataUri; a.download=filename; a.style.display='none';
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
   }
-
+ 
   // ── Loading ───────────────────────────────────────────────────────────────
   let loadingEl=null;
   function showLoading() {
@@ -390,7 +389,7 @@ const CAL = (() => {
     body.appendChild(loadingEl);
   }
   function hideLoading() { loadingEl=null; }
-
+ 
   // ── Nav ───────────────────────────────────────────────────────────────────
   document.getElementById('prev-month').addEventListener('click', async () => {
     const prevYear=calYear; calMonth--; if(calMonth<0){calMonth=11;calYear--;} render();
@@ -400,6 +399,7 @@ const CAL = (() => {
     const prevYear=calYear; calMonth++; if(calMonth>11){calMonth=0;calYear++;} render();
     if (calYear!==prevYear && currentCalEntries.length) await fetchEvents(currentCalEntries);
   });
-
+ 
   return { render, loadSample, connectGoogle, adminAuth, addOfficeEvent, exportICal };
 })();
+ 
