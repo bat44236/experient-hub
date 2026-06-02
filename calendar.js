@@ -41,7 +41,6 @@ const CAL = (() => {
   function loadSample() {
     store = {};
     SAMPLE.forEach(e => { if (!store[e.date]) store[e.date]=[]; store[e.date].push(e); });
-    loadOfficeEvents();
   }
 
   function ds(y,m,d) { return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`; }
@@ -224,7 +223,7 @@ const CAL = (() => {
     showLoading();
     currentApiKey     = apiKey;
     currentCalEntries = calEntries;
-    await fetchEvents(calEntries);
+    await fetchEvents();
   }
 
   async function adminAuth(clientId) {
@@ -260,7 +259,7 @@ const CAL = (() => {
         if (!store[e.date]) store[e.date] = [];
         store[e.date].push({ ...e, time: timeStr });
       });
-      loadOfficeEvents();
+      await loadOfficeEvents();
       hideLoading();
       render();
       // show last updated time
@@ -276,30 +275,38 @@ const CAL = (() => {
     }
   }
 
-  // ── Local office event storage ────────────────────────────────────────────
-  const OFFICE_KEY = 'hub_office_events';
+  // ── Shared office event storage via JSONBin ──────────────────────────────
+  const BIN_ID  = '6a1f2273f5f4af5e29aead82';
+  const BIN_URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
-  function loadOfficeEvents() {
+  async function loadOfficeEvents() {
     try {
-      const saved = localStorage.getItem(OFFICE_KEY);
-      if (!saved) return;
-      const events = JSON.parse(saved);
+      const resp = await fetch(BIN_URL + '/latest');
+      if (!resp.ok) return;
+      const data = await resp.json();
+      const events = data.record?.events || [];
       events.forEach(e => {
         if (!store[e.date]) store[e.date] = [];
-        // avoid dupes on reload
         if (!store[e.date].find(x => x.id === e.id)) store[e.date].push(e);
       });
     } catch(e) { console.warn('Could not load office events', e); }
   }
 
-  function saveOfficeEvents() {
-    const all = [];
-    Object.values(store).forEach(evts => evts.forEach(e => { if (e.cat === 'office') all.push(e); }));
-    localStorage.setItem(OFFICE_KEY, JSON.stringify(all));
+  async function saveOfficeEvents() {
+    try {
+      // collect all office events currently in store
+      const all = [];
+      Object.values(store).forEach(evts => evts.forEach(e => { if (e.cat === 'office') all.push(e); }));
+      await fetch(BIN_URL, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ events: all }),
+      });
+    } catch(e) { console.warn('Could not save office events', e); }
   }
 
-  // ── Add event — stores locally, no Google Calendar write needed ───────────
-  function addOfficeEvent(evt) {
+  // ── Add event — stored in shared JSONBin, visible to all users ────────────
+  async function addOfficeEvent(evt) {
     const id = 'office-' + Date.now().toString(36);
     const timeStr = evt.allDay ? null
       : new Date(`${evt.date}T${evt.startTime}`).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
@@ -312,21 +319,21 @@ const CAL = (() => {
     };
     if (!store[evt.date]) store[evt.date] = [];
     store[evt.date].push(newEvt);
-    saveOfficeEvents();
+    await saveOfficeEvents();
     render();
     return newEvt;
   }
 
-  function updateOfficeEvent(evt, newTitle, newDesc) {
+  async function updateOfficeEvent(evt, newTitle, newDesc) {
     evt.title       = newTitle;
     evt.description = newDesc;
-    saveOfficeEvents();
+    await saveOfficeEvents();
     render();
   }
 
-  function deleteOfficeEvent(evt) {
+  async function deleteOfficeEvent(evt) {
     Object.keys(store).forEach(date => { store[date] = store[date].filter(e => e.id !== evt.id); });
-    saveOfficeEvents();
+    await saveOfficeEvents();
     render();
   }
 
