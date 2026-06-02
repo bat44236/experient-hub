@@ -1,15 +1,11 @@
 /* ── APP BOOTSTRAP ───────────────────────────────────────────────────────── */
 
 // ── CONFIGURATION ─────────────────────────────────────────────────────────────
+// API key and calendars are set via the admin UI (Connect Google button)
+// and saved to localStorage — never stored in code.
 const CONFIG = {
-  apiKey:   'AIzaSyA3Ng5qsHXY5Qv9tJ07W5W0R1x70z4U-uc',
   clientId: '778007470057-6g7aur2jdjgfb2ooakoommqq0gjpb923.apps.googleusercontent.com',
-  calendars: [
-    { id: 'en.usa#holiday@group.v.calendar.google.com',                                                  cat: 'holiday'  },
-    { id: '9e3d406ff577e84f8520707b3d6fde4f0231d9af3bfa3d540139a70e801dbec2@group.calendar.google.com', cat: 'workann'  },
-    { id: '382b2aa86827b768761c16ce3b5bec6323f1d9f62fed78aaf107bf83c537a410@group.calendar.google.com', cat: 'cnend'    },
-    { id: '3e2fc9cd2ded39150182128a50e16d2d3ac65d7deabdaa411c2f497446d002fb@group.calendar.google.com', cat: 'birthday' },
-  ],
+  calendars: [],
 };
 
 // ── Date/time header ──────────────────────────────────────────────────────────
@@ -224,17 +220,19 @@ document.getElementById('export-ical-btn').addEventListener('click', ()=>CAL.exp
     document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
   });
 
-  // Auto-connect on load using CONFIG (works for every browser, no setup needed)
-  const apiKey      = localStorage.getItem('hub_gcal_apikey') || CONFIG.apiKey;
-  const clientId    = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
-  const savedE      = localStorage.getItem('hub_cal_entries');
-  calEntries        = savedE ? JSON.parse(savedE) : CONFIG.calendars;
+  // Auto-connect on load using credentials saved via the admin UI
+  const apiKey   = localStorage.getItem('hub_gcal_apikey');
+  const clientId = localStorage.getItem('hub_gcal_client') || CONFIG.clientId;
+  const savedE   = localStorage.getItem('hub_cal_entries');
 
-  CAL.connectGoogle(clientId, apiKey, calEntries).then(()=>{
-    document.getElementById('gcal-status-pill').textContent='● Connected';
-    document.getElementById('gcal-status-pill').classList.add('connected');
-    document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
-  });
+  if (apiKey && savedE) {
+    calEntries = JSON.parse(savedE);
+    CAL.connectGoogle(clientId, apiKey, calEntries).then(()=>{
+      document.getElementById('gcal-status-pill').textContent='● Connected';
+      document.getElementById('gcal-status-pill').classList.add('connected');
+      document.getElementById('connect-gcal-btn').textContent='Manage Calendars';
+    });
+  }
 })();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
