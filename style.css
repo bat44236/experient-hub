@@ -157,10 +157,9 @@ main { position: relative; overflow: hidden; height: 100%; }
   padding: 10px 20px;
   border-bottom: 1px solid var(--border);
   background: var(--navy); flex-shrink: 0;
-  justify-content: center;
 }
 .cal-toolbar-left  { display: flex; align-items: center; gap: 8px; }
-.cal-toolbar-right { display: flex; align-items: center; gap: 8px; }
+.cal-toolbar-right { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 
 .cal-nav-btn {
   width: 28px; height: 28px; border-radius: 6px;
@@ -172,7 +171,7 @@ main { position: relative; overflow: hidden; height: 100%; }
 .cal-nav-btn:hover { border-color: var(--border-hi); color: var(--white); background: rgba(255,255,255,0.05); }
 
 .cal-month-label {
-  font-size: 15px; font-weight: 600; min-width: 160px; text-align: center;
+  font-size: 15px; font-weight: 600; min-width: 160px;
   color: var(--white); letter-spacing: -0.01em;
 }
 
