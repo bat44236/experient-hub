@@ -327,16 +327,28 @@ const WS = (() => {
 
     function showBubble() {
       const sel = window.getSelection();
-      if (!sel || sel.isCollapsed || !sel.rangeCount) { hideBubble(); return; }
+      if (!sel || !sel.rangeCount) { hideBubble(); return; }
       const range = sel.getRangeAt(0);
-      // Only show if selection is inside our editor
+      // Only show if cursor/selection is inside our editor
       if (!editor.contains(range.commonAncestorContainer)) { hideBubble(); return; }
-      const rect = range.getBoundingClientRect();
-      if (rect.width === 0) { hideBubble(); return; }
+      // Position: use selection rect if text selected, otherwise use cursor caret rect
+      let rect = range.getBoundingClientRect();
+      if (!rect || rect.width === 0) {
+        // No visible selection — use a temporary span to find caret position
+        const tmpSpan = document.createElement('span');
+        tmpSpan.textContent = '\u200b'; // zero-width space
+        const cloned = range.cloneRange();
+        cloned.collapse(true);
+        cloned.insertNode(tmpSpan);
+        rect = tmpSpan.getBoundingClientRect();
+        tmpSpan.parentNode.removeChild(tmpSpan);
+        // Restore selection
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
       bubble.style.display = 'flex';
-      // Position above the selection, centered
       const bw = bubble.offsetWidth;
-      let left = rect.left + rect.width/2 - bw/2;
+      let left = rect.left + rect.width / 2 - bw / 2;
       left = Math.max(8, Math.min(left, window.innerWidth - bw - 8));
       bubble.style.left = left + 'px';
       bubble.style.top  = (rect.top + window.scrollY - bubble.offsetHeight - 8) + 'px';
@@ -349,7 +361,8 @@ const WS = (() => {
     editor.addEventListener('input',    onEdit);
     document.addEventListener('selectionchange', () => {
       const sel = window.getSelection();
-      if (!sel || sel.isCollapsed) hideBubble();
+      // Only hide if editor doesn't have focus (user clicked outside)
+      if (!sel || (sel.isCollapsed && document.activeElement !== editor)) hideBubble();
     });
 
     // title events
