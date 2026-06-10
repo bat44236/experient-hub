@@ -327,25 +327,11 @@ const WS = (() => {
 
     function showBubble() {
       const sel = window.getSelection();
-      if (!sel || !sel.rangeCount) { hideBubble(); return; }
+      if (!sel || !sel.rangeCount || sel.isCollapsed) { hideBubble(); return; }
       const range = sel.getRangeAt(0);
-      // Only show if cursor/selection is inside our editor
       if (!editor.contains(range.commonAncestorContainer)) { hideBubble(); return; }
-      // Position: use selection rect if text selected, otherwise use cursor caret rect
-      let rect = range.getBoundingClientRect();
-      if (!rect || rect.width === 0) {
-        // No visible selection — use a temporary span to find caret position
-        const tmpSpan = document.createElement('span');
-        tmpSpan.textContent = '\u200b'; // zero-width space
-        const cloned = range.cloneRange();
-        cloned.collapse(true);
-        cloned.insertNode(tmpSpan);
-        rect = tmpSpan.getBoundingClientRect();
-        tmpSpan.parentNode.removeChild(tmpSpan);
-        // Restore selection
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
+      const rect = range.getBoundingClientRect();
+      if (rect.width === 0) { hideBubble(); return; }
       bubble.style.display = 'flex';
       const bw = bubble.offsetWidth;
       let left = rect.left + rect.width / 2 - bw / 2;
@@ -356,13 +342,11 @@ const WS = (() => {
     }
     function hideBubble() { bubble.style.display = 'none'; }
 
-    editor.addEventListener('mouseup',  () => setTimeout(showBubble, 10));
-    editor.addEventListener('keyup',    () => setTimeout(showBubble, 10));
-    editor.addEventListener('input',    onEdit);
+    editor.addEventListener('dblclick', () => setTimeout(showBubble, 10));
+    editor.addEventListener('input',    () => { hideBubble(); onEdit(); });
     document.addEventListener('selectionchange', () => {
       const sel = window.getSelection();
-      // Only hide if editor doesn't have focus (user clicked outside)
-      if (!sel || (sel.isCollapsed && document.activeElement !== editor)) hideBubble();
+      if (!sel || sel.isCollapsed) hideBubble();
     });
 
     // title events
