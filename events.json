@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T14:35:05.227Z",
+  "updatedAt": "2026-06-12T19:53:40.873Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -4545,83 +4545,6 @@
       "cat": "cnend"
     },
     {
-      "id": "7hnkpnm0o2hvtc1g826t9qj5is",
-      "title": "Mimosa Sundays",
-      "date": "2026-06-14",
-      "allDay": false,
-      "startDateTime": "2026-06-14T11:00:00-04:00",
-      "endDateTime": "2026-06-14T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "m1fnjkf1fepm03u4l73efuamak",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-15",
-      "allDay": false,
-      "startDateTime": "2026-06-15T09:00:00-04:00",
-      "endDateTime": "2026-06-15T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "7d1ajr5sjtuvfsnfaqf8jtofv4",
-      "title": "PickleBall 101",
-      "date": "2026-06-15",
-      "allDay": false,
-      "startDateTime": "2026-06-15T18:00:00-04:00",
-      "endDateTime": "2026-06-15T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "dd5ic8l91hhk5lsvccjsh34h1o",
-      "title": "King of the Court",
-      "date": "2026-06-15",
-      "allDay": false,
-      "startDateTime": "2026-06-15T19:00:00-04:00",
-      "endDateTime": "2026-06-15T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "1sm0rj7se7tvnn1gapfm00ceag",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-16",
-      "allDay": false,
-      "startDateTime": "2026-06-16T09:00:00-04:00",
-      "endDateTime": "2026-06-16T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "lt8p5rjq17qic015nfjaotvvgg",
-      "title": "Mad Miles Run Club",
-      "date": "2026-06-16",
-      "allDay": false,
-      "startDateTime": "2026-06-16T18:30:00-04:00",
-      "endDateTime": "2026-06-16T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "tq7bgjtcto59fdnjqm58d8k2e4",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-17",
-      "allDay": false,
-      "startDateTime": "2026-06-17T09:00:00-04:00",
-      "endDateTime": "2026-06-17T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "6ufhj7dhp4lkdlonti937217gs",
       "title": "Midweek Mixtape",
       "date": "2026-06-17",
@@ -4641,28 +4564,6 @@
       "endDateTime": "2026-06-18T18:00:00-04:00",
       "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-06-18",
       "location": "Camp North End",
-      "cat": "cnend"
-    },
-    {
-      "id": "da5s8uj5cr4vpchhe1tejpirpk",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-18",
-      "allDay": false,
-      "startDateTime": "2026-06-18T09:00:00-04:00",
-      "endDateTime": "2026-06-18T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "ur92om7j5ll47cvn76m2cp807g",
-      "title": "Knight Vision Chess Club",
-      "date": "2026-06-18",
-      "allDay": false,
-      "startDateTime": "2026-06-18T18:00:00-04:00",
-      "endDateTime": "2026-06-18T21:00:00-04:00",
-      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
-      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
       "cat": "cnend"
     },
     {
@@ -4688,50 +4589,6 @@
       "cat": "cnend"
     },
     {
-      "id": "uvt2rsmv1e3aoslmnl4nc89mfo",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-19",
-      "allDay": false,
-      "startDateTime": "2026-06-19T09:00:00-04:00",
-      "endDateTime": "2026-06-19T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "dajhl9jc4juqe55vu156accet8",
-      "title": "Thrift Pony After Dark Party",
-      "date": "2026-06-19",
-      "allDay": false,
-      "startDateTime": "2026-06-19T19:00:00-04:00",
-      "endDateTime": "2026-06-19T22:00:00-04:00",
-      "description": "THRIFT PONY AFTER DARK IS BACK! Pop over to the Boileryard for late-night shopping, drinks, and more!",
-      "location": "1824 statesville ave #103, Charlotte, North Carolina 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "l99f662igsa04jn1nviomqg5ec",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-20",
-      "allDay": false,
-      "startDateTime": "2026-06-20T09:00:00-04:00",
-      "endDateTime": "2026-06-20T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "0v7gdn23lho90k3ajr58jptgfo",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-21",
-      "allDay": false,
-      "startDateTime": "2026-06-21T09:00:00-04:00",
-      "endDateTime": "2026-06-21T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "bqhd8g1ti5cu5uqu5ep7m0md8c",
       "title": "That’s Novel Books Silent Book Club Brunch Edition",
       "date": "2026-06-21",
@@ -4740,83 +4597,6 @@
       "endDateTime": "2026-06-21T11:00:00-04:00",
       "description": "The Sunday Brunch Silent Book Clubs will take place each month from 9:30-11 a.m.\r\n\r\nThe format is the same:\r\n\r\n \tArrive between 9:30-10\r\n \tRead from 10-11\r\n \tShop opens for the day at 11 a.m.\r\n\r\nBring your chairs, bring your friends, bring your dogs but most importantly, bring your books in whatever format you’re reading. It’s that simple.\r\n\r\nThis event is free. Just come by and look for the other nerds holding books. Then you'll know you've found your people💛",
       "location": "330 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "iuikgs4k605r6etmuo3g8q8j54",
-      "title": "Mimosa Sundays",
-      "date": "2026-06-21",
-      "allDay": false,
-      "startDateTime": "2026-06-21T11:00:00-04:00",
-      "endDateTime": "2026-06-21T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "r9j2atdh4fb7o0o77lrllkju04",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-22",
-      "allDay": false,
-      "startDateTime": "2026-06-22T09:00:00-04:00",
-      "endDateTime": "2026-06-22T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "d13qvvelq4d3f998s9tlk5r7nk",
-      "title": "PickleBall 101",
-      "date": "2026-06-22",
-      "allDay": false,
-      "startDateTime": "2026-06-22T18:00:00-04:00",
-      "endDateTime": "2026-06-22T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "9sp5v1btfv3r1d5u9b6n4cq1l4",
-      "title": "King of the Court",
-      "date": "2026-06-22",
-      "allDay": false,
-      "startDateTime": "2026-06-22T19:00:00-04:00",
-      "endDateTime": "2026-06-22T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "prhc6plck0cakpv9tl2qta95ho",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-23",
-      "allDay": false,
-      "startDateTime": "2026-06-23T09:00:00-04:00",
-      "endDateTime": "2026-06-23T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "turdtshoi6mm1gd25bplfl20s8",
-      "title": "Mad Miles Run Club",
-      "date": "2026-06-23",
-      "allDay": false,
-      "startDateTime": "2026-06-23T18:30:00-04:00",
-      "endDateTime": "2026-06-23T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "j8qtq4h9hgcpq57e526tsrddck",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-24",
-      "allDay": false,
-      "startDateTime": "2026-06-24T09:00:00-04:00",
-      "endDateTime": "2026-06-24T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -4842,17 +4622,6 @@
       "cat": "cnend"
     },
     {
-      "id": "gr5pjmnjdm8gqgl2vbl4u3mpuk",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-25",
-      "allDay": false,
-      "startDateTime": "2026-06-25T09:00:00-04:00",
-      "endDateTime": "2026-06-25T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "n8flrjbcqlb57mhel6jsfkv3t8",
       "title": "Survey Says Trivia",
       "date": "2026-06-25",
@@ -4872,127 +4641,6 @@
       "endDateTime": "2026-06-26T21:00:00-04:00",
       "description": "For those who like to start their day with fast-paced, competitive pickleball.",
       "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "vn1rfaj9kv5l915g8h3pt9mrp4",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-26",
-      "allDay": false,
-      "startDateTime": "2026-06-26T09:00:00-04:00",
-      "endDateTime": "2026-06-26T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "0l9edkkrtfm7q4rdt54uajp514",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-06-26",
-      "allDay": false,
-      "startDateTime": "2026-06-26T18:00:00-04:00",
-      "endDateTime": "2026-06-26T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "vfl4pm5kjje989g2qimemet49o",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-27",
-      "allDay": false,
-      "startDateTime": "2026-06-27T09:00:00-04:00",
-      "endDateTime": "2026-06-27T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "7qul6of6dshuiur8nhlnj7dmb4",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-28",
-      "allDay": false,
-      "startDateTime": "2026-06-28T09:00:00-04:00",
-      "endDateTime": "2026-06-28T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "da12udlvh8hss4rgne382o4opk",
-      "title": "Mimosa Sundays",
-      "date": "2026-06-28",
-      "allDay": false,
-      "startDateTime": "2026-06-28T11:00:00-04:00",
-      "endDateTime": "2026-06-28T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "cka8o0icrr1jefahh406gd9sps",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-29",
-      "allDay": false,
-      "startDateTime": "2026-06-29T09:00:00-04:00",
-      "endDateTime": "2026-06-29T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "420a4iln5cvhhco3onoisft3do",
-      "title": "PickleBall 101",
-      "date": "2026-06-29",
-      "allDay": false,
-      "startDateTime": "2026-06-29T18:00:00-04:00",
-      "endDateTime": "2026-06-29T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "flj7l94h421g1k9hkekmis9fu8",
-      "title": "King of the Court",
-      "date": "2026-06-29",
-      "allDay": false,
-      "startDateTime": "2026-06-29T19:00:00-04:00",
-      "endDateTime": "2026-06-29T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "kbiq9vvo22630rle0ro7hi3sbc",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-06-30",
-      "allDay": false,
-      "startDateTime": "2026-06-30T09:00:00-04:00",
-      "endDateTime": "2026-06-30T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "311rp8gc6filq73trnctm88c9s",
-      "title": "Mad Miles Run Club",
-      "date": "2026-06-30",
-      "allDay": false,
-      "startDateTime": "2026-06-30T18:30:00-04:00",
-      "endDateTime": "2026-06-30T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "c1b7aphrsqluo7ih5h121o0n4o",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-01",
-      "allDay": false,
-      "startDateTime": "2026-07-01T09:00:00-04:00",
-      "endDateTime": "2026-07-01T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -5018,17 +4666,6 @@
       "cat": "cnend"
     },
     {
-      "id": "93u0vj3m82ua1gdoqr5p6qvplc",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-02",
-      "allDay": false,
-      "startDateTime": "2026-07-02T09:00:00-04:00",
-      "endDateTime": "2026-07-02T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "rv135q1g4f279s9tm0tcvbco7k",
       "title": "Survey Says Trivia",
       "date": "2026-07-02",
@@ -5048,138 +4685,6 @@
       "endDateTime": "2026-07-03T21:00:00-04:00",
       "description": "For those who like to start their day with fast-paced, competitive pickleball.",
       "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "j8lt133bsfp1rees91m7gl9g60",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-03",
-      "allDay": false,
-      "startDateTime": "2026-07-03T09:00:00-04:00",
-      "endDateTime": "2026-07-03T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "uagi1nvf41mu7iurggklatpnf0",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-07-03",
-      "allDay": false,
-      "startDateTime": "2026-07-03T18:00:00-04:00",
-      "endDateTime": "2026-07-03T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "lsqrd6hig3emvlcdqvqk4qc2nc",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-04",
-      "allDay": false,
-      "startDateTime": "2026-07-04T09:00:00-04:00",
-      "endDateTime": "2026-07-04T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "pqgbueq11t416gu7fbed98on6o",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-05",
-      "allDay": false,
-      "startDateTime": "2026-07-05T09:00:00-04:00",
-      "endDateTime": "2026-07-05T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "mvtdaqc7toc90qvb4c571us9ps",
-      "title": "Mimosa Sundays",
-      "date": "2026-07-05",
-      "allDay": false,
-      "startDateTime": "2026-07-05T11:00:00-04:00",
-      "endDateTime": "2026-07-05T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "t1bebkp18u0rkqa4ddmctrj204",
-      "title": "Shop Local Queen City Market",
-      "date": "2026-07-05",
-      "allDay": false,
-      "startDateTime": "2026-07-05T11:00:00-04:00",
-      "endDateTime": "2026-07-05T16:00:00-04:00",
-      "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "97mqe2uln8hibq55ammvih7omk",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-06",
-      "allDay": false,
-      "startDateTime": "2026-07-06T09:00:00-04:00",
-      "endDateTime": "2026-07-06T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "nbjo772t5om6vs5mqiiicu8tjg",
-      "title": "PickleBall 101",
-      "date": "2026-07-06",
-      "allDay": false,
-      "startDateTime": "2026-07-06T18:00:00-04:00",
-      "endDateTime": "2026-07-06T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "t4bte73licpf7gkqanrrb5m48g",
-      "title": "King of the Court",
-      "date": "2026-07-06",
-      "allDay": false,
-      "startDateTime": "2026-07-06T19:00:00-04:00",
-      "endDateTime": "2026-07-06T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "fki0eh5shod8a1sll9g3383das",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-07",
-      "allDay": false,
-      "startDateTime": "2026-07-07T09:00:00-04:00",
-      "endDateTime": "2026-07-07T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "v91v0ckis866qu2s5312vdr9mk",
-      "title": "Mad Miles Run Club",
-      "date": "2026-07-07",
-      "allDay": false,
-      "startDateTime": "2026-07-07T18:30:00-04:00",
-      "endDateTime": "2026-07-07T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "jgdpmovgs3ajgcr9h2s60804rs",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-08",
-      "allDay": false,
-      "startDateTime": "2026-07-08T09:00:00-04:00",
-      "endDateTime": "2026-07-08T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -5205,17 +4710,6 @@
       "cat": "cnend"
     },
     {
-      "id": "95m5vsuhe7j5hk1oan6f6e9s60",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-09",
-      "allDay": false,
-      "startDateTime": "2026-07-09T09:00:00-04:00",
-      "endDateTime": "2026-07-09T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "g1n8cc9t13ajbhh6353hu0jidc",
       "title": "Survey Says Trivia",
       "date": "2026-07-09",
@@ -5238,61 +4732,6 @@
       "cat": "cnend"
     },
     {
-      "id": "ntm8rrcg166gg50b8nondddkio",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-10",
-      "allDay": false,
-      "startDateTime": "2026-07-10T09:00:00-04:00",
-      "endDateTime": "2026-07-10T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "1o9s3vt86npdkdkg9b4uideac8",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-07-10",
-      "allDay": false,
-      "startDateTime": "2026-07-10T18:00:00-04:00",
-      "endDateTime": "2026-07-10T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "2h0k4fp6ac70ok592a5skoi1o0",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-11",
-      "allDay": false,
-      "startDateTime": "2026-07-11T09:00:00-04:00",
-      "endDateTime": "2026-07-11T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "l9snljj774jcvc3umlisli0cc8",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-12",
-      "allDay": false,
-      "startDateTime": "2026-07-12T09:00:00-04:00",
-      "endDateTime": "2026-07-12T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "c783guspgoq2u0iqoe88qj1l3s",
-      "title": "Mimosa Sundays",
-      "date": "2026-07-12",
-      "allDay": false,
-      "startDateTime": "2026-07-12T11:00:00-04:00",
-      "endDateTime": "2026-07-12T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
       "id": "hatg4qjov6llevpuann1f36st8",
       "title": "Thrift Pony Vintage Market on the Green",
       "date": "2026-07-12",
@@ -5301,72 +4740,6 @@
       "endDateTime": "2026-07-12T17:00:00-04:00",
       "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
       "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "cr5ffv5hn07esronbul68i78ik",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-13",
-      "allDay": false,
-      "startDateTime": "2026-07-13T09:00:00-04:00",
-      "endDateTime": "2026-07-13T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "vsnaoaarnbimi3guahpsscnbco",
-      "title": "PickleBall 101",
-      "date": "2026-07-13",
-      "allDay": false,
-      "startDateTime": "2026-07-13T18:00:00-04:00",
-      "endDateTime": "2026-07-13T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "6ec8os77n2s3duusd27tq8fhn4",
-      "title": "King of the Court",
-      "date": "2026-07-13",
-      "allDay": false,
-      "startDateTime": "2026-07-13T19:00:00-04:00",
-      "endDateTime": "2026-07-13T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "106ja6vluorojtk8vlcu4scp5s",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-14",
-      "allDay": false,
-      "startDateTime": "2026-07-14T09:00:00-04:00",
-      "endDateTime": "2026-07-14T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "9o37kdv1nl9q2cmero1phi2lgo",
-      "title": "Mad Miles Run Club",
-      "date": "2026-07-14",
-      "allDay": false,
-      "startDateTime": "2026-07-14T18:30:00-04:00",
-      "endDateTime": "2026-07-14T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "7bkbfffj6mmvkj0a4jh5vdcfao",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-15",
-      "allDay": false,
-      "startDateTime": "2026-07-15T09:00:00-04:00",
-      "endDateTime": "2026-07-15T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -5392,28 +4765,6 @@
       "cat": "cnend"
     },
     {
-      "id": "2okg4mk4ss9gnopubjasmp2348",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-16",
-      "allDay": false,
-      "startDateTime": "2026-07-16T09:00:00-04:00",
-      "endDateTime": "2026-07-16T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "h108023741hi4ek1s3ojppqoes",
-      "title": "Knight Vision Chess Club",
-      "date": "2026-07-16",
-      "allDay": false,
-      "startDateTime": "2026-07-16T18:00:00-04:00",
-      "endDateTime": "2026-07-16T21:00:00-04:00",
-      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
-      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
-      "cat": "cnend"
-    },
-    {
       "id": "b7iga71bed1633hjr3r45oicqo",
       "title": "Survey Says Trivia",
       "date": "2026-07-16",
@@ -5436,39 +4787,6 @@
       "cat": "cnend"
     },
     {
-      "id": "rs5bgd4qed35gmk1s086cb2nl0",
-      "title": "Junior Achievement Summer Camp",
-      "date": "2026-07-17",
-      "allDay": false,
-      "startDateTime": "2026-07-17T09:00:00-04:00",
-      "endDateTime": "2026-07-17T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "qhrr74i02j2vc0p017ftd682as",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-07-17",
-      "allDay": false,
-      "startDateTime": "2026-07-17T18:00:00-04:00",
-      "endDateTime": "2026-07-17T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "ql1flbaep0ct02b347q9vrbkes",
-      "title": "Thrift Pony After Dark Party",
-      "date": "2026-07-17",
-      "allDay": false,
-      "startDateTime": "2026-07-17T19:00:00-04:00",
-      "endDateTime": "2026-07-17T22:00:00-04:00",
-      "description": "THRIFT PONY AFTER DARK IS BACK! Pop over to the Boileryard for late-night shopping, drinks, and more!",
-      "location": "1824 statesville ave #103, Charlotte, North Carolina 28206",
-      "cat": "cnend"
-    },
-    {
       "id": "kbm6hjobb72if6bi1na222m5bk",
       "title": "That’s Novel Books Silent Book Club Brunch Edition",
       "date": "2026-07-19",
@@ -5488,50 +4806,6 @@
       "endDateTime": "2026-07-19T23:00:00-04:00",
       "description": "https://www.thatsnovelbooks.com/events-1/acpg9x9xvvzht04gihqunftp7izwlt-lbsxd-489mg-mfn8h?occurrence=2026-07-19",
       "location": "That's Novel Books",
-      "cat": "cnend"
-    },
-    {
-      "id": "8qcdr8s8b8243srencupdp8mmc",
-      "title": "Mimosa Sundays",
-      "date": "2026-07-19",
-      "allDay": false,
-      "startDateTime": "2026-07-19T11:00:00-04:00",
-      "endDateTime": "2026-07-19T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "m78353du0s0o92ndieigvp40kk",
-      "title": "PickleBall 101",
-      "date": "2026-07-20",
-      "allDay": false,
-      "startDateTime": "2026-07-20T18:00:00-04:00",
-      "endDateTime": "2026-07-20T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "vmnprvfhiapka2054odv8e69v4",
-      "title": "King of the Court",
-      "date": "2026-07-20",
-      "allDay": false,
-      "startDateTime": "2026-07-20T19:00:00-04:00",
-      "endDateTime": "2026-07-20T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "sjoar2ha70362dv0qqj0tr34hc",
-      "title": "Mad Miles Run Club",
-      "date": "2026-07-21",
-      "allDay": false,
-      "startDateTime": "2026-07-21T18:30:00-04:00",
-      "endDateTime": "2026-07-21T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -5590,17 +4864,6 @@
       "cat": "cnend"
     },
     {
-      "id": "d5si5juvjkqt1ufp0124ung0rk",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-07-24",
-      "allDay": false,
-      "startDateTime": "2026-07-24T18:00:00-04:00",
-      "endDateTime": "2026-07-24T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "a5nc2oo1orog09qfojcvvn203g",
       "title": "How To Play Warhammer 40,000",
       "date": "2026-07-25",
@@ -5609,50 +4872,6 @@
       "endDateTime": "2026-07-25T17:00:00-04:00",
       "description": "https://www.thatsnovelbooks.com/events-1/how-to-play-warhammer-40000?occurrence=2026-07-25",
       "location": "That's Novel Books",
-      "cat": "cnend"
-    },
-    {
-      "id": "fkkkhv33o6l2ioch31ng6444qc",
-      "title": "Mimosa Sundays",
-      "date": "2026-07-26",
-      "allDay": false,
-      "startDateTime": "2026-07-26T11:00:00-04:00",
-      "endDateTime": "2026-07-26T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "6ve91mi0683fs7gp2k031sr8co",
-      "title": "PickleBall 101",
-      "date": "2026-07-27",
-      "allDay": false,
-      "startDateTime": "2026-07-27T18:00:00-04:00",
-      "endDateTime": "2026-07-27T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "ibmkl8gvttre905u4bbhrfa590",
-      "title": "King of the Court",
-      "date": "2026-07-27",
-      "allDay": false,
-      "startDateTime": "2026-07-27T19:00:00-04:00",
-      "endDateTime": "2026-07-27T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "crl46088ah9amgqrb8jh403kh8",
-      "title": "Mad Miles Run Club",
-      "date": "2026-07-28",
-      "allDay": false,
-      "startDateTime": "2026-07-28T18:30:00-04:00",
-      "endDateTime": "2026-07-28T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -5700,72 +4919,6 @@
       "cat": "cnend"
     },
     {
-      "id": "68dtr68slrl6spua6983958jcc",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-07-31",
-      "allDay": false,
-      "startDateTime": "2026-07-31T18:00:00-04:00",
-      "endDateTime": "2026-07-31T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "lsd154vreif14egurcat9opq90",
-      "title": "Mimosa Sundays",
-      "date": "2026-08-02",
-      "allDay": false,
-      "startDateTime": "2026-08-02T11:00:00-04:00",
-      "endDateTime": "2026-08-02T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "nn9omrtmnd40m2nlu7ib6hlngo",
-      "title": "Shop Local Queen City Market",
-      "date": "2026-08-02",
-      "allDay": false,
-      "startDateTime": "2026-08-02T11:00:00-04:00",
-      "endDateTime": "2026-08-02T16:00:00-04:00",
-      "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "ocnof4oe3gp49s101deptoap2s",
-      "title": "PickleBall 101",
-      "date": "2026-08-03",
-      "allDay": false,
-      "startDateTime": "2026-08-03T18:00:00-04:00",
-      "endDateTime": "2026-08-03T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "d6o3pjboau3dhqsolgm4p9a21o",
-      "title": "King of the Court",
-      "date": "2026-08-03",
-      "allDay": false,
-      "startDateTime": "2026-08-03T19:00:00-04:00",
-      "endDateTime": "2026-08-03T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "ofr4risagehqhpfu2ehv20bs6s",
-      "title": "Mad Miles Run Club",
-      "date": "2026-08-04",
-      "allDay": false,
-      "startDateTime": "2026-08-04T18:30:00-04:00",
-      "endDateTime": "2026-08-04T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
       "id": "ifjcao0ifcluo7o5ih4j7b3sv8",
       "title": "Midweek Mixtape",
       "date": "2026-08-05",
@@ -5810,17 +4963,6 @@
       "cat": "cnend"
     },
     {
-      "id": "o0d87u2k54tt0ftpv6l7nq258c",
-      "title": "Live Friday Nights at Camp",
-      "date": "2026-08-07",
-      "allDay": false,
-      "startDateTime": "2026-08-07T18:00:00-04:00",
-      "endDateTime": "2026-08-07T21:00:00-04:00",
-      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "216lsat3lssuttsfrmifie7fn0",
       "title": "Thrift Pony Vintage Market on the Green",
       "date": "2026-08-09",
@@ -5828,50 +4970,6 @@
       "startDateTime": "2026-08-09T11:00:00-04:00",
       "endDateTime": "2026-08-09T17:00:00-04:00",
       "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "magudd4pihvatl9r299b1c9eb4",
-      "title": "Mimosa Sundays",
-      "date": "2026-08-09",
-      "allDay": false,
-      "startDateTime": "2026-08-09T11:00:00-04:00",
-      "endDateTime": "2026-08-09T18:00:00-04:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "n2kq6t0gnphkpitip65dfkeins",
-      "title": "PickleBall 101",
-      "date": "2026-08-10",
-      "allDay": false,
-      "startDateTime": "2026-08-10T18:00:00-04:00",
-      "endDateTime": "2026-08-10T19:00:00-04:00",
-      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
-      "id": "kkrm9h2jigbj2vi57huhk6aldo",
-      "title": "King of the Court",
-      "date": "2026-08-10",
-      "allDay": false,
-      "startDateTime": "2026-08-10T19:00:00-04:00",
-      "endDateTime": "2026-08-10T21:00:00-04:00",
-      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "4bkfv8k1p0fc7i31fn0c5jmiss",
-      "title": "Mad Miles Run Club",
-      "date": "2026-08-11",
-      "allDay": false,
-      "startDateTime": "2026-08-11T18:30:00-04:00",
-      "endDateTime": "2026-08-11T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
@@ -5895,6 +4993,908 @@
       "endDateTime": "2026-08-13T18:00:00-04:00",
       "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-08-13",
       "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "02qsmhs4dc0o67rejci9vqjhhg",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-13",
+      "allDay": false,
+      "startDateTime": "2026-08-13T19:00:00-04:00",
+      "endDateTime": "2026-08-13T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "j7tq3t0cts18olfhtobeqs0kek",
+      "title": "Sunrise Session",
+      "date": "2026-08-14",
+      "allDay": false,
+      "startDateTime": "2026-08-14T07:00:00-04:00",
+      "endDateTime": "2026-08-14T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "5ld9amhu5lsm4r1lb3q45298qc",
+      "title": "That’s Novel Books Silent Book Club Brunch Edition",
+      "date": "2026-08-16",
+      "allDay": false,
+      "startDateTime": "2026-08-16T09:30:00-04:00",
+      "endDateTime": "2026-08-16T11:00:00-04:00",
+      "description": "The Sunday Brunch Silent Book Clubs will take place each month from 9:30-11 a.m.\r\n\r\nThe format is the same:\r\n\r\n \tArrive between 9:30-10\r\n \tRead from 10-11\r\n \tShop opens for the day at 11 a.m.\r\n\r\nBring your chairs, bring your friends, bring your dogs but most importantly, bring your books in whatever format you’re reading. It’s that simple.\r\n\r\nThis event is free. Just come by and look for the other nerds holding books. Then you'll know you've found your people💛",
+      "location": "330 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "41plldtscs10j9s3vb3pm857ao",
+      "title": "Silent Book Club",
+      "date": "2026-08-16",
+      "allDay": false,
+      "startDateTime": "2026-08-16T10:00:00-04:00",
+      "endDateTime": "2026-08-16T23:00:00-04:00",
+      "description": "https://www.thatsnovelbooks.com/events-1/acpg9x9xvvzht04gihqunftp7izwlt-lbsxd-489mg-mfn8h?occurrence=2026-08-16",
+      "location": "That's Novel Books",
+      "cat": "cnend"
+    },
+    {
+      "id": "2nf827k4911g5pu8je1qb9hpcs",
+      "title": "Midweek Mixtape",
+      "date": "2026-08-19",
+      "allDay": false,
+      "startDateTime": "2026-08-19T19:00:00-04:00",
+      "endDateTime": "2026-08-19T21:00:00-04:00",
+      "description": "https://www.instagram.com/p/DWCqzYNDNvm/?occurrence=2026-08-19",
+      "location": "Boileryard",
+      "cat": "cnend"
+    },
+    {
+      "id": "rgrq6vn68siflkeg9majt6hso0",
+      "title": "Wine Thursdays at Hex",
+      "date": "2026-08-20",
+      "allDay": false,
+      "startDateTime": "2026-08-20T08:00:00-04:00",
+      "endDateTime": "2026-08-20T18:00:00-04:00",
+      "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-08-20",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "9vagusijpoe0ea22kfnthdjbek",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-20",
+      "allDay": false,
+      "startDateTime": "2026-08-20T19:00:00-04:00",
+      "endDateTime": "2026-08-20T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "rfshsc8u67bd4qff8hu6cd36mc",
+      "title": "Sunrise Session",
+      "date": "2026-08-21",
+      "allDay": false,
+      "startDateTime": "2026-08-21T07:00:00-04:00",
+      "endDateTime": "2026-08-21T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "3vn44en49m2fbtfc7h1s4u4u70",
+      "title": "Midweek Mixtape",
+      "date": "2026-08-26",
+      "allDay": false,
+      "startDateTime": "2026-08-26T19:00:00-04:00",
+      "endDateTime": "2026-08-26T21:00:00-04:00",
+      "description": "https://www.instagram.com/p/DWCqzYNDNvm/?occurrence=2026-08-26",
+      "location": "Boileryard",
+      "cat": "cnend"
+    },
+    {
+      "id": "482hiqqckkqtqe6ub5kaq5lnc0",
+      "title": "Wine Thursdays at Hex",
+      "date": "2026-08-27",
+      "allDay": false,
+      "startDateTime": "2026-08-27T08:00:00-04:00",
+      "endDateTime": "2026-08-27T18:00:00-04:00",
+      "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-08-27",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "5opmroi53tfsv3f1dkmu10iivo",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-27",
+      "allDay": false,
+      "startDateTime": "2026-08-27T19:00:00-04:00",
+      "endDateTime": "2026-08-27T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "1a5cmcso59gvs4soqdmrnnf1m8",
+      "title": "Sunrise Session",
+      "date": "2026-08-28",
+      "allDay": false,
+      "startDateTime": "2026-08-28T07:00:00-04:00",
+      "endDateTime": "2026-08-28T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "s9sasfp1t9u255tisk8nsu8rek",
+      "title": "Midweek Mixtape",
+      "date": "2026-09-02",
+      "allDay": false,
+      "startDateTime": "2026-09-02T19:00:00-04:00",
+      "endDateTime": "2026-09-02T21:00:00-04:00",
+      "description": "https://www.instagram.com/p/DWCqzYNDNvm/?occurrence=2026-09-02",
+      "location": "Boileryard",
+      "cat": "cnend"
+    },
+    {
+      "id": "3kl3dnj1kos5votvk89db3p7go",
+      "title": "Wine Thursdays at Hex",
+      "date": "2026-09-03",
+      "allDay": false,
+      "startDateTime": "2026-09-03T08:00:00-04:00",
+      "endDateTime": "2026-09-03T18:00:00-04:00",
+      "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-09-03",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "7dmomb57fe5ig163s97hcor754",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-03",
+      "allDay": false,
+      "startDateTime": "2026-09-03T19:00:00-04:00",
+      "endDateTime": "2026-09-03T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "4ae3s6j1fo1b66ouf71sv1ghj8",
+      "title": "Sunrise Session",
+      "date": "2026-09-04",
+      "allDay": false,
+      "startDateTime": "2026-09-04T07:00:00-04:00",
+      "endDateTime": "2026-09-04T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "lolfno5gabr5k03v7pqc3tjebo",
+      "title": "Midweek Mixtape",
+      "date": "2026-09-09",
+      "allDay": false,
+      "startDateTime": "2026-09-09T19:00:00-04:00",
+      "endDateTime": "2026-09-09T21:00:00-04:00",
+      "description": "https://www.instagram.com/p/DWCqzYNDNvm/?occurrence=2026-09-09",
+      "location": "Boileryard",
+      "cat": "cnend"
+    },
+    {
+      "id": "s2ukgcfjqub5vlt8mq4m5mbsf0",
+      "title": "Wine Thursdays at Hex",
+      "date": "2026-09-10",
+      "allDay": false,
+      "startDateTime": "2026-09-10T08:00:00-04:00",
+      "endDateTime": "2026-09-10T18:00:00-04:00",
+      "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-09-10",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "e734381vtp8ojl76bsu07sujcc",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-10",
+      "allDay": false,
+      "startDateTime": "2026-09-10T19:00:00-04:00",
+      "endDateTime": "2026-09-10T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "scgqidoeg8bfm9ecsigq6qn0pc",
+      "title": "Sunrise Session",
+      "date": "2026-09-11",
+      "allDay": false,
+      "startDateTime": "2026-09-11T07:00:00-04:00",
+      "endDateTime": "2026-09-11T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "p7364rjmi0ue630mg499d1rvt0",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-11",
+      "allDay": false,
+      "startDateTime": "2026-09-11T18:00:00-04:00",
+      "endDateTime": "2026-09-11T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "jggqh5htp8cmogaag7pmccg218",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-09-13",
+      "allDay": false,
+      "startDateTime": "2026-09-13T11:00:00-04:00",
+      "endDateTime": "2026-09-13T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "oruqj8int3dufs589gkhier4t8",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-13",
+      "allDay": false,
+      "startDateTime": "2026-09-13T11:00:00-04:00",
+      "endDateTime": "2026-09-13T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "i07m2btmdqv0bpfkj49r4da624",
+      "title": "Intermediate Open Play",
+      "date": "2026-09-14",
+      "allDay": false,
+      "startDateTime": "2026-09-14T10:00:00-04:00",
+      "endDateTime": "2026-09-14T12:00:00-04:00",
+      "description": "Fast-paced, competitive pickleball. quality games, solid rallies, plenty of court time at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ladnhk90bit1j946eeddakkajc",
+      "title": "PickleBall 101",
+      "date": "2026-09-14",
+      "allDay": false,
+      "startDateTime": "2026-09-14T18:00:00-04:00",
+      "endDateTime": "2026-09-14T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "ldp5vktj8fuepi5aj6p52v4p6s",
+      "title": "King of the Court",
+      "date": "2026-09-14",
+      "allDay": false,
+      "startDateTime": "2026-09-14T19:00:00-04:00",
+      "endDateTime": "2026-09-14T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "1519bl970gsd4coohvv5tluj5c",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-15",
+      "allDay": false,
+      "startDateTime": "2026-09-15T18:30:00-04:00",
+      "endDateTime": "2026-09-15T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "3la2eavqgeu701gvc71010ra80",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-16",
+      "allDay": false,
+      "startDateTime": "2026-09-16T13:00:00-04:00",
+      "endDateTime": "2026-09-16T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "qlqnnok95hdpd7i4f05c0n8g30",
+      "title": "Cork & Cap Vinyl Night",
+      "date": "2026-09-16",
+      "allDay": false,
+      "startDateTime": "2026-09-16T16:00:00-04:00",
+      "endDateTime": "2026-09-16T21:00:00-04:00",
+      "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
+      "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "56l9h30crs5jk1dodtskno2srk",
+      "title": "The Bulb Mobile Market",
+      "date": "2026-09-17",
+      "allDay": false,
+      "startDateTime": "2026-09-17T11:00:00-04:00",
+      "endDateTime": "2026-09-17T12:00:00-04:00",
+      "description": "The Bulb provide mostly local produce, as well as health and wellness education, to food insecure neighborhoods. Since our launch in 2016, The Bulb has established community-led sponsorships and received grants that have allowed us to grow from 2 donation-based weekly markets to more than 12 in neighborhoods across the Charlotte metro area.\r\n\r\nBe sure to note The Bulb's NEWEST MARKET LOCATION at Camp North End!\r\n\r\n\r\n\r\n\r\n\r\nThursdays from 11am - 12pm\r\n400 Camp Rd. (Ford Factory) 🌻\r\nNorth End Community Coalition's space, \"The Nest\"",
+      "location": "1774 Statesville Ave. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "tigiqcctko95fu63j0v9fm3bv8",
+      "title": "Knight Vision Chess Club",
+      "date": "2026-09-17",
+      "allDay": false,
+      "startDateTime": "2026-09-17T18:00:00-04:00",
+      "endDateTime": "2026-09-17T21:00:00-04:00",
+      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
+      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
+      "cat": "cnend"
+    },
+    {
+      "id": "oeedked6uufen85b1h23ig4b0c",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-17",
+      "allDay": false,
+      "startDateTime": "2026-09-17T19:00:00-04:00",
+      "endDateTime": "2026-09-17T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "1p5jr8ei45p59f9cilm0evlq9k",
+      "title": "Sunrise Session",
+      "date": "2026-09-18",
+      "allDay": false,
+      "startDateTime": "2026-09-18T07:00:00-04:00",
+      "endDateTime": "2026-09-18T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ea25pn5c5voghrhkdo4ia6tki4",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-18",
+      "allDay": false,
+      "startDateTime": "2026-09-18T18:00:00-04:00",
+      "endDateTime": "2026-09-18T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "dmcf2ti9qq5r8hhthsj6qon4l8",
+      "title": "Thrift Pony After Dark Party",
+      "date": "2026-09-18",
+      "allDay": false,
+      "startDateTime": "2026-09-18T19:00:00-04:00",
+      "endDateTime": "2026-09-18T22:00:00-04:00",
+      "description": "THRIFT PONY AFTER DARK IS BACK! Pop over to the Boileryard for late-night shopping, drinks, and more!",
+      "location": "1824 statesville ave #103, Charlotte, North Carolina 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "93683p87ahsbq3fmlvavhs5hq8",
+      "title": "That’s Novel Books Silent Book Club Brunch Edition",
+      "date": "2026-09-20",
+      "allDay": false,
+      "startDateTime": "2026-09-20T09:30:00-04:00",
+      "endDateTime": "2026-09-20T11:00:00-04:00",
+      "description": "The Sunday Brunch Silent Book Clubs will take place each month from 9:30-11 a.m.\r\n\r\nThe format is the same:\r\n\r\n \tArrive between 9:30-10\r\n \tRead from 10-11\r\n \tShop opens for the day at 11 a.m.\r\n\r\nBring your chairs, bring your friends, bring your dogs but most importantly, bring your books in whatever format you’re reading. It’s that simple.\r\n\r\nThis event is free. Just come by and look for the other nerds holding books. Then you'll know you've found your people💛",
+      "location": "330 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "v1nhor23uun0nkidrgmlqplfk0",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-20",
+      "allDay": false,
+      "startDateTime": "2026-09-20T11:00:00-04:00",
+      "endDateTime": "2026-09-20T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ccuit3ah34b7ojgihumagjqhnc",
+      "title": "Intermediate Open Play",
+      "date": "2026-09-21",
+      "allDay": false,
+      "startDateTime": "2026-09-21T10:00:00-04:00",
+      "endDateTime": "2026-09-21T12:00:00-04:00",
+      "description": "Fast-paced, competitive pickleball. quality games, solid rallies, plenty of court time at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8kqv7d8jcdeeb1naohqedlc9ek",
+      "title": "PickleBall 101",
+      "date": "2026-09-21",
+      "allDay": false,
+      "startDateTime": "2026-09-21T18:00:00-04:00",
+      "endDateTime": "2026-09-21T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "6bh9fjrpq6k46oph6vun1sr4f8",
+      "title": "King of the Court",
+      "date": "2026-09-21",
+      "allDay": false,
+      "startDateTime": "2026-09-21T19:00:00-04:00",
+      "endDateTime": "2026-09-21T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "894u3knd027pdqt1a8cclqrd40",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-22",
+      "allDay": false,
+      "startDateTime": "2026-09-22T18:30:00-04:00",
+      "endDateTime": "2026-09-22T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "bgk37ggla0uvjg4rac984b1hrg",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-23",
+      "allDay": false,
+      "startDateTime": "2026-09-23T13:00:00-04:00",
+      "endDateTime": "2026-09-23T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "3cvfeukdhbvinkrl0qs3k55qnk",
+      "title": "Cork & Cap Vinyl Night",
+      "date": "2026-09-23",
+      "allDay": false,
+      "startDateTime": "2026-09-23T16:00:00-04:00",
+      "endDateTime": "2026-09-23T21:00:00-04:00",
+      "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
+      "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "3d14bdt3hafimpnougfp78hmho",
+      "title": "The Bulb Mobile Market",
+      "date": "2026-09-24",
+      "allDay": false,
+      "startDateTime": "2026-09-24T11:00:00-04:00",
+      "endDateTime": "2026-09-24T12:00:00-04:00",
+      "description": "The Bulb provide mostly local produce, as well as health and wellness education, to food insecure neighborhoods. Since our launch in 2016, The Bulb has established community-led sponsorships and received grants that have allowed us to grow from 2 donation-based weekly markets to more than 12 in neighborhoods across the Charlotte metro area.\r\n\r\nBe sure to note The Bulb's NEWEST MARKET LOCATION at Camp North End!\r\n\r\n\r\n\r\n\r\n\r\nThursdays from 11am - 12pm\r\n400 Camp Rd. (Ford Factory) 🌻\r\nNorth End Community Coalition's space, \"The Nest\"",
+      "location": "1774 Statesville Ave. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "unp0ugq5t2oonbjbiuuqe4r93g",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-24",
+      "allDay": false,
+      "startDateTime": "2026-09-24T19:00:00-04:00",
+      "endDateTime": "2026-09-24T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "t7q4b9n9orjqnmf60bees9ukes",
+      "title": "Sunrise Session",
+      "date": "2026-09-25",
+      "allDay": false,
+      "startDateTime": "2026-09-25T07:00:00-04:00",
+      "endDateTime": "2026-09-25T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "qkq2uh4u995hf2jovg3f9pgjqs",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-25",
+      "allDay": false,
+      "startDateTime": "2026-09-25T18:00:00-04:00",
+      "endDateTime": "2026-09-25T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "8gv638h56hbm9gmcpjvh8hofv0",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-27",
+      "allDay": false,
+      "startDateTime": "2026-09-27T11:00:00-04:00",
+      "endDateTime": "2026-09-27T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "noc6ndk18helmhdkneti1o2kqo",
+      "title": "Boileryard Brunch",
+      "date": "2026-09-27",
+      "allDay": false,
+      "startDateTime": "2026-09-27T12:00:00-04:00",
+      "endDateTime": "2026-09-27T16:00:00-04:00",
+      "description": "Bring your friends + appetite for an music experience under the water tower.",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "i1el933kfvorb0slqmemq72u3g",
+      "title": "Intermediate Open Play",
+      "date": "2026-09-28",
+      "allDay": false,
+      "startDateTime": "2026-09-28T10:00:00-04:00",
+      "endDateTime": "2026-09-28T12:00:00-04:00",
+      "description": "Fast-paced, competitive pickleball. quality games, solid rallies, plenty of court time at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8hkoaot0nnlp92tb4h0j2t84i0",
+      "title": "PickleBall 101",
+      "date": "2026-09-28",
+      "allDay": false,
+      "startDateTime": "2026-09-28T18:00:00-04:00",
+      "endDateTime": "2026-09-28T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "fbk68c6qi0eod4h01v6qcs5kns",
+      "title": "King of the Court",
+      "date": "2026-09-28",
+      "allDay": false,
+      "startDateTime": "2026-09-28T19:00:00-04:00",
+      "endDateTime": "2026-09-28T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "237pif8hhivc30qtqi94d7lb7k",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-29",
+      "allDay": false,
+      "startDateTime": "2026-09-29T18:30:00-04:00",
+      "endDateTime": "2026-09-29T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "u2gbj248861ut2i474of17br3s",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-30",
+      "allDay": false,
+      "startDateTime": "2026-09-30T13:00:00-04:00",
+      "endDateTime": "2026-09-30T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "fugfn9f2o6k609p2fd2ob5jvo8",
+      "title": "Cork & Cap Vinyl Night",
+      "date": "2026-09-30",
+      "allDay": false,
+      "startDateTime": "2026-09-30T16:00:00-04:00",
+      "endDateTime": "2026-09-30T21:00:00-04:00",
+      "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
+      "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "cp7dlpmbl8779kknhem084tiao",
+      "title": "The Bulb Mobile Market",
+      "date": "2026-10-01",
+      "allDay": false,
+      "startDateTime": "2026-10-01T11:00:00-04:00",
+      "endDateTime": "2026-10-01T12:00:00-04:00",
+      "description": "The Bulb provide mostly local produce, as well as health and wellness education, to food insecure neighborhoods. Since our launch in 2016, The Bulb has established community-led sponsorships and received grants that have allowed us to grow from 2 donation-based weekly markets to more than 12 in neighborhoods across the Charlotte metro area.\r\n\r\nBe sure to note The Bulb's NEWEST MARKET LOCATION at Camp North End!\r\n\r\n\r\n\r\n\r\n\r\nThursdays from 11am - 12pm\r\n400 Camp Rd. (Ford Factory) 🌻\r\nNorth End Community Coalition's space, \"The Nest\"",
+      "location": "1774 Statesville Ave. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "i51n52ktl5tfgeql746djp1p30",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-01",
+      "allDay": false,
+      "startDateTime": "2026-10-01T19:00:00-04:00",
+      "endDateTime": "2026-10-01T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "mjvts0t4lpif39876f554votp8",
+      "title": "Sunrise Session",
+      "date": "2026-10-02",
+      "allDay": false,
+      "startDateTime": "2026-10-02T07:00:00-04:00",
+      "endDateTime": "2026-10-02T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "5g22gil78ufhna4vmbccv6m294",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-02",
+      "allDay": false,
+      "startDateTime": "2026-10-02T18:00:00-04:00",
+      "endDateTime": "2026-10-02T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "g7h6213vvnr4ievleb9edbbg4s",
+      "title": "Mimosa Sundays",
+      "date": "2026-10-04",
+      "allDay": false,
+      "startDateTime": "2026-10-04T11:00:00-04:00",
+      "endDateTime": "2026-10-04T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "t9agl03mhdmq2b7kl3387tmhlc",
+      "title": "Shop Local Queen City Market",
+      "date": "2026-10-04",
+      "allDay": false,
+      "startDateTime": "2026-10-04T11:00:00-04:00",
+      "endDateTime": "2026-10-05T16:00:00-04:00",
+      "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "7d9q33t3kot8vn5bb117p6f0ac",
+      "title": "Intermediate Open Play",
+      "date": "2026-10-05",
+      "allDay": false,
+      "startDateTime": "2026-10-05T10:00:00-04:00",
+      "endDateTime": "2026-10-05T12:00:00-04:00",
+      "description": "Fast-paced, competitive pickleball. quality games, solid rallies, plenty of court time at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "chpa6c82vo2ioi65ldfebgjba0",
+      "title": "PickleBall 101",
+      "date": "2026-10-05",
+      "allDay": false,
+      "startDateTime": "2026-10-05T18:00:00-04:00",
+      "endDateTime": "2026-10-05T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "mt86p8oh6b0hauduak03qcab7c",
+      "title": "King of the Court",
+      "date": "2026-10-05",
+      "allDay": false,
+      "startDateTime": "2026-10-05T19:00:00-04:00",
+      "endDateTime": "2026-10-05T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "nq2noc5klkudilbvrk3g0t0h3o",
+      "title": "Mad Miles Run Club",
+      "date": "2026-10-06",
+      "allDay": false,
+      "startDateTime": "2026-10-06T18:30:00-04:00",
+      "endDateTime": "2026-10-06T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "4i0n35grrkg17l5pe25o84hki8",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-10-07",
+      "allDay": false,
+      "startDateTime": "2026-10-07T13:00:00-04:00",
+      "endDateTime": "2026-10-07T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "n40fgd07gmtgbo8mdm9uf4g954",
+      "title": "Cork & Cap Vinyl Night",
+      "date": "2026-10-07",
+      "allDay": false,
+      "startDateTime": "2026-10-07T16:00:00-04:00",
+      "endDateTime": "2026-10-07T21:00:00-04:00",
+      "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
+      "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "v0dpm8nbp7m0ji2g8ihnott9i8",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-08",
+      "allDay": false,
+      "startDateTime": "2026-10-08T19:00:00-04:00",
+      "endDateTime": "2026-10-08T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "doneveh6revqo9d2geieria6ns",
+      "title": "Sunrise Session",
+      "date": "2026-10-09",
+      "allDay": false,
+      "startDateTime": "2026-10-09T07:00:00-04:00",
+      "endDateTime": "2026-10-09T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "gg4nprde3kqm99sua3n90rag10",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-09",
+      "allDay": false,
+      "startDateTime": "2026-10-09T18:00:00-04:00",
+      "endDateTime": "2026-10-09T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "9nh4tidiir9ghud418rq4psfu4",
+      "title": "Mimosa Sundays",
+      "date": "2026-10-11",
+      "allDay": false,
+      "startDateTime": "2026-10-11T11:00:00-04:00",
+      "endDateTime": "2026-10-11T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "it91v21tkf67uo1jsh9sdk7b80",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-10-11",
+      "allDay": false,
+      "startDateTime": "2026-10-11T11:00:00-04:00",
+      "endDateTime": "2026-10-11T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "a2ksee2t7c4nij1ocjh0u3oof8",
+      "title": "Intermediate Open Play",
+      "date": "2026-10-12",
+      "allDay": false,
+      "startDateTime": "2026-10-12T10:00:00-04:00",
+      "endDateTime": "2026-10-12T12:00:00-04:00",
+      "description": "Fast-paced, competitive pickleball. quality games, solid rallies, plenty of court time at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "v1olr5chmagb13lse9vk67023o",
+      "title": "PickleBall 101",
+      "date": "2026-10-12",
+      "allDay": false,
+      "startDateTime": "2026-10-12T18:00:00-04:00",
+      "endDateTime": "2026-10-12T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "18s0bemmd552n5e6c25fjjv1vo",
+      "title": "King of the Court",
+      "date": "2026-10-12",
+      "allDay": false,
+      "startDateTime": "2026-10-12T19:00:00-04:00",
+      "endDateTime": "2026-10-12T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "guloog0lpe4e7f7jqees3d41do",
+      "title": "Mad Miles Run Club",
+      "date": "2026-10-13",
+      "allDay": false,
+      "startDateTime": "2026-10-13T18:30:00-04:00",
+      "endDateTime": "2026-10-13T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "2af9soouk8bnd83glapu864tc8",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-10-14",
+      "allDay": false,
+      "startDateTime": "2026-10-14T13:00:00-04:00",
+      "endDateTime": "2026-10-14T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "mtotdqpkg5njllble82vp50kss",
+      "title": "Cork & Cap Vinyl Night",
+      "date": "2026-10-14",
+      "allDay": false,
+      "startDateTime": "2026-10-14T16:00:00-04:00",
+      "endDateTime": "2026-10-14T21:00:00-04:00",
+      "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
+      "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "p5m0pf3mkscl12nsk0rki0afn8",
+      "title": "Knight Vision Chess Club",
+      "date": "2026-10-15",
+      "allDay": false,
+      "startDateTime": "2026-10-15T18:00:00-04:00",
+      "endDateTime": "2026-10-15T21:00:00-04:00",
+      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
+      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
+      "cat": "cnend"
+    },
+    {
+      "id": "s2kemn8c81e33llk6uutmrf4ok",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-15",
+      "allDay": false,
+      "startDateTime": "2026-10-15T19:00:00-04:00",
+      "endDateTime": "2026-10-15T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "kp68qj4u6kboaiik6k8hev7hg4",
+      "title": "Sunrise Session",
+      "date": "2026-10-16",
+      "allDay": true,
+      "startDateTime": "2026-10-16",
+      "endDateTime": "2026-10-17",
+      "description": "https://camp.nc/camp-events/sunrise-session/?occurrence=2026-10-16",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "ucitobnii7nldkmomkccbc0e2k",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-16",
+      "allDay": false,
+      "startDateTime": "2026-10-16T18:00:00-04:00",
+      "endDateTime": "2026-10-16T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
       "cat": "cnend"
     },
     {
