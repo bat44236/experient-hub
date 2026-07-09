@@ -37,34 +37,47 @@ jobs:
 
           function fetchCal(cal) {
             return new Promise((resolve) => {
-              const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(cal.id)}/events?key=${apiKey}&timeMin=${timeMin}&timeMax=${timeMax}&singleEvents=true&orderBy=startTime&maxResults=500`;
-              https.get(url, res => {
-                let data = '';
-                res.on('data', chunk => data += chunk);
-                res.on('end', () => {
-                  try {
-                    const json = JSON.parse(data);
-                    const events = (json.items || []).map(item => ({
-                      id:            item.id,
-                      title:         item.summary || '(No title)',
-                      date:          item.start.date || item.start.dateTime?.split('T')[0],
-                      allDay:        !!item.start.date,
-                      startDateTime: item.start.dateTime || item.start.date,
-                      endDateTime:   item.end?.dateTime  || item.end?.date,
-                      description:   item.description || '',
-                      location:      item.location    || '',
-                      cat:           cal.cat,
-                    }));
-                    resolve(events);
-                  } catch(e) {
-                    console.warn('Parse error for', cal.id, e.message);
-                    resolve([]);
-                  }
+              const allEvents = [];
+
+              function fetchPage(pageToken) {
+                let url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(cal.id)}/events?key=${apiKey}&timeMin=${timeMin}&timeMax=${timeMax}&singleEvents=true&orderBy=startTime&maxResults=2500`;
+                if (pageToken) url += `&pageToken=${pageToken}`;
+
+                https.get(url, res => {
+                  let data = '';
+                  res.on('data', chunk => data += chunk);
+                  res.on('end', () => {
+                    try {
+                      const json = JSON.parse(data);
+                      const events = (json.items || []).map(item => ({
+                        id:            item.id,
+                        title:         item.summary || '(No title)',
+                        date:          item.start.date || item.start.dateTime?.split('T')[0],
+                        allDay:        !!item.start.date,
+                        startDateTime: item.start.dateTime || item.start.date,
+                        endDateTime:   item.end?.dateTime  || item.end?.date,
+                        description:   item.description || '',
+                        location:      item.location    || '',
+                        cat:           cal.cat,
+                      }));
+                      allEvents.push(...events);
+                      if (json.nextPageToken) {
+                        fetchPage(json.nextPageToken);
+                      } else {
+                        resolve(allEvents);
+                      }
+                    } catch(e) {
+                      console.warn('Parse error for', cal.id, e.message);
+                      resolve(allEvents);
+                    }
+                  });
+                }).on('error', err => {
+                  console.warn('Fetch error for', cal.id, err.message);
+                  resolve(allEvents);
                 });
-              }).on('error', err => {
-                console.warn('Fetch error for', cal.id, err.message);
-                resolve([]);
-              });
+              }
+
+              fetchPage(null);
             });
           }
 
