@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T13:20:43.242Z",
+  "updatedAt": "2026-07-16T18:55:43.163Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -2824,7 +2824,7 @@
       "allDay": false,
       "startDateTime": "2026-04-07T18:30:00-04:00",
       "endDateTime": "2026-04-07T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n����: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n��: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
@@ -6553,7 +6553,7 @@
       "allDay": false,
       "startDateTime": "2026-08-20T20:30:00-04:00",
       "endDateTime": "2026-08-20T22:30:00-04:00",
-      "description": "It's that time of year again... FREE outdoor movies are back at Camp North End! 🤩\r\nJoin us on Thursday nights as we rewind in time with some of the most iconic films. 🪐\r\n\r\nGrab your friends, bring your chairs, and enjoy a fun night of movies under the stars + free retro arcade games. 🕹\r\n\r\nRemember to pick up tasty food and drink from one of the many great Camp North End restaurants beforehand for the full dinner-and-a-show experience. 🤤🍽 (Please note that food/beverage from elsewhere is not permitted.)\r\n\r\nTHE LINEUP\r\nJUNE\r\nJune 4th – Men in Black\r\nJune 11th – Jurassic Park\r\nJune 18th – Black Panther\r\nJune 25th – Mamma Mia!\r\nJULY\r\nJuly 2nd – The Sandlot\r\nJuly 9th – Hamilton\r\nJuly 16th – Sisterhood of the Traveling Pants\r\nJuly 23rd – Iron Man\r\nJuly 30th – The Lion King\r\nAUGUST\r\nAugust 6th – The Wizard of Oz\r\nAugust 13th – Love & Basketball\r\nAugust 20th – The Neverending Story\r\nAugust 27th – The Emperor's New Groove\r\n\r\nThis is a FREE event and will take place outdoors rain or shine. Movies start @ 8:30pm",
+      "description": "It's that time of year again... FREE outdoor movies are back at Camp North End! 🤩\r\nJoin us on Thursday nights as we rewind in time with some of the most iconic films. 🪐\r\n\r\nGrab your friends, bring your chairs, and enjoy a fun night of movies under the stars + free retro arcade games. 🕹\r\n\r\nRemember to pick up tasty food and drink from one of the many great Camp North End restaurants beforehand for the full dinner-and-a-show experience. 🤤🍽 (Please note that food/beverage from elsewhere is not permitted.)\r\n\r\nTHE LINEUP\r\nJUNE\r\nJune 4th – Men in Black\r\nJune 11th – Jurassic Park\r\nJune 18th – Black Panther\r\nJune 25th – Mamma Mia!\r\nJULY\r\nJuly 2nd �� The Sandlot\r\nJuly 9th – Hamilton\r\nJuly 16th – Sisterhood of the Traveling Pants\r\nJuly 23rd – Iron Man\r\nJuly 30th – The Lion King\r\nAUGUST\r\nAugust 6th – The Wizard of Oz\r\nAugust 13th – Love & Basketball\r\nAugust 20th – The Neverending Story\r\nAugust 27th – The Emperor's New Groove\r\n\r\nThis is a FREE event and will take place outdoors rain or shine. Movies start @ 8:30pm",
       "location": "",
       "cat": "cnend"
     },
@@ -7743,6 +7743,17 @@
       "endDateTime": "2026-10-14T21:00:00-04:00",
       "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
       "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "e0a3obtlaki4qu4hmcnm7aj9ek",
+      "title": "Midweek Mixtape",
+      "date": "2026-10-14",
+      "allDay": false,
+      "startDateTime": "2026-10-14T19:00:00-04:00",
+      "endDateTime": "2026-10-14T21:00:00-04:00",
+      "description": "https://www.instagram.com/p/DWCqzYNDNvm/?occurrence=2026-10-14",
+      "location": "Boileryard",
       "cat": "cnend"
     },
     {
