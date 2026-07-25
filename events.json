@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T13:01:05.054Z",
+  "updatedAt": "2026-07-25T18:53:02.505Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -2824,7 +2824,7 @@
       "allDay": false,
       "startDateTime": "2026-04-07T18:30:00-04:00",
       "endDateTime": "2026-04-07T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n����: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
@@ -6250,17 +6250,6 @@
       "cat": "cnend"
     },
     {
-      "id": "216lsat3lssuttsfrmifie7fn0",
-      "title": "Thrift Pony Vintage Market on the Green",
-      "date": "2026-08-09",
-      "allDay": false,
-      "startDateTime": "2026-08-09T11:00:00-04:00",
-      "endDateTime": "2026-08-09T17:00:00-04:00",
-      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
       "id": "6k6b1lh3jgsla0k8mvqs59127c",
       "title": "Mimosa Sundays",
       "date": "2026-08-09",
@@ -7031,17 +7020,6 @@
       "cat": "cnend"
     },
     {
-      "id": "jggqh5htp8cmogaag7pmccg218",
-      "title": "Thrift Pony Vintage Market on the Green",
-      "date": "2026-09-13",
-      "allDay": false,
-      "startDateTime": "2026-09-13T11:00:00-04:00",
-      "endDateTime": "2026-09-13T17:00:00-04:00",
-      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
       "id": "oruqj8int3dufs589gkhier4t8",
       "title": "Mimosa Sundays",
       "date": "2026-09-13",
@@ -7669,17 +7647,6 @@
       "cat": "cnend"
     },
     {
-      "id": "it91v21tkf67uo1jsh9sdk7b80",
-      "title": "Thrift Pony Vintage Market on the Green",
-      "date": "2026-10-11",
-      "allDay": false,
-      "startDateTime": "2026-10-11T11:00:00-04:00",
-      "endDateTime": "2026-10-11T17:00:00-04:00",
-      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
-      "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
       "id": "a2ksee2t7c4nij1ocjh0u3oof8",
       "title": "Intermediate Open Play",
       "date": "2026-10-12",
@@ -7919,6 +7886,28 @@
       "endDateTime": "2026-10-21T21:00:00-04:00",
       "description": "You're the DJ! Bring your own records to Cork & Cap every Wednesday from 4 - 9 pm and share. Bring your own vinyl selections to share! Come play your favorite tracks while discovering new favorites by listening to what others bring, Check out our upcoming events at Cork & Cap Beer and Wine Bottle Shop ( https://www.corkcap.buzz/ )",
       "location": "1701 N Graham St, Suite 110, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ncrnniv31v6mnnqerhurn930b8",
+      "title": "Midweek Mixtape",
+      "date": "2026-10-21",
+      "allDay": false,
+      "startDateTime": "2026-10-21T19:00:00-04:00",
+      "endDateTime": "2026-10-21T21:00:00-04:00",
+      "description": "https://www.instagram.com/p/DWCqzYNDNvm/?occurrence=2026-10-21",
+      "location": "Boileryard",
+      "cat": "cnend"
+    },
+    {
+      "id": "it413ejnomlv6v8cr10b87av1s",
+      "title": "Wine Thursdays at Hex",
+      "date": "2026-10-22",
+      "allDay": false,
+      "startDateTime": "2026-10-22T08:00:00-04:00",
+      "endDateTime": "2026-10-22T18:00:00-04:00",
+      "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-10-22",
+      "location": "Camp North End",
       "cat": "cnend"
     },
     {
