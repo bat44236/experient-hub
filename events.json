@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T14:10:30.019Z",
+  "updatedAt": "2026-07-27T19:12:52.012Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -6261,6 +6261,17 @@
       "cat": "cnend"
     },
     {
+      "id": "git5qsf89ti1u1ofinl6927pao",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-08-09",
+      "allDay": false,
+      "startDateTime": "2026-08-09T11:00:00-04:00",
+      "endDateTime": "2026-08-09T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "gnq8bm6elrqe3lhqiufafdkffk",
       "title": "Intermediate Open Play",
       "date": "2026-08-10",
@@ -7020,6 +7031,17 @@
       "cat": "cnend"
     },
     {
+      "id": "7pdn2g5ilp8qrtji6t7r8qe8po",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-09-13",
+      "allDay": false,
+      "startDateTime": "2026-09-13T11:00:00-04:00",
+      "endDateTime": "2026-09-13T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "oruqj8int3dufs589gkhier4t8",
       "title": "Mimosa Sundays",
       "date": "2026-09-13",
@@ -7633,6 +7655,17 @@
       "endDateTime": "2026-10-09T21:00:00-04:00",
       "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
       "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "8bro1etiqk25t45c63llc8gmlk",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-10-11",
+      "allDay": false,
+      "startDateTime": "2026-10-11T11:00:00-04:00",
+      "endDateTime": "2026-10-11T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
