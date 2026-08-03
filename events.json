@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T09:21:37.254Z",
+  "updatedAt": "2026-08-03T14:15:46.661Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -4540,7 +4540,7 @@
       "allDay": false,
       "startDateTime": "2026-06-11T20:30:00-04:00",
       "endDateTime": "2026-06-11T22:30:00-04:00",
-      "description": "It's that time of year again... FREE outdoor movies are back at Camp North End! 🤩\r\nJoin us on Thursday nights as we rewind in time with some of the most iconic films. 🪐\r\n\r\nGrab your friends, bring your chairs, and enjoy a fun night of movies under the stars + free retro arcade games. 🕹\r\n\r\nRemember to pick up tasty food and drink from one of the many great Camp North End restaurants beforehand for the full dinner-and-a-show experience. 🤤🍽 (Please note that food/beverage from elsewhere is not permitted.)\r\n\r\nTHE LINEUP\r\nJUNE\r\nJune 4th – Men in Black\r\nJune 11th – Jurassic Park\r\nJune 18th – Black Panther\r\nJune 25th – Mamma Mia!\r\nJULY\r\nJuly 2nd – The Sandlot\r\nJuly 9th – Hamilton\r\nJuly 16th – Sisterhood of the Traveling Pants\r\nJuly 23rd – Iron Man\r\nJuly 30th �� The Lion King\r\nAUGUST\r\nAugust 6th – The Wizard of Oz\r\nAugust 13th – Love & Basketball\r\nAugust 20th – The Neverending Story\r\nAugust 27th – The Emperor's New Groove\r\n\r\nThis is a FREE event and will take place outdoors rain or shine. . Movies start @ 8:30pm",
+      "description": "It's that time of year again... FREE outdoor movies are back at Camp North End! 🤩\r\nJoin us on Thursday nights as we rewind in time with some of the most iconic films. 🪐\r\n\r\nGrab your friends, bring your chairs, and enjoy a fun night of movies under the stars + free retro arcade games. 🕹\r\n\r\nRemember to pick up tasty food and drink from one of the many great Camp North End restaurants beforehand for the full dinner-and-a-show experience. 🤤🍽 (Please note that food/beverage from elsewhere is not permitted.)\r\n\r\nTHE LINEUP\r\nJUNE\r\nJune 4th – Men in Black\r\nJune 11th – Jurassic Park\r\nJune 18th – Black Panther\r\nJune 25th – Mamma Mia!\r\nJULY\r\nJuly 2nd – The Sandlot\r\nJuly 9th – Hamilton\r\nJuly 16th – Sisterhood of the Traveling Pants\r\nJuly 23rd – Iron Man\r\nJuly 30th – The Lion King\r\nAUGUST\r\nAugust 6th – The Wizard of Oz\r\nAugust 13th – Love & Basketball\r\nAugust 20th – The Neverending Story\r\nAugust 27th – The Emperor's New Groove\r\n\r\nThis is a FREE event and will take place outdoors rain or shine. . Movies start @ 8:30pm",
       "location": "",
       "cat": "cnend"
     },
@@ -5541,7 +5541,7 @@
       "allDay": false,
       "startDateTime": "2026-07-13T09:00:00-04:00",
       "endDateTime": "2026-07-13T16:00:00-04:00",
-      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer��s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
+      "description": "If you're looking for a fun and engaging way to boost your child's learning this summer, register them for Junior Achievement (JA) Summer Camp! Named the Charlotte Observer’s 2023 Best Summer Camp, Junior Achievement of Central Carolinas’ full-day camp offers rising 4th-8th grade students hands-on experiences in career readiness, personal finance, and entrepreneurship. With innovative projects and workshops, interesting guest speakers, and fun games and activities, JA Summer Camp is sure to help campers become future-ready!",
       "location": "",
       "cat": "cnend"
     },
@@ -6085,6 +6085,61 @@
       "cat": "cnend"
     },
     {
+      "id": "7iunbchgnnak24fcmg2m1ggga0",
+      "title": "Mimosa Sundays",
+      "date": "2026-08-02",
+      "allDay": false,
+      "startDateTime": "2026-08-02T11:00:00-04:00",
+      "endDateTime": "2026-08-02T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "uj5isrndib4om9skjtu63ckrcs",
+      "title": "Shop Local Queen City Market",
+      "date": "2026-08-02",
+      "allDay": false,
+      "startDateTime": "2026-08-02T11:00:00-04:00",
+      "endDateTime": "2026-08-02T16:00:00-04:00",
+      "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "4s3q4dsvt3qfo3f9jv07eoqoqk",
+      "title": "PickleBall 101",
+      "date": "2026-08-03",
+      "allDay": false,
+      "startDateTime": "2026-08-03T18:00:00-04:00",
+      "endDateTime": "2026-08-03T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "rrn3ecsk7c1184fih76u2avs14",
+      "title": "King of the Court",
+      "date": "2026-08-03",
+      "allDay": false,
+      "startDateTime": "2026-08-03T19:00:00-04:00",
+      "endDateTime": "2026-08-03T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "u50lrcii0u1l6kiefqdpg5c39s",
+      "title": "Mad Miles Run Club",
+      "date": "2026-08-04",
+      "allDay": false,
+      "startDateTime": "2026-08-04T18:30:00-04:00",
+      "endDateTime": "2026-08-04T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "ifjcao0ifcluo7o5ih4j7b3sv8",
       "title": "Midweek Mixtape",
       "date": "2026-08-05",
@@ -6104,6 +6159,83 @@
       "endDateTime": "2026-08-06T18:00:00-04:00",
       "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-08-06",
       "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "3cetvq1afcc1fev262cs23o21k",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-06",
+      "allDay": false,
+      "startDateTime": "2026-08-06T19:00:00-04:00",
+      "endDateTime": "2026-08-06T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "khb5antpavnj5g42pe6ph7m1u0",
+      "title": "Sunrise Session",
+      "date": "2026-08-07",
+      "allDay": false,
+      "startDateTime": "2026-08-07T07:00:00-04:00",
+      "endDateTime": "2026-08-07T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "89a5ttfgrug9djed3k1e2orco8",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-08-07",
+      "allDay": false,
+      "startDateTime": "2026-08-07T18:00:00-04:00",
+      "endDateTime": "2026-08-07T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "l4qtbs3m6djs4vjehp0ljpjgvo",
+      "title": "Mimosa Sundays",
+      "date": "2026-08-09",
+      "allDay": false,
+      "startDateTime": "2026-08-09T11:00:00-04:00",
+      "endDateTime": "2026-08-09T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ujfgfah3m01qssha3jvnjph4s0",
+      "title": "PickleBall 101",
+      "date": "2026-08-10",
+      "allDay": false,
+      "startDateTime": "2026-08-10T18:00:00-04:00",
+      "endDateTime": "2026-08-10T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "d2snlg0ig61domj39v98levrc8",
+      "title": "King of the Court",
+      "date": "2026-08-10",
+      "allDay": false,
+      "startDateTime": "2026-08-10T19:00:00-04:00",
+      "endDateTime": "2026-08-10T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "v12pv4eldjkkoqi43rfnuhb8l4",
+      "title": "Mad Miles Run Club",
+      "date": "2026-08-11",
+      "allDay": false,
+      "startDateTime": "2026-08-11T18:30:00-04:00",
+      "endDateTime": "2026-08-11T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6129,6 +6261,39 @@
       "cat": "cnend"
     },
     {
+      "id": "dk0an3n7sr598slpssgf7a8o80",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-13",
+      "allDay": false,
+      "startDateTime": "2026-08-13T19:00:00-04:00",
+      "endDateTime": "2026-08-13T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8jmkqr54058enrlm2nc184kphg",
+      "title": "Sunrise Session",
+      "date": "2026-08-14",
+      "allDay": false,
+      "startDateTime": "2026-08-14T07:00:00-04:00",
+      "endDateTime": "2026-08-14T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "hja8n5kame0rl8fold258e861s",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-08-14",
+      "allDay": false,
+      "startDateTime": "2026-08-14T18:00:00-04:00",
+      "endDateTime": "2026-08-14T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
       "id": "irmmpq6i3h0nfn61re8lq7fj1o",
       "title": "Sweat Fitness Party",
       "date": "2026-08-15",
@@ -6140,6 +6305,17 @@
       "cat": "cnend"
     },
     {
+      "id": "m9r4rnimp1fdc8psjppp38ereo",
+      "title": "That’s Novel Books Silent Book Club Brunch Edition",
+      "date": "2026-08-16",
+      "allDay": false,
+      "startDateTime": "2026-08-16T09:30:00-04:00",
+      "endDateTime": "2026-08-16T11:00:00-04:00",
+      "description": "The Sunday Brunch Silent Book Clubs will take place each month from 9:30-11 a.m.\r\n\r\nThe format is the same:\r\n\r\n \tArrive between 9:30-10\r\n \tRead from 10-11\r\n \tShop opens for the day at 11 a.m.\r\n\r\nBring your chairs, bring your friends, bring your dogs but most importantly, bring your books in whatever format you’re reading. It’s that simple.\r\n\r\nThis event is free. Just come by and look for the other nerds holding books. Then you'll know you've found your people💛",
+      "location": "330 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "41plldtscs10j9s3vb3pm857ao",
       "title": "Silent Book Club",
       "date": "2026-08-16",
@@ -6148,6 +6324,50 @@
       "endDateTime": "2026-08-16T23:00:00-04:00",
       "description": "https://www.thatsnovelbooks.com/events-1/acpg9x9xvvzht04gihqunftp7izwlt-lbsxd-489mg-mfn8h?occurrence=2026-08-16",
       "location": "That's Novel Books",
+      "cat": "cnend"
+    },
+    {
+      "id": "cgdpgga5sm3i0qjs6gd8qaeoug",
+      "title": "Mimosa Sundays",
+      "date": "2026-08-16",
+      "allDay": false,
+      "startDateTime": "2026-08-16T11:00:00-04:00",
+      "endDateTime": "2026-08-16T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8uhucu3jh6bd0j0lklb32l6ttc",
+      "title": "PickleBall 101",
+      "date": "2026-08-17",
+      "allDay": false,
+      "startDateTime": "2026-08-17T18:00:00-04:00",
+      "endDateTime": "2026-08-17T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "fqlv4riajmkuiec4fpjkv2vi1k",
+      "title": "King of the Court",
+      "date": "2026-08-17",
+      "allDay": false,
+      "startDateTime": "2026-08-17T19:00:00-04:00",
+      "endDateTime": "2026-08-17T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8cm98lo1ptme9f4g0b1pkfi1qc",
+      "title": "Mad Miles Run Club",
+      "date": "2026-08-18",
+      "allDay": false,
+      "startDateTime": "2026-08-18T18:30:00-04:00",
+      "endDateTime": "2026-08-18T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6173,6 +6393,105 @@
       "cat": "cnend"
     },
     {
+      "id": "pjorgdkvp6slpgmvufakvlcnjg",
+      "title": "Knight Vision Chess Club",
+      "date": "2026-08-20",
+      "allDay": false,
+      "startDateTime": "2026-08-20T18:00:00-04:00",
+      "endDateTime": "2026-08-20T21:00:00-04:00",
+      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
+      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
+      "cat": "cnend"
+    },
+    {
+      "id": "jvqg46qor08kb6aoo4866h96k8",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-20",
+      "allDay": false,
+      "startDateTime": "2026-08-20T19:00:00-04:00",
+      "endDateTime": "2026-08-20T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "hq25d36a96civahno8buh9k2vs",
+      "title": "Sunrise Session",
+      "date": "2026-08-21",
+      "allDay": false,
+      "startDateTime": "2026-08-21T07:00:00-04:00",
+      "endDateTime": "2026-08-21T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "3hjbve35ueum03m87dge7o6nek",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-08-21",
+      "allDay": false,
+      "startDateTime": "2026-08-21T18:00:00-04:00",
+      "endDateTime": "2026-08-21T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "rc3os0r6nkjf24fj4q93i8if30",
+      "title": "Thrift Pony After Dark Party",
+      "date": "2026-08-21",
+      "allDay": false,
+      "startDateTime": "2026-08-21T19:00:00-04:00",
+      "endDateTime": "2026-08-21T22:00:00-04:00",
+      "description": "THRIFT PONY AFTER DARK IS BACK! Pop over to the Boileryard for late-night shopping, drinks, and more!",
+      "location": "1824 statesville ave #103, Charlotte, North Carolina 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "fft0uqs214iqg612nrstn0qur4",
+      "title": "Mimosa Sundays",
+      "date": "2026-08-23",
+      "allDay": false,
+      "startDateTime": "2026-08-23T11:00:00-04:00",
+      "endDateTime": "2026-08-23T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "725s09n0v3d5f1hm6q1m3gm344",
+      "title": "PickleBall 101",
+      "date": "2026-08-24",
+      "allDay": false,
+      "startDateTime": "2026-08-24T18:00:00-04:00",
+      "endDateTime": "2026-08-24T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "8crc4sl2j92je7f11jka8bsp08",
+      "title": "King of the Court",
+      "date": "2026-08-24",
+      "allDay": false,
+      "startDateTime": "2026-08-24T19:00:00-04:00",
+      "endDateTime": "2026-08-24T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "iop461hj8fa5kvmanuiqaov2ds",
+      "title": "Mad Miles Run Club",
+      "date": "2026-08-25",
+      "allDay": false,
+      "startDateTime": "2026-08-25T18:30:00-04:00",
+      "endDateTime": "2026-08-25T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "3vn44en49m2fbtfc7h1s4u4u70",
       "title": "Midweek Mixtape",
       "date": "2026-08-26",
@@ -6192,6 +6511,83 @@
       "endDateTime": "2026-08-27T18:00:00-04:00",
       "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-08-27",
       "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "u7ph47ann51vib52t3ecqu4278",
+      "title": "Survey Says Trivia",
+      "date": "2026-08-27",
+      "allDay": false,
+      "startDateTime": "2026-08-27T19:00:00-04:00",
+      "endDateTime": "2026-08-27T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ke12l9b4dadl2iorb5173kh88c",
+      "title": "Sunrise Session",
+      "date": "2026-08-28",
+      "allDay": false,
+      "startDateTime": "2026-08-28T07:00:00-04:00",
+      "endDateTime": "2026-08-28T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "n8di5um8204vn0h8h11bsa7afo",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-08-28",
+      "allDay": false,
+      "startDateTime": "2026-08-28T18:00:00-04:00",
+      "endDateTime": "2026-08-28T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "40hfm75ul8g2ps89oa33ao04sg",
+      "title": "Mimosa Sundays",
+      "date": "2026-08-30",
+      "allDay": false,
+      "startDateTime": "2026-08-30T11:00:00-04:00",
+      "endDateTime": "2026-08-30T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "hogcref5de1sok4gaoja087elo",
+      "title": "PickleBall 101",
+      "date": "2026-08-31",
+      "allDay": false,
+      "startDateTime": "2026-08-31T18:00:00-04:00",
+      "endDateTime": "2026-08-31T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "1ppm6l0m10e99ejhbvv5jv6cd0",
+      "title": "King of the Court",
+      "date": "2026-08-31",
+      "allDay": false,
+      "startDateTime": "2026-08-31T19:00:00-04:00",
+      "endDateTime": "2026-08-31T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "pf66d2ar8apa7d2oc5mut75suo",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-01",
+      "allDay": false,
+      "startDateTime": "2026-09-01T18:30:00-04:00",
+      "endDateTime": "2026-09-01T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6217,6 +6613,94 @@
       "cat": "cnend"
     },
     {
+      "id": "64oj74pakidaunnkpe0g7fe6tg",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-03",
+      "allDay": false,
+      "startDateTime": "2026-09-03T19:00:00-04:00",
+      "endDateTime": "2026-09-03T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ln56gq5rhn9cb9544cvc2hg2r4",
+      "title": "Sunrise Session",
+      "date": "2026-09-04",
+      "allDay": false,
+      "startDateTime": "2026-09-04T07:00:00-04:00",
+      "endDateTime": "2026-09-04T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "b55s3hvuogqfjejk96ddhtkm0o",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-04",
+      "allDay": false,
+      "startDateTime": "2026-09-04T18:00:00-04:00",
+      "endDateTime": "2026-09-04T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "k5d87uolbk4kfh5lccel37lfbk",
+      "title": "Shop Local Queen City Market",
+      "date": "2026-09-06",
+      "allDay": false,
+      "startDateTime": "2026-09-06T11:00:00-04:00",
+      "endDateTime": "2026-09-06T16:00:00-04:00",
+      "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "pejg9cctbm0b7ip1ibj8djphr0",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-06",
+      "allDay": false,
+      "startDateTime": "2026-09-06T11:00:00-04:00",
+      "endDateTime": "2026-09-06T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "agsbvcav9umtt3hfsdhspbjolk",
+      "title": "PickleBall 101",
+      "date": "2026-09-07",
+      "allDay": false,
+      "startDateTime": "2026-09-07T18:00:00-04:00",
+      "endDateTime": "2026-09-07T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "2dupsm8kaqkrdsjslo45jc13mk",
+      "title": "King of the Court",
+      "date": "2026-09-07",
+      "allDay": false,
+      "startDateTime": "2026-09-07T19:00:00-04:00",
+      "endDateTime": "2026-09-07T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "57trgk3vc60qjdbo6gdgaqvm8c",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-08",
+      "allDay": false,
+      "startDateTime": "2026-09-08T18:30:00-04:00",
+      "endDateTime": "2026-09-08T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "lolfno5gabr5k03v7pqc3tjebo",
       "title": "Midweek Mixtape",
       "date": "2026-09-09",
@@ -6236,6 +6720,94 @@
       "endDateTime": "2026-09-10T18:00:00-04:00",
       "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-09-10",
       "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "01edl19t0nojoqek7ufdb7262g",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-10",
+      "allDay": false,
+      "startDateTime": "2026-09-10T19:00:00-04:00",
+      "endDateTime": "2026-09-10T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "a2kg39qbm9kebmpc08askq4gng",
+      "title": "Sunrise Session",
+      "date": "2026-09-11",
+      "allDay": false,
+      "startDateTime": "2026-09-11T07:00:00-04:00",
+      "endDateTime": "2026-09-11T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "tbgg4ms7c74pa3cfckqtgema8g",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-11",
+      "allDay": false,
+      "startDateTime": "2026-09-11T18:00:00-04:00",
+      "endDateTime": "2026-09-11T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "97ftin0jiev0fdouf7tj9dhdjs",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-09-13",
+      "allDay": false,
+      "startDateTime": "2026-09-13T11:00:00-04:00",
+      "endDateTime": "2026-09-13T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "p2ncrqjiiklu3g964fpi116e98",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-13",
+      "allDay": false,
+      "startDateTime": "2026-09-13T11:00:00-04:00",
+      "endDateTime": "2026-09-13T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "lflk1lsat9lu5r078eoj19mous",
+      "title": "PickleBall 101",
+      "date": "2026-09-14",
+      "allDay": false,
+      "startDateTime": "2026-09-14T18:00:00-04:00",
+      "endDateTime": "2026-09-14T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "tpgrink6v118b52i0p6cq2fu54",
+      "title": "King of the Court",
+      "date": "2026-09-14",
+      "allDay": false,
+      "startDateTime": "2026-09-14T19:00:00-04:00",
+      "endDateTime": "2026-09-14T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ms9snr59njj3okm298emj2scj8",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-15",
+      "allDay": false,
+      "startDateTime": "2026-09-15T18:30:00-04:00",
+      "endDateTime": "2026-09-15T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6261,6 +6833,72 @@
       "cat": "cnend"
     },
     {
+      "id": "e37fbm97uj8eimdgku96ut9iqg",
+      "title": "Knight Vision Chess Club",
+      "date": "2026-09-17",
+      "allDay": false,
+      "startDateTime": "2026-09-17T18:00:00-04:00",
+      "endDateTime": "2026-09-17T21:00:00-04:00",
+      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
+      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
+      "cat": "cnend"
+    },
+    {
+      "id": "gli8bo2eghmts02dljf093urg4",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-17",
+      "allDay": false,
+      "startDateTime": "2026-09-17T19:00:00-04:00",
+      "endDateTime": "2026-09-17T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "54hseeth1to19qu7uvlnaeru8k",
+      "title": "Sunrise Session",
+      "date": "2026-09-18",
+      "allDay": false,
+      "startDateTime": "2026-09-18T07:00:00-04:00",
+      "endDateTime": "2026-09-18T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ma9lrmj700nf2919u2d84llqes",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-18",
+      "allDay": false,
+      "startDateTime": "2026-09-18T18:00:00-04:00",
+      "endDateTime": "2026-09-18T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "05sif81imrk3csuqi38cos13b4",
+      "title": "Thrift Pony After Dark Party",
+      "date": "2026-09-18",
+      "allDay": false,
+      "startDateTime": "2026-09-18T19:00:00-04:00",
+      "endDateTime": "2026-09-18T22:00:00-04:00",
+      "description": "THRIFT PONY AFTER DARK IS BACK! Pop over to the Boileryard for late-night shopping, drinks, and more!",
+      "location": "1824 statesville ave #103, Charlotte, North Carolina 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "5jcp5s12c2prumr7ljkn5bnnds",
+      "title": "That’s Novel Books Silent Book Club Brunch Edition",
+      "date": "2026-09-20",
+      "allDay": false,
+      "startDateTime": "2026-09-20T09:30:00-04:00",
+      "endDateTime": "2026-09-20T11:00:00-04:00",
+      "description": "The Sunday Brunch Silent Book Clubs will take place each month from 9:30-11 a.m.\r\n\r\nThe format is the same:\r\n\r\n \tArrive between 9:30-10\r\n \tRead from 10-11\r\n \tShop opens for the day at 11 a.m.\r\n\r\nBring your chairs, bring your friends, bring your dogs but most importantly, bring your books in whatever format you’re reading. It’s that simple.\r\n\r\nThis event is free. Just come by and look for the other nerds holding books. Then you'll know you've found your people💛",
+      "location": "330 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "t8ai5iv90sqarinj1conf1cfrc",
       "title": "Silent Book Club",
       "date": "2026-09-20",
@@ -6269,6 +6907,50 @@
       "endDateTime": "2026-09-20T23:00:00-04:00",
       "description": "https://www.thatsnovelbooks.com/events-1/acpg9x9xvvzht04gihqunftp7izwlt-lbsxd-489mg-mfn8h?occurrence=2026-09-20",
       "location": "That's Novel Books",
+      "cat": "cnend"
+    },
+    {
+      "id": "cebtrefeckq8c5ik2n0tlcu4ds",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-20",
+      "allDay": false,
+      "startDateTime": "2026-09-20T11:00:00-04:00",
+      "endDateTime": "2026-09-20T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "qs4r4o0niciaqtv8rhope05r00",
+      "title": "PickleBall 101",
+      "date": "2026-09-21",
+      "allDay": false,
+      "startDateTime": "2026-09-21T18:00:00-04:00",
+      "endDateTime": "2026-09-21T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "cak07grjdioq8l3d2doesv4q7g",
+      "title": "King of the Court",
+      "date": "2026-09-21",
+      "allDay": false,
+      "startDateTime": "2026-09-21T19:00:00-04:00",
+      "endDateTime": "2026-09-21T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "v15i1c2kqa58hs0vh5noq0ugls",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-22",
+      "allDay": false,
+      "startDateTime": "2026-09-22T18:30:00-04:00",
+      "endDateTime": "2026-09-22T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6294,6 +6976,83 @@
       "cat": "cnend"
     },
     {
+      "id": "dk5buntesllafs9dvq2ni9qlhg",
+      "title": "Survey Says Trivia",
+      "date": "2026-09-24",
+      "allDay": false,
+      "startDateTime": "2026-09-24T19:00:00-04:00",
+      "endDateTime": "2026-09-24T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "slsb7mthl25kmvnkalo38u7cps",
+      "title": "Sunrise Session",
+      "date": "2026-09-25",
+      "allDay": false,
+      "startDateTime": "2026-09-25T07:00:00-04:00",
+      "endDateTime": "2026-09-25T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "7q4j0098004736n01okhj4tspc",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-09-25",
+      "allDay": false,
+      "startDateTime": "2026-09-25T18:00:00-04:00",
+      "endDateTime": "2026-09-25T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "c13sr89u6epfhj0r5hfbkce40k",
+      "title": "Mimosa Sundays",
+      "date": "2026-09-27",
+      "allDay": false,
+      "startDateTime": "2026-09-27T11:00:00-04:00",
+      "endDateTime": "2026-09-27T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "vpu0tr4f5rm4mejf2bbismfh60",
+      "title": "PickleBall 101",
+      "date": "2026-09-28",
+      "allDay": false,
+      "startDateTime": "2026-09-28T18:00:00-04:00",
+      "endDateTime": "2026-09-28T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "6l5744vk49ve972tpkmebvec94",
+      "title": "King of the Court",
+      "date": "2026-09-28",
+      "allDay": false,
+      "startDateTime": "2026-09-28T19:00:00-04:00",
+      "endDateTime": "2026-09-28T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "4msme156vt48p6p1t24b721nuk",
+      "title": "Mad Miles Run Club",
+      "date": "2026-09-29",
+      "allDay": false,
+      "startDateTime": "2026-09-29T18:30:00-04:00",
+      "endDateTime": "2026-09-29T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "9skenhqrnog10jl8ed33q7nnks",
       "title": "Midweek Mixtape",
       "date": "2026-09-30",
@@ -6316,6 +7075,39 @@
       "cat": "cnend"
     },
     {
+      "id": "6fr9g03j82cogq2j162orro430",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-01",
+      "allDay": false,
+      "startDateTime": "2026-10-01T19:00:00-04:00",
+      "endDateTime": "2026-10-01T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "fq7c7htb2n8rcdhusteelmknqk",
+      "title": "Sunrise Session",
+      "date": "2026-10-02",
+      "allDay": false,
+      "startDateTime": "2026-10-02T07:00:00-04:00",
+      "endDateTime": "2026-10-02T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "sp0dr9rkv1rs273puoodn9ljno",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-02",
+      "allDay": false,
+      "startDateTime": "2026-10-02T18:00:00-04:00",
+      "endDateTime": "2026-10-02T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
       "id": "6do214kdhscg4tiig8bufead74",
       "title": "The Congregation Show 2026",
       "date": "2026-10-03",
@@ -6324,6 +7116,61 @@
       "endDateTime": "2026-10-03T20:00:00-04:00",
       "description": "https://www.instagram.com/thecongregationshow/?occurrence=2026-10-03",
       "location": "The Ford Building",
+      "cat": "cnend"
+    },
+    {
+      "id": "jpucesq53nssdhtjglnpca38f0",
+      "title": "Shop Local Queen City Market",
+      "date": "2026-10-04",
+      "allDay": false,
+      "startDateTime": "2026-10-04T11:00:00-04:00",
+      "endDateTime": "2026-10-05T16:00:00-04:00",
+      "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "qalrqltpb9sdr9ufqne077nlmg",
+      "title": "Mimosa Sundays",
+      "date": "2026-10-04",
+      "allDay": false,
+      "startDateTime": "2026-10-04T11:00:00-04:00",
+      "endDateTime": "2026-10-04T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "512965hh3iocgtpj8gnauock1o",
+      "title": "PickleBall 101",
+      "date": "2026-10-05",
+      "allDay": false,
+      "startDateTime": "2026-10-05T18:00:00-04:00",
+      "endDateTime": "2026-10-05T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "mif79aksn2etnfagkuc2uei4j0",
+      "title": "King of the Court",
+      "date": "2026-10-05",
+      "allDay": false,
+      "startDateTime": "2026-10-05T19:00:00-04:00",
+      "endDateTime": "2026-10-05T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "m42s3lejnd1unelda732mh9qjk",
+      "title": "Mad Miles Run Club",
+      "date": "2026-10-06",
+      "allDay": false,
+      "startDateTime": "2026-10-06T18:30:00-04:00",
+      "endDateTime": "2026-10-06T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6349,6 +7196,94 @@
       "cat": "cnend"
     },
     {
+      "id": "7omtmtmb8vbtvtiqjc3963kd1g",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-08",
+      "allDay": false,
+      "startDateTime": "2026-10-08T19:00:00-04:00",
+      "endDateTime": "2026-10-08T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "t2dvqdu6anuirub8uhpeb6p8o8",
+      "title": "Sunrise Session",
+      "date": "2026-10-09",
+      "allDay": false,
+      "startDateTime": "2026-10-09T07:00:00-04:00",
+      "endDateTime": "2026-10-09T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "q8d3fsh7m5ai1j4jrco0vvd724",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-09",
+      "allDay": false,
+      "startDateTime": "2026-10-09T18:00:00-04:00",
+      "endDateTime": "2026-10-09T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "nepe6hhcirgrsl8rtmll4v1mm8",
+      "title": "Mimosa Sundays",
+      "date": "2026-10-11",
+      "allDay": false,
+      "startDateTime": "2026-10-11T11:00:00-04:00",
+      "endDateTime": "2026-10-11T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "trg9vbhmeqrno0ncqq745gb3hc",
+      "title": "Thrift Pony Vintage Market on the Green",
+      "date": "2026-10-11",
+      "allDay": false,
+      "startDateTime": "2026-10-11T11:00:00-04:00",
+      "endDateTime": "2026-10-11T17:00:00-04:00",
+      "description": "Thrift Pony Market on the green is back! Come hang out from 11am-5pm on the ford green with 10+ vendors.",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "1ci6ape6n9vg9v3nub58hgucf8",
+      "title": "PickleBall 101",
+      "date": "2026-10-12",
+      "allDay": false,
+      "startDateTime": "2026-10-12T18:00:00-04:00",
+      "endDateTime": "2026-10-12T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "vd6me9agtcdeplsishuiipg8s4",
+      "title": "King of the Court",
+      "date": "2026-10-12",
+      "allDay": false,
+      "startDateTime": "2026-10-12T19:00:00-04:00",
+      "endDateTime": "2026-10-12T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8qb5hmkb5961kbmp0n1v8t8d4s",
+      "title": "Mad Miles Run Club",
+      "date": "2026-10-13",
+      "allDay": false,
+      "startDateTime": "2026-10-13T18:30:00-04:00",
+      "endDateTime": "2026-10-13T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "e0a3obtlaki4qu4hmcnm7aj9ek",
       "title": "Midweek Mixtape",
       "date": "2026-10-14",
@@ -6371,6 +7306,72 @@
       "cat": "cnend"
     },
     {
+      "id": "5b09avpcfejlpvqpe1louv01js",
+      "title": "Knight Vision Chess Club",
+      "date": "2026-10-15",
+      "allDay": false,
+      "startDateTime": "2026-10-15T18:00:00-04:00",
+      "endDateTime": "2026-10-15T21:00:00-04:00",
+      "description": "Join the Knight Vision Chess Club, where strategic minds converge and chess enthusiasts unite!\r\n\r\n\r\nSharpen your intellect and immerse yourself in the world of checkmates and endgames with our community. Whether you're a seasoned player or just starting your journey on the 64 squares, Knight Vision Chess Club is the perfect place to foster your passion for the game. Join them for exciting matches, insightful discussions, and a supportive environment that celebrates the timeless allure of chess.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis is a free event but RSVP to reserve your spot! Join them at their next chess club gathering every third Thursday of the month at 6 pm at Loyd Studios, 120 Razades Wy suite 100, Charlotte, NC 28206. All experience levels and ages are welcome!",
+      "location": "120 Razades Way, Suite 100, Charlotte, NC 28206 Mount",
+      "cat": "cnend"
+    },
+    {
+      "id": "0hh6b9hlkmjfjg5a0qqm1t110s",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-15",
+      "allDay": false,
+      "startDateTime": "2026-10-15T19:00:00-04:00",
+      "endDateTime": "2026-10-15T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "qveclbakhci11k3cmed5cbc9sg",
+      "title": "Sunrise Session",
+      "date": "2026-10-16",
+      "allDay": false,
+      "startDateTime": "2026-10-16T07:00:00-04:00",
+      "endDateTime": "2026-10-16T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "k031m30cpo4l4973dbk32ih3cs",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-16",
+      "allDay": false,
+      "startDateTime": "2026-10-16T18:00:00-04:00",
+      "endDateTime": "2026-10-16T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "c5t7ijhn3ts028gdlq9e4l9kpg",
+      "title": "Thrift Pony After Dark Party",
+      "date": "2026-10-16",
+      "allDay": false,
+      "startDateTime": "2026-10-16T19:00:00-04:00",
+      "endDateTime": "2026-10-16T22:00:00-04:00",
+      "description": "THRIFT PONY AFTER DARK IS BACK! Pop over to the Boileryard for late-night shopping, drinks, and more!",
+      "location": "1824 statesville ave #103, Charlotte, North Carolina 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "udcm9qf614l2l1kspbn2g0vo2c",
+      "title": "That’s Novel Books Silent Book Club Brunch Edition",
+      "date": "2026-10-18",
+      "allDay": false,
+      "startDateTime": "2026-10-18T09:30:00-04:00",
+      "endDateTime": "2026-10-18T11:00:00-04:00",
+      "description": "The Sunday Brunch Silent Book Clubs will take place each month from 9:30-11 a.m.\r\n\r\nThe format is the same:\r\n\r\n \tArrive between 9:30-10\r\n \tRead from 10-11\r\n \tShop opens for the day at 11 a.m.\r\n\r\nBring your chairs, bring your friends, bring your dogs but most importantly, bring your books in whatever format you’re reading. It’s that simple.\r\n\r\nThis event is free. Just come by and look for the other nerds holding books. Then you'll know you've found your people💛",
+      "location": "330 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "864lnfqvtlle8enn18ri9iebkg",
       "title": "Silent Book Club",
       "date": "2026-10-18",
@@ -6379,6 +7380,50 @@
       "endDateTime": "2026-10-18T23:00:00-04:00",
       "description": "https://www.thatsnovelbooks.com/events-1/acpg9x9xvvzht04gihqunftp7izwlt-lbsxd-489mg-mfn8h?occurrence=2026-10-18",
       "location": "That's Novel Books",
+      "cat": "cnend"
+    },
+    {
+      "id": "56kivpehdroh93e3mf3tkiungs",
+      "title": "Mimosa Sundays",
+      "date": "2026-10-18",
+      "allDay": false,
+      "startDateTime": "2026-10-18T11:00:00-04:00",
+      "endDateTime": "2026-10-18T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "lpqae1mngfgk37tc2ho4reamb8",
+      "title": "PickleBall 101",
+      "date": "2026-10-19",
+      "allDay": false,
+      "startDateTime": "2026-10-19T18:00:00-04:00",
+      "endDateTime": "2026-10-19T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "j1ttig2d9lh35sbp46dmp51rqk",
+      "title": "King of the Court",
+      "date": "2026-10-19",
+      "allDay": false,
+      "startDateTime": "2026-10-19T19:00:00-04:00",
+      "endDateTime": "2026-10-19T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "qt2e95eadegfl2otdtb5cokqno",
+      "title": "Mad Miles Run Club",
+      "date": "2026-10-20",
+      "allDay": false,
+      "startDateTime": "2026-10-20T18:30:00-04:00",
+      "endDateTime": "2026-10-20T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6404,6 +7449,94 @@
       "cat": "cnend"
     },
     {
+      "id": "ke9st2v9ckmuqau2pc6apjrdb4",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-22",
+      "allDay": false,
+      "startDateTime": "2026-10-22T19:00:00-04:00",
+      "endDateTime": "2026-10-22T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "4vfmdf8dm1i70tea5ptimgr2k0",
+      "title": "Sunrise Session",
+      "date": "2026-10-23",
+      "allDay": false,
+      "startDateTime": "2026-10-23T07:00:00-04:00",
+      "endDateTime": "2026-10-23T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "17qmimhg2282hafcbgdmermig0",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-23",
+      "allDay": false,
+      "startDateTime": "2026-10-23T18:00:00-04:00",
+      "endDateTime": "2026-10-23T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "5uebgu2mla6siq5ost4n71hp10",
+      "title": "Mimosa Sundays",
+      "date": "2026-10-25",
+      "allDay": false,
+      "startDateTime": "2026-10-25T11:00:00-04:00",
+      "endDateTime": "2026-10-25T18:00:00-04:00",
+      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
+      "location": "301 Camp Road. Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "r6dosu31d7io863uo6safbmd38",
+      "title": "Intermediate Open Play",
+      "date": "2026-10-26",
+      "allDay": false,
+      "startDateTime": "2026-10-26T10:00:00-04:00",
+      "endDateTime": "2026-10-26T12:00:00-04:00",
+      "description": "Fast-paced, competitive pickleball. quality games, solid rallies, plenty of court time at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "v49a8q0dv2l68507m6h2rvers0",
+      "title": "PickleBall 101",
+      "date": "2026-10-26",
+      "allDay": false,
+      "startDateTime": "2026-10-26T18:00:00-04:00",
+      "endDateTime": "2026-10-26T19:00:00-04:00",
+      "description": "Join Tipsy Pickle for hands-on instruction covering rules, scoring, serving, and basic techniques all in a supportive, no-stress setting.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
+      "id": "k1tq2c00ijn1rl2peadp4hjiis",
+      "title": "King of the Court",
+      "date": "2026-10-26",
+      "allDay": false,
+      "startDateTime": "2026-10-26T19:00:00-04:00",
+      "endDateTime": "2026-10-26T21:00:00-04:00",
+      "description": "First to 3 (side-out scoring), winners hold the court, losers rotate out at Tipsy Pickle.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "uune24tpaejgsjb25f4e94ikao",
+      "title": "Mad Miles Run Club",
+      "date": "2026-10-27",
+      "allDay": false,
+      "startDateTime": "2026-10-27T18:30:00-04:00",
+      "endDateTime": "2026-10-27T20:00:00-04:00",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "edkomnvr6imhm4rlgsdnau0v4s",
       "title": "Midweek Mixtape",
       "date": "2026-10-28",
@@ -6423,6 +7556,39 @@
       "endDateTime": "2026-10-29T18:00:00-04:00",
       "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-10-29",
       "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
+      "id": "rn3me4ve5accdiccge680d1abc",
+      "title": "Survey Says Trivia",
+      "date": "2026-10-29",
+      "allDay": false,
+      "startDateTime": "2026-10-29T19:00:00-04:00",
+      "endDateTime": "2026-10-29T19:00:00-04:00",
+      "description": "Hosted by Canteen ( https://www.instagram.com/canteenclt/ )!\r\nA delightful rendition of the classic Family Feud! Bid farewell to the mundane world of answering obscure questions and dive headfirst into a game that celebrates your gut instincts and intuitive prowess. No need to rack your brain for arcane facts; \"Survey Says\" brings you the joy of predicting what the masses think, channeling your inner mind-reader as you match wits against survey results. It's a game that's less about knowing it all and more about tapping into the collective consciousness. So, for those who find trivia a tad too taxing, our game promises laughter, camaraderie, and a chance to prove that sometimes, the wisdom of the crowd is the best path to victory!",
+      "location": "1824 Statesville Ave. #100, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "n805s14l9rm0ddu4b23d75au4o",
+      "title": "Sunrise Session",
+      "date": "2026-10-30",
+      "allDay": false,
+      "startDateTime": "2026-10-30T07:00:00-04:00",
+      "endDateTime": "2026-10-30T21:00:00-04:00",
+      "description": "For those who like to start their day with fast-paced, competitive pickleball.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "8tr0o3aj7uikdb67s2s39ltirk",
+      "title": "Live Friday Nights at Camp",
+      "date": "2026-10-30",
+      "allDay": false,
+      "startDateTime": "2026-10-30T18:00:00-04:00",
+      "endDateTime": "2026-10-30T21:00:00-04:00",
+      "description": "Get ready for Friday Nights at Camp North End: Season 10!\r\n\r\n\r\nJoin us for live music, food, shopping, local art, and new surprises! This year's programming is scheduled from 6 to 9 PM",
+      "location": "",
       "cat": "cnend"
     },
     {
