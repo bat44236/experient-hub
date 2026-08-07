@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T12:40:06.060Z",
+  "updatedAt": "2026-08-07T18:39:42.844Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -6228,6 +6228,17 @@
       "cat": "cnend"
     },
     {
+      "id": "91i0d7qhasr96f8ta45umund9c",
+      "title": "[CANCELLED DUE TO WEATHER] Crossroad Cinema: The Wizard of Oz",
+      "date": "2026-08-06",
+      "allDay": false,
+      "startDateTime": "2026-08-06T20:30:00-04:00",
+      "endDateTime": "2026-08-06T22:30:00-04:00",
+      "description": "UPDATE 8/6/26: Crossroad Cinema's showing of Wizard of Oz has been CANCELLED due to inclement weather. We hope to see you at our next movie!\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\nIt's that time of year again... FREE outdoor movies are back at Camp North End! 🤩\r\nJoin us on Thursday nights as we rewind in time with some of the most iconic films. 🪐\r\n\r\nGrab your friends, bring your chairs, and enjoy a fun night of movies under the stars + free retro arcade games. 🕹\r\n\r\nRemember to pick up tasty food and drink from one of the many great Camp North End restaurants beforehand for the full dinner-and-a-show experience. 🤤🍽 (Please note that food/beverage from elsewhere is not permitted.)\r\n\r\nTHE LINEUP\r\nJUNE\r\nJune 4th – Men in Black\r\nJune 11th – Jurassic Park\r\nJune 18th – Black Panther\r\nJune 25th – Mamma Mia!\r\nJULY\r\nJuly 2nd – The Sandlot\r\nJuly 9th – Hamilton\r\nJuly 16th – Sisterhood of the Traveling Pants\r\nJuly 23rd – Iron Man\r\nJuly 30th – The Lion King\r\nAUGUST\r\nAugust 6th – The Wizard of Oz\r\nAugust 13th – Love & Basketball\r\nAugust 20th – The Neverending Story\r\nAugust 27th – The Emperor's New Groove\r\n\r\nThis is a FREE event and will take place outdoors rain or shine. . Movies start @ 8:30pm",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
       "id": "b0ccgdvmqhr9vfsaeadd3dih1s",
       "title": "Crossroad Cinema: The Wizard of Oz",
       "date": "2026-08-06",
@@ -8241,14 +8252,14 @@
       "cat": "cnend"
     },
     {
-      "id": "9cnldka1r0gbrut81plr9gsrg0",
-      "title": "Bentley’s Bud’s & Brew’s",
+      "id": "sjg8k2c69inu7jcpnjgvhhr8c0",
+      "title": "Wine Thursdays at Hex",
       "date": "2026-11-05",
       "allDay": false,
-      "startDateTime": "2026-11-05T11:00:00-05:00",
-      "endDateTime": "2026-11-05T15:00:00-05:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, this weekend, July 4-5, 11 a.m.-3 p.m. Saturday and Sunday.",
-      "location": "300 Camp Road, Charlotte, NC 28206",
+      "startDateTime": "2026-11-05T08:00:00-05:00",
+      "endDateTime": "2026-11-05T18:00:00-05:00",
+      "description": "https://www.instagram.com/p/DMNvoi1sBdw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==&occurrence=2026-11-05",
+      "location": "Camp North End",
       "cat": "cnend"
     },
     {
