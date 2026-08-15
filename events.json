@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T12:17:52.071Z",
+  "updatedAt": "2026-08-15T18:13:51.313Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -6454,7 +6454,7 @@
       "allDay": false,
       "startDateTime": "2026-08-18T18:30:00-04:00",
       "endDateTime": "2026-08-18T20:00:00-04:00",
-      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking ��� 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
+      "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
       "cat": "cnend"
     },
@@ -6737,11 +6737,11 @@
       "id": "oh3v0c3d70f12mcqavdmpbqsko",
       "title": "Beginner/Recreational Play",
       "date": "2026-09-02",
-      "allDay": false,
-      "startDateTime": "2026-09-02T13:00:00-04:00",
-      "endDateTime": "2026-09-02T15:00:00-04:00",
-      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
-      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "allDay": true,
+      "startDateTime": "2026-09-02",
+      "endDateTime": "2026-09-03",
+      "description": "https://camp.nc/camp-events/beginner-recreational-play/?occurrence=2026-09-02",
+      "location": "Camp North End",
       "cat": "cnend"
     },
     {
