@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T12:24:05.992Z",
+  "updatedAt": "2026-08-18T18:22:20.021Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -6459,6 +6459,17 @@
       "cat": "cnend"
     },
     {
+      "id": "ipt5e562vmmkoo3sa7upm6d8fk",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-08-19",
+      "allDay": false,
+      "startDateTime": "2026-08-19T13:00:00-04:00",
+      "endDateTime": "2026-08-19T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "94mkd08lhvk64laccf6dalp6fo",
       "title": "Cork & Cap Vinyl Night",
       "date": "2026-08-19",
@@ -6547,6 +6558,17 @@
       "cat": "cnend"
     },
     {
+      "id": "d82ktls37aptrbtn7pp562q280",
+      "title": "Boileryard Brunch",
+      "date": "2026-08-23",
+      "allDay": false,
+      "startDateTime": "2026-08-23T12:00:00-04:00",
+      "endDateTime": "2026-08-23T16:00:00-04:00",
+      "description": "Bring your friends + appetite for an music experience under the water tower.",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
       "id": "8258iak7rqp09ba831sddgtqpo",
       "title": "Intermediate Open Play",
       "date": "2026-08-24",
@@ -6588,6 +6610,17 @@
       "endDateTime": "2026-08-25T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "ia3hb6v86vi8jf4qfj6e1q32rs",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-08-26",
+      "allDay": false,
+      "startDateTime": "2026-08-26T13:00:00-04:00",
+      "endDateTime": "2026-08-26T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6701,6 +6734,17 @@
       "cat": "cnend"
     },
     {
+      "id": "3op1vt6vfp92rr2pqb1bersd5k",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-02",
+      "allDay": false,
+      "startDateTime": "2026-09-02T13:00:00-04:00",
+      "endDateTime": "2026-09-02T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "noj50u249pmmmt44t05k90e1n4",
       "title": "Cork & Cap Vinyl Night",
       "date": "2026-09-02",
@@ -6756,6 +6800,17 @@
       "cat": "cnend"
     },
     {
+      "id": "hjdmsdjtt5kceqblbsq3f83d9g",
+      "title": "Bentley’s Buds & Brews",
+      "date": "2026-09-05",
+      "allDay": false,
+      "startDateTime": "2026-09-05T11:00:00-04:00",
+      "endDateTime": "2026-09-05T15:00:00-04:00",
+      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
       "id": "n64807c3ovtr3s9fe9j19bkjl0",
       "title": "Shop Local Queen City Market",
       "date": "2026-09-06",
@@ -6764,6 +6819,17 @@
       "endDateTime": "2026-09-06T16:00:00-04:00",
       "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "p09q0nusd1cacl3d2rff9j3h1g",
+      "title": "Bentley’s Buds & Brews",
+      "date": "2026-09-06",
+      "allDay": false,
+      "startDateTime": "2026-09-06T11:00:00-04:00",
+      "endDateTime": "2026-09-06T15:00:00-04:00",
+      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
+      "location": "",
       "cat": "cnend"
     },
     {
@@ -6808,6 +6874,17 @@
       "endDateTime": "2026-09-08T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "bjkpcgn998597l044j58mcnrr0",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-09",
+      "allDay": false,
+      "startDateTime": "2026-09-09T13:00:00-04:00",
+      "endDateTime": "2026-09-09T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -6918,6 +6995,17 @@
       "endDateTime": "2026-09-15T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "q707sr3h8jq7g6tsttlou6aaqg",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-16",
+      "allDay": false,
+      "startDateTime": "2026-09-16T13:00:00-04:00",
+      "endDateTime": "2026-09-16T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -7064,6 +7152,17 @@
       "cat": "cnend"
     },
     {
+      "id": "42g42a986p1h75q7p88q6rchb4",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-23",
+      "allDay": false,
+      "startDateTime": "2026-09-23T13:00:00-04:00",
+      "endDateTime": "2026-09-23T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "6bt6bnb57213r84c61ek4d3gjc",
       "title": "Cork & Cap Vinyl Night",
       "date": "2026-09-23",
@@ -7119,6 +7218,17 @@
       "cat": "cnend"
     },
     {
+      "id": "28mg6cmjkam20hv7hgfp8vg3c8",
+      "title": "Boileryard Brunch",
+      "date": "2026-09-27",
+      "allDay": false,
+      "startDateTime": "2026-09-27T12:00:00-04:00",
+      "endDateTime": "2026-09-27T16:00:00-04:00",
+      "description": "Bring your friends + appetite for an music experience under the water tower.",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
       "id": "p3dokifo7nmmp532u62868f8q0",
       "title": "Intermediate Open Play",
       "date": "2026-09-28",
@@ -7160,6 +7270,17 @@
       "endDateTime": "2026-09-29T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "tt780vrk1270abdc2dn6550640",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-09-30",
+      "allDay": false,
+      "startDateTime": "2026-09-30T13:00:00-04:00",
+      "endDateTime": "2026-09-30T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -7218,6 +7339,17 @@
       "cat": "cnend"
     },
     {
+      "id": "3t8h6pelrq2dg6tcldfuces0cg",
+      "title": "Bentley’s Buds & Brews",
+      "date": "2026-10-03",
+      "allDay": false,
+      "startDateTime": "2026-10-03T11:00:00-04:00",
+      "endDateTime": "2026-10-03T15:00:00-04:00",
+      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
       "id": "6do214kdhscg4tiig8bufead74",
       "title": "The Congregation Show 2026",
       "date": "2026-10-03",
@@ -7237,6 +7369,17 @@
       "endDateTime": "2026-10-05T16:00:00-04:00",
       "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "pn4eb0fptto4kmdlqm35k7opmo",
+      "title": "Bentley’s Buds & Brews",
+      "date": "2026-10-04",
+      "allDay": false,
+      "startDateTime": "2026-10-04T11:00:00-04:00",
+      "endDateTime": "2026-10-04T15:00:00-04:00",
+      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
+      "location": "",
       "cat": "cnend"
     },
     {
@@ -7281,6 +7424,17 @@
       "endDateTime": "2026-10-06T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "dghrq4uc2mhrq36lph1l0a0h7g",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-10-07",
+      "allDay": false,
+      "startDateTime": "2026-10-07T13:00:00-04:00",
+      "endDateTime": "2026-10-07T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -7391,6 +7545,17 @@
       "endDateTime": "2026-10-13T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "bgem0v1i474g99410kps0fa3is",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-10-14",
+      "allDay": false,
+      "startDateTime": "2026-10-14T13:00:00-04:00",
+      "endDateTime": "2026-10-14T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -7537,6 +7702,17 @@
       "cat": "cnend"
     },
     {
+      "id": "ur5gago2q34elp3jtfd2do9940",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-10-21",
+      "allDay": false,
+      "startDateTime": "2026-10-21T13:00:00-04:00",
+      "endDateTime": "2026-10-21T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "r9gqven24rraol4eu5qosu5eak",
       "title": "Cork & Cap Vinyl Night",
       "date": "2026-10-21",
@@ -7592,6 +7768,17 @@
       "cat": "cnend"
     },
     {
+      "id": "5n5jkf7pge772btm3d9k5d5fnk",
+      "title": "Boileryard Brunch",
+      "date": "2026-10-25",
+      "allDay": false,
+      "startDateTime": "2026-10-25T12:00:00-04:00",
+      "endDateTime": "2026-10-25T16:00:00-04:00",
+      "description": "Bring your friends + appetite for an music experience under the water tower.",
+      "location": "Camp North End",
+      "cat": "cnend"
+    },
+    {
       "id": "o7gmt01btaenvoo1rdjk91gjuk",
       "title": "Intermediate Open Play",
       "date": "2026-10-26",
@@ -7633,6 +7820,17 @@
       "endDateTime": "2026-10-27T20:00:00-04:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "k753td1knlnhjkcojiinfopvdc",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-10-28",
+      "allDay": false,
+      "startDateTime": "2026-10-28T13:00:00-04:00",
+      "endDateTime": "2026-10-28T15:00:00-04:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
@@ -7691,6 +7889,17 @@
       "cat": "cnend"
     },
     {
+      "id": "0adbmvqe5nd2kjpmsiecb4mjf0",
+      "title": "Bentley’s Buds & Brews",
+      "date": "2026-11-01",
+      "allDay": false,
+      "startDateTime": "2026-11-01T11:00:00-05:00",
+      "endDateTime": "2026-11-01T15:00:00-05:00",
+      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
+      "location": "",
+      "cat": "cnend"
+    },
+    {
       "id": "0b9lr4rhed9tbql8vb8u1stv7o",
       "title": "Intermediate Open Play",
       "date": "2026-11-02",
@@ -7735,6 +7944,17 @@
       "cat": "cnend"
     },
     {
+      "id": "o2dbgg37uc71iq4t09ug3qs1kk",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-11-04",
+      "allDay": false,
+      "startDateTime": "2026-11-04T13:00:00-05:00",
+      "endDateTime": "2026-11-04T15:00:00-05:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
       "id": "11fs7n0pmc6o4qm2n44aqsjfsc",
       "title": "Cork & Cap Vinyl Night",
       "date": "2026-11-04",
@@ -7765,6 +7985,17 @@
       "endDateTime": "2026-11-06T09:00:00-05:00",
       "description": "For those who like to start their day with fast-paced, competitive pickleball.",
       "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "5lqi85kbtfuoqcghno76a7sd4s",
+      "title": "Bentley’s Buds & Brews",
+      "date": "2026-11-07",
+      "allDay": false,
+      "startDateTime": "2026-11-07T11:00:00-05:00",
+      "endDateTime": "2026-11-07T15:00:00-05:00",
+      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
+      "location": "",
       "cat": "cnend"
     },
     {
@@ -7809,6 +8040,17 @@
       "endDateTime": "2026-11-10T20:00:00-05:00",
       "description": "Join Mad Miles Run Club and You vs Yourself for a free weekly run! Tuesdays at 6:30pm. All paces welcome.\r\n\r\nFree parking 📍 1724 Statesville Ave\r\n\r\nMeet up spot for the run 📍 400 Camp Rd (Ford Green)\r\n\r\n⏰: 6:30p warm up | 6:45p group run/walk⁣⁣⁣\r\n\r\n📸: @robjourneyy ( https://www.instagram.com/robjourneyy/ )",
       "location": "400 Camp Road, Charlotte, NC 28206",
+      "cat": "cnend"
+    },
+    {
+      "id": "9fn7i08mob49pl3ch6k56lpaco",
+      "title": "Beginner/Recreational Play",
+      "date": "2026-11-11",
+      "allDay": false,
+      "startDateTime": "2026-11-11T13:00:00-05:00",
+      "endDateTime": "2026-11-11T15:00:00-05:00",
+      "description": "Easygoing, social games with casual rotations at Tipsy Pickle. Learn, play, and have fun.",
+      "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
