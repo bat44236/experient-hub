@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:27:11.777Z",
+  "updatedAt": "2026-08-24T18:24:59.273Z",
   "events": [
     {
       "id": "20260101_d3glsfo8cfrs476elqd81so37s",
@@ -6778,17 +6778,6 @@
       "cat": "cnend"
     },
     {
-      "id": "ghhgseu2iknqcrp9pph91ejtho",
-      "title": "Bentley’s Buds & Brews",
-      "date": "2026-09-05",
-      "allDay": false,
-      "startDateTime": "2026-09-05T11:00:00-04:00",
-      "endDateTime": "2026-09-05T15:00:00-04:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "4nedtrtagk6b4upf8djrbr1564",
       "title": "Shop Local Queen City Market",
       "date": "2026-09-06",
@@ -6797,17 +6786,6 @@
       "endDateTime": "2026-09-06T16:00:00-04:00",
       "description": "Join us First Sundays, June through October | 11AM–4PM and shop a variety of small businesses—from boutiques and jewelry to gifts and home decor—set alongside Camp North End’s incredible lineup of permanent tenants.\r\n\r\nSpend the day exploring it all—shop the market, grab a bite, stroll the property, and discover even more local favorites throughout Camp North End.",
       "location": "400 Camp Road, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "edsepoduael1rmrpucip9ooqv8",
-      "title": "Bentley’s Buds & Brews",
-      "date": "2026-09-06",
-      "allDay": false,
-      "startDateTime": "2026-09-06T11:00:00-04:00",
-      "endDateTime": "2026-09-06T15:00:00-04:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -7163,17 +7141,6 @@
       "cat": "cnend"
     },
     {
-      "id": "acgllfue5g7ctk95a3f3239l78",
-      "title": "Boileryard Brunch",
-      "date": "2026-09-27",
-      "allDay": false,
-      "startDateTime": "2026-09-27T12:00:00-04:00",
-      "endDateTime": "2026-09-27T16:00:00-04:00",
-      "description": "Bring your friends + appetite for an music experience under the water tower.",
-      "location": "Camp North End",
-      "cat": "cnend"
-    },
-    {
       "id": "24bvbkd706p96mmt62pal5a1ks",
       "title": "Intermediate Open Play",
       "date": "2026-09-28",
@@ -7273,17 +7240,6 @@
       "cat": "cnend"
     },
     {
-      "id": "o1ci4t2m6cjqj0vjcpuhmsviko",
-      "title": "Bentley’s Buds & Brews",
-      "date": "2026-10-03",
-      "allDay": false,
-      "startDateTime": "2026-10-03T11:00:00-04:00",
-      "endDateTime": "2026-10-03T15:00:00-04:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "6do214kdhscg4tiig8bufead74",
       "title": "The Congregation Show 2026",
       "date": "2026-10-03",
@@ -7292,17 +7248,6 @@
       "endDateTime": "2026-10-03T20:00:00-04:00",
       "description": "https://www.instagram.com/thecongregationshow/?occurrence=2026-10-03",
       "location": "The Ford Building",
-      "cat": "cnend"
-    },
-    {
-      "id": "4e2q54m4f2vreommbnvoefvp7g",
-      "title": "Bentley’s Buds & Brews",
-      "date": "2026-10-04",
-      "allDay": false,
-      "startDateTime": "2026-10-04T11:00:00-04:00",
-      "endDateTime": "2026-10-04T15:00:00-04:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -7669,17 +7614,6 @@
       "cat": "cnend"
     },
     {
-      "id": "bgbrjrvhrf0uj0k2ivsd1dcqus",
-      "title": "Boileryard Brunch",
-      "date": "2026-10-25",
-      "allDay": false,
-      "startDateTime": "2026-10-25T12:00:00-04:00",
-      "endDateTime": "2026-10-25T16:00:00-04:00",
-      "description": "Bring your friends + appetite for an music experience under the water tower.",
-      "location": "Camp North End",
-      "cat": "cnend"
-    },
-    {
       "id": "6kr00l4nhn9l7vpqr7g6h1pjgk",
       "title": "Intermediate Open Play",
       "date": "2026-10-26",
@@ -7779,17 +7713,6 @@
       "cat": "cnend"
     },
     {
-      "id": "a49oi6ebmnh6fkasfc44pas97c",
-      "title": "Bentley’s Buds & Brews",
-      "date": "2026-11-01",
-      "allDay": false,
-      "startDateTime": "2026-11-01T11:00:00-05:00",
-      "endDateTime": "2026-11-01T15:00:00-05:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
-      "location": "",
-      "cat": "cnend"
-    },
-    {
       "id": "bmprh897kovg8aircrj0mmmpak",
       "title": "Intermediate Open Play",
       "date": "2026-11-02",
@@ -7864,17 +7787,6 @@
       "endDateTime": "2026-11-06T09:00:00-05:00",
       "description": "For those who like to start their day with fast-paced, competitive pickleball.",
       "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "8t3notcd009u027mhqpi05p77s",
-      "title": "Bentley’s Buds & Brews",
-      "date": "2026-11-07",
-      "allDay": false,
-      "startDateTime": "2026-11-07T11:00:00-05:00",
-      "endDateTime": "2026-11-07T15:00:00-05:00",
-      "description": "Catch @bentleysbudsflowertruck ( https://www.instagram.com/bentleysbudsflowertruck/ ) pulling up to Camp with Bella, the pink 1954 Dodge Truck, the FIRST Saturday and Sunday of every month, 11 a.m.-3 p.m.",
-      "location": "",
       "cat": "cnend"
     },
     {
@@ -8062,17 +7974,6 @@
       "endDateTime": "2026-11-20T21:00:00-05:00",
       "description": "For those who like to start their day with fast-paced, competitive pickleball.",
       "location": "201 Camp Road, Suite 120, Charlotte, NC 28206",
-      "cat": "cnend"
-    },
-    {
-      "id": "pvm9qan2r2plstc2hvlf9mh9q0",
-      "title": "Mimosa Sundays",
-      "date": "2026-11-22",
-      "allDay": false,
-      "startDateTime": "2026-11-22T11:00:00-05:00",
-      "endDateTime": "2026-11-22T18:00:00-05:00",
-      "description": "Join us for Mimosa Sundays at Free Range Bar! Every Sunday, enjoy all mimosas at half off. FRB always has the classic, plus a variety of seasonal flavors!\r\nCome on in and treat yourself to a bevie this Sunday!\r\n\r\n*Outside food and pets are always welcome!",
-      "location": "301 Camp Road. Charlotte, NC 28206",
       "cat": "cnend"
     },
     {
